@@ -1,62 +1,61 @@
 <style>
-    @keyframes spinSlow {
+    @keyframes hudSpinClockwise {
         from { transform: rotate(0deg); }
         to { transform: rotate(360deg); }
     }
 
-    @keyframes reverseSpinSlow {
+    @keyframes hudSpinCounter {
         from { transform: rotate(360deg); }
         to { transform: rotate(0deg); }
     }
 
-    @keyframes dashFlow {
+    @keyframes laserPulseFlow {
         0% {
-            stroke-dasharray: 120 1200;
-            stroke-dashoffset: 1320;
+            stroke-dasharray: 100 1000;
+            stroke-dashoffset: 1100;
         }
         100% {
-            stroke-dasharray: 120 1200;
-            stroke-dashoffset: -1320;
+            stroke-dasharray: 100 1000;
+            stroke-dashoffset: -1100;
         }
     }
 
-    @keyframes dashFlowRev {
+    @keyframes laserPulseRev {
         0% {
-            stroke-dasharray: 140 1200;
-            stroke-dashoffset: -1340;
+            stroke-dasharray: 120 1000;
+            stroke-dashoffset: -1120;
         }
         100% {
-            stroke-dasharray: 140 1200;
-            stroke-dashoffset: 1340;
+            stroke-dasharray: 120 1000;
+            stroke-dashoffset: 1120;
         }
     }
 
-    @keyframes pulseGlow {
-        0%, 100% { transform: scale(1); opacity: 0.6; }
-        50% { transform: scale(1.6); opacity: 1; }
+    @keyframes rippleExpand {
+        0% { r: 4px; opacity: 0.9; stroke-width: 2px; }
+        100% { r: 24px; opacity: 0; stroke-width: 0.5px; }
     }
 
-    .animate-spin-ultra-slow {
-        animation: spinSlow 65s linear infinite;
-        transform-origin: 50% 50%;
+    .animate-hud-clockwise {
+        animation: hudSpinClockwise 50s linear infinite;
+        transform-origin: 400px 250px;
     }
 
-    .animate-reverse-spin-slow {
-        animation: reverseSpinSlow 50s linear infinite;
-        transform-origin: 50% 50%;
+    .animate-hud-counter {
+        animation: hudSpinCounter 35s linear infinite;
+        transform-origin: 400px 250px;
     }
 
-    .animate-dash-flow {
-        animation: dashFlow 7s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    .animate-laser-beam {
+        animation: laserPulseFlow 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
     }
 
-    .animate-dash-flow-rev {
-        animation: dashFlowRev 9s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    .animate-laser-beam-rev {
+        animation: laserPulseRev 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
     }
 
-    .animate-node-pulse {
-        animation: pulseGlow 3s ease-in-out infinite;
-        transform-origin: center;
+    .animate-ripple {
+        animation: rippleExpand 3s ease-out infinite;
     }
 </style>
 
@@ -66,69 +65,82 @@
         <!-- Outer Dark Container with Rounded Corners -->
         <div class="relative w-full h-full bg-[#0a0d16] rounded-[32px] md:rounded-[40px] overflow-hidden border border-white/10 shadow-2xl">
 
-            <!-- Dynamic Animated Background & Orbital Wireframe Graphics -->
+            <!-- Cyber IT Tech Animated Background Layer -->
             <div class="absolute inset-0 pointer-events-none overflow-hidden">
                 <!-- Center Radial Glow -->
-                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-[#ffc835]/12 blur-[130px] rounded-full"></div>
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[400px] bg-[#ffc835]/14 blur-[120px] rounded-full"></div>
 
                 <!-- Subtle Tech Grid Lines Overlay -->
-                <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:3.5rem_3.5rem] opacity-30"></div>
+                <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:3.5rem_3.5rem] opacity-35"></div>
 
-                <!-- Animated Network & Light Pulse Container (Compact / Shorter Size) -->
-                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] sm:w-[900px] lg:w-[950px] h-[520px] opacity-85 pointer-events-none">
+                <!-- Centered Cyber Tech HUD & Neural Network graphic -->
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] sm:w-[900px] lg:w-[960px] h-[500px] opacity-85 pointer-events-none flex items-center justify-center">
                     
-                    <!-- Outer Rotating Dashed Ring -->
-                    <svg class="absolute inset-0 w-full h-full animate-spin-ultra-slow text-[#ffc835]" viewBox="0 0 1300 750" fill="none">
-                        <ellipse cx="650" cy="375" rx="580" ry="320" stroke="currentColor" stroke-width="1.2" stroke-dasharray="10 15" opacity="0.6" />
-                    </svg>
-
-                    <!-- Counter Rotating Ring -->
-                    <svg class="absolute inset-0 w-full h-full animate-reverse-spin-slow text-[#ffc835]" viewBox="0 0 1300 750" fill="none">
-                        <ellipse cx="650" cy="375" rx="460" ry="240" stroke="currentColor" stroke-width="1.5" stroke-dasharray="6 24" opacity="0.7" />
-                        <circle cx="1110" cy="375" r="4.5" fill="#ffc835" />
-                        <circle cx="190" cy="375" r="4.5" fill="#ffc835" />
-                    </svg>
-
-                    <!-- Intersecting Network Lines & Traveling Light Beams -->
-                    <svg class="absolute inset-0 w-full h-full text-[#ffc835]" viewBox="0 0 1300 750" fill="none">
+                    <svg class="w-full h-full text-[#ffc835]" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                             <!-- Light beam gradient 1 -->
-                            <linearGradient id="beamGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <linearGradient id="cyberGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
                                 <stop offset="0%" stop-color="#ffc835" stop-opacity="0" />
                                 <stop offset="50%" stop-color="#ffc835" stop-opacity="1" />
                                 <stop offset="100%" stop-color="#ffffff" stop-opacity="1" />
                             </linearGradient>
 
-                            <!-- Light beam gradient 2 -->
-                            <linearGradient id="beamGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <linearGradient id="cyberGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
                                 <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
                                 <stop offset="50%" stop-color="#ffc835" stop-opacity="1" />
                                 <stop offset="100%" stop-color="#ffc835" stop-opacity="0" />
                             </linearGradient>
 
-                            <radialGradient id="glowDot" cx="50%" cy="50%" r="50%">
+                            <radialGradient id="cyberGlowDot" cx="50%" cy="50%" r="50%">
                                 <stop offset="0%" stop-color="#ffffff" />
-                                <stop offset="50%" stop-color="#ffc835" />
+                                <stop offset="40%" stop-color="#ffc835" />
                                 <stop offset="100%" stop-color="#ffc835" stop-opacity="0" />
                             </radialGradient>
                         </defs>
 
-                        <!-- Base mesh paths -->
-                        <path d="M 60 375 Q 650 40 1240 375" stroke="currentColor" stroke-width="1.2" opacity="0.4" />
-                        <path d="M 60 375 Q 650 710 1240 375" stroke="currentColor" stroke-width="1.2" opacity="0.4" />
-                        <path d="M 650 40 Q 300 375 650 710" stroke="currentColor" stroke-width="1.2" opacity="0.35" />
-                        <path d="M 650 40 Q 1000 375 650 710" stroke="currentColor" stroke-width="1.2" opacity="0.35" />
+                        <!-- Outer Rotating Tech Compass / Ring -->
+                        <g class="animate-hud-clockwise" opacity="0.6">
+                            <circle cx="400" cy="250" r="210" stroke="currentColor" stroke-width="1" stroke-dasharray="8 12" />
+                            <circle cx="400" cy="250" r="230" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3 24" />
+                            <!-- Tick marks -->
+                            <line x1="400" y1="30" x2="400" y2="45" stroke="currentColor" stroke-width="2" />
+                            <line x1="400" y1="455" x2="400" y2="470" stroke="currentColor" stroke-width="2" />
+                            <line x1="180" y1="250" x2="195" y2="250" stroke="currentColor" stroke-width="2" />
+                            <line x1="605" y1="250" x2="620" y2="250" stroke="currentColor" stroke-width="2" />
+                        </g>
 
-                        <!-- Traveling Light Beams (GIF effect equivalent) -->
-                        <path d="M 60 375 Q 650 40 1240 375" stroke="url(#beamGrad1)" stroke-width="3.5" class="animate-dash-flow" />
-                        <path d="M 1240 375 Q 650 710 60 375" stroke="url(#beamGrad2)" stroke-width="3.5" class="animate-dash-flow-rev" />
+                        <!-- Counter Rotating Inner Tech HUD Ring -->
+                        <g class="animate-hud-counter" opacity="0.7">
+                            <circle cx="400" cy="250" r="160" stroke="currentColor" stroke-width="1.2" stroke-dasharray="40 10 5 10" />
+                            <circle cx="400" cy="250" r="140" stroke="currentColor" stroke-width="0.8" stroke-dasharray="2 10" />
+                            <!-- Crosshair ticks -->
+                            <circle cx="560" cy="250" r="4" fill="#ffc835" />
+                            <circle cx="240" cy="250" r="4" fill="#ffc835" />
+                            <circle cx="400" cy="90" r="4" fill="#ffc835" />
+                            <circle cx="400" cy="410" r="4" fill="#ffc835" />
+                        </g>
 
-                        <!-- Pulsing Network Nodes -->
+                        <!-- IT Data Waves & Curved Circuit Highways -->
+                        <path d="M 50 250 Q 400 40 750 250" stroke="currentColor" stroke-width="1" opacity="0.3" />
+                        <path d="M 50 250 Q 400 460 750 250" stroke="currentColor" stroke-width="1" opacity="0.3" />
+                        <path d="M 120 250 C 250 100, 550 400, 680 250" stroke="currentColor" stroke-width="1" opacity="0.25" />
+
+                        <!-- Traveling High-Speed Laser Packets -->
+                        <path d="M 50 250 Q 400 40 750 250" stroke="url(#cyberGrad1)" stroke-width="3" class="animate-laser-beam" />
+                        <path d="M 750 250 Q 400 460 50 250" stroke="url(#cyberGrad2)" stroke-width="3" class="animate-laser-beam-rev" />
+                        <path d="M 120 250 C 250 100, 550 400, 680 250" stroke="url(#cyberGrad1)" stroke-width="2.5" class="animate-laser-beam" style="animation-duration: 9s;" />
+
+                        <!-- Central Quantum Core with Pulse Ripples -->
+                        <circle cx="400" cy="250" r="8" fill="url(#cyberGlowDot)" />
+                        <circle cx="400" cy="250" r="16" stroke="#ffc835" fill="none" class="animate-ripple" />
+                        <circle cx="400" cy="250" r="16" stroke="#ffc835" fill="none" class="animate-ripple" style="animation-delay: 1.5s;" />
+
+                        <!-- Intersecting Data Nodes -->
                         <g>
-                            <circle cx="650" cy="207" r="6" fill="url(#glowDot)" class="animate-node-pulse" />
-                            <circle cx="475" cy="375" r="5" fill="url(#glowDot)" class="animate-node-pulse" style="animation-delay: 1s;" />
-                            <circle cx="825" cy="375" r="5" fill="url(#glowDot)" class="animate-node-pulse" style="animation-delay: 2s;" />
-                            <circle cx="650" cy="542" r="6" fill="url(#glowDot)" class="animate-node-pulse" style="animation-delay: 1.5s;" />
+                            <circle cx="280" cy="135" r="4.5" fill="url(#cyberGlowDot)" />
+                            <circle cx="520" cy="135" r="4.5" fill="url(#cyberGlowDot)" />
+                            <circle cx="280" cy="365" r="4.5" fill="url(#cyberGlowDot)" />
+                            <circle cx="520" cy="365" r="4.5" fill="url(#cyberGlowDot)" />
                         </g>
                     </svg>
 

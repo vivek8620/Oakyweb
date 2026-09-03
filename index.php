@@ -11,20 +11,12 @@
 <?php include("components/homeComp/clients.php") ?>
 
 
+<!-- Transformation / Beyond Development Section -->
+<?php include("components/homeComp/transformation.php") ?>
+
+
 <!-- Services Section -->
 <?php include("components/homeComp/services.php") ?>
-
-
-<!-- Our Finest Work -->
-<?php include("components/homeComp/finestWork.php") ?>
-
-
-<!-- Our Leadership Section -->
-<?php include("components/homeComp/leadership.php") ?>
-
-
-<!-- Our Team Section -->
-<?php include("components/homeComp/management.php") ?>
 
 
 <!-- Footer -->

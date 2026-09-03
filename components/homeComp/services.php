@@ -266,4 +266,4 @@
 
     document.getElementById("services-grid").innerHTML =
         services.map(createServiceCard).join("");
-</script>
+</script>

@@ -29,6 +29,13 @@ ROI-driven SEO solutions. Partner with us today";
       $canonical = "https://www.oakyweb.com/about-us.html";
       break;
 
+    case 'core-team.php':
+      $title = "Our Core Team & Leadership | OakyWeb";
+      $description = "Meet the experienced core leadership and engineering team behind OakyWeb, delivering innovative web and mobile solutions.";
+      $keywords = "OakyWeb core team, leadership team, management, web experts, IT leaders Noida, Pradeep Deshwal, Gunjan Sharma, Ratna Deep Verma, Shaukeen Khan";
+      $canonical = "https://www.oakyweb.com/core-team.html";
+      break;
+
     case 'custom-software-solution.php':
       $title = "Custom Software Development Company in Delhi NCR |
 OakyWeb";

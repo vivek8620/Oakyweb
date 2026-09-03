@@ -24,10 +24,37 @@ include 'components/meta.php';
           class="relative link-underline tracking-[2px] <?php echo ($page === 'index.php') ? 'text-black' : ''; ?>">
           Home
         </a>
-        <a href="about-us.html"
-          class="relative link-underline tracking-[2px] <?php echo ($page === 'about-us.php') ? 'text-black' : ''; ?>">
-          About Us
-        </a>
+        <!-- About -->
+        <div class="relative group inline-block">
+
+          <a class="flex items-center gap-1 cursor-pointer">
+
+            <span class="relative link-underline tracking-[2px] <?php echo in_array($page, ['about-us.php', 'core-team.php']) ? 'text-black' : ''; ?>">About</span>
+
+            <svg class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
+              fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 6.27a.75.75 0 01.02-1.06z" />
+            </svg>
+          </a>
+
+          <!-- DROPDOWN -->
+          <div class="absolute -left-6 w-[200px] bg-white shadow-xl rounded-lg p-2 hidden group-hover:block z-50 dropdown-anim tracking-wide">
+
+            <a href="about-us.html" style="animation-delay: .05s;"
+              class="dropdown-item block px-3 py-2 rounded 
+              <?php echo ($page === 'about-us.php') ? 'text-black' : ''; ?>">
+              <span class="relative link-underline">About Us</span>
+            </a>
+
+            <a href="core-team.html" style="animation-delay: .10s;"
+              class="dropdown-item block px-3 py-2 rounded
+              <?php echo ($page === 'core-team.php') ? 'text-black' : ''; ?>">
+              <span class="relative link-underline">Our Core Team</span>
+            </a>
+
+          </div>
+        </div>
 
 
         <!-- services -->
@@ -96,7 +123,7 @@ include 'components/meta.php';
           </div>
         </div>
 
-        <a href="index.php#Portfolio"
+        <a href="case-studies.html#Portfolio"
           class=" relative link-underline tracking-[2px] <?php echo ($page === 'portofolio.php' || $page === 'portfolio.php') ? 'text-black' : ''; ?>">
           Portfolio
         </a>
@@ -243,8 +270,21 @@ include 'components/meta.php';
     <!-- SCROLLABLE CONTENT -->
     <div class="flex-1 overflow-y-auto flex flex-col text-28 font-medium px-4 py-6 text-white">
 
-      <!-- About -->
-      <a href="about-us.html" class="block py-4 nav-link relative">About</a>
+      <!-- ABOUT DROPDOWN MOBILE -->
+      <div class="w-full">
+        <button id="mobileAboutBtn"
+          class="flex items-center gap-2 py-4 w-full text-left nav-link">
+          <span>About</span>
+          <img id="mobileAboutArrow"
+            src="assets/icons/down-white.svg"
+            class="h-4 w-4 ml-2 transition-transform duration-300" />
+        </button>
+
+        <div id="mobileAboutMenu" class="hidden pl-6 pb-2 space-y-2 text-22">
+          <a href="about-us.html" class="block py-2 hover:underline">About Us</a>
+          <a href="core-team.html" class="block py-2 hover:underline">Our Core Team</a>
+        </div>
+      </div>
 
       <!-- SERVICES DROPDOWN -->
       <div class="w-full">
@@ -268,7 +308,7 @@ include 'components/meta.php';
         </div>
       </div>
 
-      <a href="index.php#Portfolio" class="block py-4 nav-link relative">Portfolio</a>
+      <a href="case-studies.html#Portfolio" class="block py-4 nav-link relative">Portfolio</a>
 
       <!-- INDUSTRIES DROPDOWN MOBILE -->
       <div class="w-full">
@@ -369,6 +409,17 @@ include 'components/meta.php';
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
+
+    const aboutBtn = document.getElementById("mobileAboutBtn");
+    const aboutMenu = document.getElementById("mobileAboutMenu");
+    const aboutArrow = document.getElementById("mobileAboutArrow");
+
+    if (aboutBtn && aboutMenu && aboutArrow) {
+      aboutBtn.addEventListener("click", () => {
+        aboutMenu.classList.toggle("hidden");
+        aboutArrow.classList.toggle("rotate-180");
+      });
+    }
 
     const btn = document.getElementById("mobileServicesBtn");
     const menu = document.getElementById("mobileServicesMenu");

@@ -7,6 +7,10 @@
 <?php include("components/homeComp/hero.php") ?>
 
 
+<!-- Impact & Stats Section (Moved below Hero) -->
+<?php include("components/homeComp/stats.php") ?>
+
+
 <!-- Client Section -->
 <?php include("components/homeComp/clients.php") ?>
 

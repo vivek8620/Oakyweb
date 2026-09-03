@@ -1,0 +1,10 @@
+# llms.txt for www.oakyweb.com
+
+https://www.oakyweb.com/
+https://www.oakyweb.com/custom-software-solution.html
+https://www.oakyweb.com/mobile-application.html
+https://www.oakyweb.com/web-design-development.html
+https://www.oakyweb.com/oee-dashboard.html
+
+Sitemap:
+https://www.oakyweb.com/sitemap.xml

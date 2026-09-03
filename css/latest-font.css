@@ -1,0 +1,59 @@
+/* define for 1920 px */
+
+body {
+    font-size: clamp(14px, 1.2vw, 18px);
+}
+
+
+
+
+.text-136 { font-size: clamp(32px, 6vw, 136px); } /* Big hero */
+
+/* Headings */
+.text-110 { font-size: clamp(32px, 6vw, 110px); } /* Big hero */
+.text-92 { font-size: clamp(45px, 5vw, 92px); } /* Big hero */
+.text-80 { font-size: clamp(45px, 5vw, 80px); } /* Big hero */
+.text-79 { font-size: clamp(44px, 4vw, 79px); } /* Big hero */
+.text-71 { font-size: clamp(35px, 3vw, 71px); } /* Big hero */
+.text-69 { font-size: clamp(35px, 3vw, 69px); } /* Big hero */
+.text-66  { font-size: clamp(35px, 3.5vw, 66px); }
+.text-65  { font-size: clamp(35px, 3.5vw, 65px); }
+
+
+.text-60  { font-size: clamp(37px, 3.5vw, 60px); }
+.text-56  { font-size: clamp(34px, 3vw, 56px); }
+.text-54  { font-size: clamp(34px, 3vw, 54px); }
+.text-51  { font-size: clamp(32px, 3vw, 51px); }
+.text-50  { font-size: clamp(32px, 3vw, 50px); }
+.text-49  { font-size: clamp(31px, 2.5vw, 49px); }
+.text-47  { font-size: clamp(30px, 2.5vw, 47px); }
+.text-45  { font-size: clamp(30px, 2.5vw, 45px); }
+.text-44  { font-size: clamp(30px, 2.5vw, 44px); }
+.text-40  { font-size: clamp(28px, 2.5vw, 40px); }
+.text-38  { font-size: clamp(27px, 2vw, 38px); }
+
+.text-35  { font-size: clamp(26px, 2vw, 35px); }
+.text-33  { font-size: clamp(25px, 2vw, 33px); }
+.text-32  { font-size: clamp(24px, 2vw, 32px); }
+.text-31  { font-size: clamp(22px, 2.5vw, 31px); }
+
+/* Subheadings / medium text */
+.text-30  { font-size: clamp(24px, 1.6vw, 30px); }
+.text-29  { font-size: clamp(24px, 1.8vw, 29px); }
+.text-28  { font-size: clamp(24px, 1.8vw, 28px); }
+.text-25  { font-size: clamp(20px, 1.5vw, 25px); }
+.text-24  { font-size: clamp(18px, 2vw, 24px); }
+.text-23  { font-size: clamp(18px, 1.3vw, 23px); }
+.text-22  { font-size: clamp(18px, 1.5vw, 22px); }
+.text-21  { font-size: clamp(17px, 1.2vw, 21px); }
+.text-20  { font-size: clamp(16px, 1.2vw, 20px); }
+.text-19  { font-size: clamp(15px, 1.2vw, 19px); }
+.text-18  { font-size: clamp(14px, 1.2vw, 18px); }
+
+/* Body text */
+.text-16  { font-size: clamp(14px, 1vw, 16px); }
+.text-15  { font-size: clamp(13px, 1vw, 15px); }
+.text-14  { font-size: clamp(12px, 0.9vw, 14px); }
+.text-12  { font-size: clamp(11px, 0.8vw, 12px); }
+.text-10  { font-size: clamp(9px, 0.8vw, 10px); }
+

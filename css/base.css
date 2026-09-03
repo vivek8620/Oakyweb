@@ -1,0 +1,335 @@
+:root {
+  --primary: #ffc835;
+  --secondary: #94a3b8;
+  --bglight: #f6f6f6;
+  --bgdark: #333333;
+  --bgsecondary: #0f172a;
+}
+
+/* Text utilities */
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+/* Background utilities */
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-bgsecondary {
+  background-color: var(--bgsecondary);
+}
+
+.bg-bglight {
+  background-color: var(--bglight);
+}
+.bg-bgdark {
+  background-color: var(--bgdark);
+}
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  background-color: white;
+}
+
+.contain2 {
+  max-width: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+/* my contain sizes */
+@media (min-width: 100px) {
+  .contain {
+    max-width: 1500px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .paddingy {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .marginy {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .text-manually-hero {
+    font-size: 60px;
+  }
+  .define-text-manually {
+    font-size: 45px !important;
+    line-height: 1 !important;
+  }
+  .text-manually-footer {
+    font-size: 50px !important;
+    line-height: 1 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .contain {
+    max-width: 1500px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .paddingy {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .marginy {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .text-manually-hero {
+    font-size: 60px;
+  }
+  .define-text-manually {
+    font-size: 50px !important;
+    line-height: 1 !important;
+  }
+  .text-manually-footer {
+    font-size: 55px !important;
+    line-height: 1 !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contain {
+    max-width: 1500px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .paddingy {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .marginy {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .text-manually-hero {
+    font-size: 70px;
+  }
+  .define-text-manually {
+    font-size: 40px;
+  }
+  .text-manually-footer {
+    font-size: 60px !important;
+    line-height: 1 !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .text-manually-hero {
+    font-size: 90px;
+  }
+  .text-manually-footer {
+    font-size: 65px !important;
+    line-height: 1 !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .contain {
+    max-width: 1500px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .paddingy {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .marginy {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .text-manually-hero {
+    font-size: 100px;
+  }
+  .define-text-manually {
+    font-size: 40px;
+  }
+  .text-manually-footer {
+    font-size: 70px !important;
+    line-height: 1 !important;
+  }
+}
+
+/* Reset Swiper default arrow styles */
+.swiper-button-prev,
+.swiper-button-next {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  color: inherit !important;
+}
+
+/* Hide the default pseudo arrows */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none !important;
+  content: "" !important;
+}
+
+/* Custom short divider utility */
+/* .divide-x-short > :not([hidden]) ~ :not([hidden]) {
+  position: relative;
+}
+
+.divide-x-short > :not([hidden]) ~ :not([hidden])::before {
+  content: "";
+  position: absolute;
+  top: 25%; 
+  bottom: 25%;
+  left: 0;
+  width: 1px;
+  background-color: rgb(209 213 219);
+} */
+
+/* header underline dropdown */
+.link-underline {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+.link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease-in-out;
+  color: #ffda31;
+}
+.link-underline:hover::after {
+  width: 100%;
+}
+.link-underline:hover {
+  transform: scale();
+  color: #000000;
+}
+
+/* footer underline dropdown */
+.link-funderline {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+.link-funderline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease-in-out;
+  color: #ffffff;
+}
+.link-funderline:hover::after {
+  width: 100%;
+}
+.link-funderline:hover {
+  transform: scale();
+  font-weight: 500;
+}
+
+/* button arrow hover */
+.arrow-move {
+  transition: transform 0.3s ease-in-out;
+}
+.group:hover .arrow-move {
+  transform: translate(4px, -4px) scale(1.1);
+}
+
+/* dropdown animation */
+.dropdown-anim {
+  animation: dropFade 0.25s ease-out forwards;
+}
+@keyframes dropFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Card flip animation */
+.dropdown-item {
+  opacity: 0;
+  transform: rotateX(-90deg);
+  transform-origin: top;
+  animation: flipIn 1s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+@keyframes flipIn {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
+/* Arrow button header */
+@keyframes arrowMoveH {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(4px, -4px);
+  }
+}
+.arrow-hover {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+  animation: arrowMoveH 1.4s ease-in-out infinite;
+}
+.group:hover .arrow-hover {
+  animation: arrowMoveH 1.4s ease-in-out infinite;
+}

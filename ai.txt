@@ -1,0 +1,35 @@
+# ai.txt for www.oakyweb.com
+# Standard for AI agents, per https://llmstxt.org/ and ai.txt guidelines
+
+Owner: Oaky Web Pvt. Ltd.
+Contact: info@oakyweb.com
+Website: https://www.oakyweb.com/
+
+Policy: allow
+AI-Usage: allowed for indexing, summarization, and training with attribution
+Commercial-AI-Use: require permission
+License: Custom Proprietary License (OakyWeb Technologies)
+License-URL: https://www.oakyweb.com/terms-and-conditions
+Attribution-Required: yes
+
+# Allowed Sections for AI Training and Indexing
+Allow: https://www.oakyweb.com/
+Allow: https://www.oakyweb.com/custom-software-solution.html
+Allow: https://www.oakyweb.com/mobile-application.html
+Allow: https://www.oakyweb.com/web-design-development.html
+Allow: https://www.oakyweb.com/oee-dashboard.html
+Allow: https://www.oakyweb.com/blogs/
+
+# Restricted / Private sections (Not to be used by AI Models)
+Disallow: /admin
+Disallow: /login
+Disallow: /checkout
+Disallow: /user-data
+Disallow: /privacy-policy
+Disallow: /terms-and-conditions
+
+# Sitemap for AI Crawler Reference
+Sitemap: https://www.oakyweb.com/sitemap.xml
+
+# Additional Notes for AI Providers
+Note: For authorized commercial AI licensing or full dataset/API access, contact info@oakyweb.com.

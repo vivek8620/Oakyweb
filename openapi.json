@@ -1,0 +1,125 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "OakyWeb Services API",
+    "version": "1.0.0",
+    "description": "API for OakyWeb - Web Development, Mobile App Development, AI, Branding, and Custom Software Solutions."
+  },
+  "servers": [
+    {
+      "url": "https://www.oakyweb.com"
+    }
+  ],
+  "paths": {
+    "/api/services": {
+      "get": {
+        "summary": "Get list of services offered by OakyWeb",
+        "operationId": "getServices",
+        "responses": {
+          "200": {
+            "description": "List of services",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "services": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "example": [
+                        "Web Development",
+                        "Mobile App Development",
+                        "AI Chatbot Integration",
+                        "Branding & UI/UX Design",
+                        "Custom Software Development",
+                        "Cloud & DevOps Solutions"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/contact": {
+      "get": {
+        "summary": "Get contact details for OakyWeb",
+        "operationId": "getContact",
+        "responses": {
+          "200": {
+            "description": "Contact information",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "email": {
+                      "type": "string",
+                      "example": "ratna@oakyweb.com"
+                    },
+                    "phone": {
+                      "type": "string",
+                      "example": "+91-7303565840"
+                    },
+                    "website": {
+                      "type": "string",
+                      "example": "https://www.oakyweb.com"
+                    },
+                    "address": {
+                      "type": "string",
+                      "example": "India , Delhi NCR"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/about": {
+      "get": {
+        "summary": "Get information about OakyWeb",
+        "operationId": "getAbout",
+        "responses": {
+          "200": {
+            "description": "About OakyWeb",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "company_name": {
+                      "type": "string",
+                      "example": "OakyWeb Technologies"
+                    },
+                    "founded": {
+                      "type": "string",
+                      "example": "2017"
+                    },
+                    "mission": {
+                      "type": "string",
+                      "example": "To build innovative digital solutions with transparency, creativity, and performance."
+                    },
+                    "ceo": {
+                      "type": "string",
+                      "example": "Ratna Deep Verma"
+                    },
+                    "services_overview": {
+                      "type": "string",
+                      "example": "We provide website development, mobile apps, AI chatbot integration, branding/UI, and cloud solutions."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

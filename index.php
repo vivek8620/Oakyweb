@@ -11,10 +11,6 @@
 <?php include("components/homeComp/stats.php") ?>
 
 
-<!-- Client Section -->
-<?php include("components/homeComp/clients.php") ?>
-
-
 <!-- Transformation / Beyond Development Section -->
 <?php include("components/homeComp/transformation.php") ?>
 
@@ -25,6 +21,10 @@
 
 <!-- AI Ecosystem Section -->
 <?php include("components/homeComp/aiEcosystem.php") ?>
+
+
+<!-- Client Section (Positioned directly below AI Ecosystem) -->
+<?php include("components/homeComp/clients.php") ?>
 
 
 <!-- Footer -->

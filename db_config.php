@@ -1,35 +1,32 @@
- 
-
- <?php 
- $base_url = dirname(__FILE__);
- define("base_url",$base_url);
- define('site_url','https://www.oakyweb.com/');
-
-
-$hostname	=	'localhost';
-$username   =   'oakyweb2a_oakyweb_user';
-$password   =    'B{!6ORMn-{~,';
-$database   =   'oakyweb2a_oakyweb_db';
-
-// $conn  		= mysql_connect($hostname, $username, $password) ;//or die("Sorry connection could not estalished");
-$conn = mysqli_connect($hostname, $username, $password, $database);
-
-// alert('');
-//if (!$conn) {
-    // Print the error message if the connection failed
-  //  echo("Connection failed: " . mysql_error());
-    
-    // die("Connection failed: " . mysql_error());
-//}
-//mysql_select_db($database,$conn)
- // die("Connection failed: " . mysql_error());
-// or die("sorry database could not found"); 
-if ($conn->connect_error) {
-    // If connection failed, output a JavaScript alert with the error message
-   echo "<script>alert('Connection failed: " . $conn->connect_error . "');</script>";
-} else {
-    // If connected successfully, you can proceed with your database operations
-    //echo "<script>alert('Connected successfully');</script>";
+<?php 
+$base_url = dirname(__FILE__);
+if (!defined("base_url")) {
+    define("base_url", $base_url);
+}
+if (!defined("site_url")) {
+    define("site_url", "https://www.oakyweb.com/");
 }
 
+$hostname = 'localhost';
+$username = 'oakyweb2a_oakyweb_user';
+$password = 'B{!6ORMn-{~,';
+$database = 'oakyweb2a_oakyweb_db';
+
+// Disable default mysqli exception throwing to prevent fatal error crashes
+mysqli_report(MYSQLI_REPORT_OFF);
+
+$conn = null;
+try {
+    $conn = @mysqli_connect($hostname, $username, $password, $database);
+    if (!$conn) {
+        // Try fallback for local XAMPP environment
+        $conn = @mysqli_connect('localhost', 'root', '', $database);
+    }
+} catch (Throwable $e) {
+    $conn = null;
+}
+
+if (!$conn || (isset($conn->connect_error) && $conn->connect_error)) {
+    $conn = null;
+}
 ?>

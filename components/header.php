@@ -96,10 +96,92 @@ include 'components/meta.php';
           </div>
         </div>
 
-        <a href="/index.php#Portfolio"
-          class=" relative link-underline tracking-[2px] <?php echo ($page === 'portofolio.php') ? 'text-black' : ''; ?>">
+        <a href="index.php#Portfolio"
+          class=" relative link-underline tracking-[2px] <?php echo ($page === 'portofolio.php' || $page === 'portfolio.php') ? 'text-black' : ''; ?>">
           Portfolio
         </a>
+
+        <!-- Industries -->
+        <div class="relative group inline-block">
+
+          <a class="flex items-center gap-1 cursor-pointer">
+
+            <span class="relative link-underline tracking-[2px] <?php echo in_array($page, ['healthcare.php', 'industry-social-media.php', 'media-entertainment.php', 'finance.php', 'e-commerce-industry.php', 'event-management.php', 'insurance.php', 'saas.php', 'real-estate.php', 'travel.php', 'education.php']) ? 'text-black font-bold' : ''; ?>">Industries</span>
+
+            <svg class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
+              fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 6.27a.75.75 0 01.02-1.06z" />
+            </svg>
+          </a>
+
+          <!-- DROPDOWN -->
+          <div class="absolute -left-6 w-[220px] bg-white shadow-xl rounded-lg p-2 hidden group-hover:block z-50 dropdown-anim tracking-wide">
+
+            <a href="healthcare.html" style="animation-delay: .05s;"
+              class="dropdown-item block px-3 py-2 rounded <?php echo ($page === 'healthcare.php') ? 'text-black font-bold' : ''; ?>">
+              <span class="relative link-underline">Healthcare</span>
+            </a>
+
+            <a href="industry-social-media.html" style="animation-delay: .10s;"
+              class="dropdown-item block px-3 py-2 rounded <?php echo ($page === 'industry-social-media.php') ? 'text-black font-bold' : ''; ?>">
+              <span class="relative link-underline">Social Media</span>
+            </a>
+
+            <a href="media-entertainment.html" style="animation-delay: .15s;"
+              class="dropdown-item block px-3 py-2 rounded <?php echo ($page === 'media-entertainment.php') ? 'text-black font-bold' : ''; ?>">
+              <span class="relative link-underline">Media Entertainment</span>
+            </a>
+
+            <a href="finance.html" style="animation-delay: .20s;"
+              class="dropdown-item block px-3 py-2 rounded <?php echo ($page === 'finance.php') ? 'text-black font-bold' : ''; ?>">
+              <span class="relative link-underline">Finance</span>
+            </a>
+
+            <a href="e-commerce-industry.html" style="animation-delay: .25s;"
+              class="dropdown-item block px-3 py-2 rounded <?php echo ($page === 'e-commerce-industry.php') ? 'text-black font-bold' : ''; ?>">
+              <span class="relative link-underline">E-Commerce</span>
+            </a>
+
+            <a href="event-management.html" style="animation-delay: .30s;"
+              class="dropdown-item block px-3 py-2 rounded <?php echo ($page === 'event-management.php') ? 'text-black font-bold' : ''; ?>">
+              <span class="relative link-underline">Event Management</span>
+            </a>
+
+            <a href="insurance.html" style="animation-delay: .35s;"
+              class="dropdown-item block px-3 py-2 rounded <?php echo ($page === 'insurance.php') ? 'text-black font-bold' : ''; ?>">
+              <span class="relative link-underline">Insurance</span>
+            </a>
+
+            <a href="saas.html" style="animation-delay: .40s;"
+              class="dropdown-item block px-3 py-2 rounded <?php echo ($page === 'saas.php') ? 'text-black font-bold' : ''; ?>">
+              <span class="relative link-underline">Saas</span>
+            </a>
+
+            <a href="real-estate.html" style="animation-delay: .45s;"
+              class="dropdown-item block px-3 py-2 rounded <?php echo ($page === 'real-estate.php') ? 'text-black font-bold' : ''; ?>">
+              <span class="relative link-underline">Real Estate</span>
+            </a>
+
+            <a href="travel.html" style="animation-delay: .50s;"
+              class="dropdown-item block px-3 py-2 rounded <?php echo ($page === 'travel.php') ? 'text-black font-bold' : ''; ?>">
+              <span class="relative link-underline">Travel</span>
+            </a>
+
+            <a href="education.html" style="animation-delay: .55s;"
+              class="dropdown-item block px-3 py-2 rounded <?php echo ($page === 'education.php') ? 'text-black font-bold' : ''; ?>">
+              <span class="relative link-underline">Education</span>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Case Studies -->
+        <a href="case-studies.html"
+          class="relative link-underline tracking-[2px] <?php echo ($page === 'case-studies.php') ? 'text-black font-bold' : ''; ?>">
+          Case Studies
+        </a>
+
         <a href="contact-us.html"
           class="relative link-underline tracking-[2px] <?php echo ($page === 'contact-us.php') ? 'text-black' : ''; ?>">
           Contact Us
@@ -186,7 +268,34 @@ include 'components/meta.php';
         </div>
       </div>
 
-      <a href="#" class="block py-4 nav-link relative">Portfolio</a>
+      <a href="index.php#Portfolio" class="block py-4 nav-link relative">Portfolio</a>
+
+      <!-- INDUSTRIES DROPDOWN MOBILE -->
+      <div class="w-full">
+        <button id="mobileIndustriesBtn"
+          class="flex items-center gap-2 py-4 w-full text-left nav-link">
+          <span>Industries</span>
+          <img id="mobileIndustriesArrow"
+            src="assets/icons/down-white.svg"
+            class="h-4 w-4 ml-2 transition-transform duration-300" />
+        </button>
+
+        <div id="mobileIndustriesMenu" class="hidden pl-6 pb-2 space-y-2 text-22">
+          <a href="healthcare.html" class="block py-2 hover:underline">Healthcare</a>
+          <a href="industry-social-media.html" class="block py-2 hover:underline">Social Media</a>
+          <a href="media-entertainment.html" class="block py-2 hover:underline">Media Entertainment</a>
+          <a href="finance.html" class="block py-2 hover:underline">Finance</a>
+          <a href="e-commerce-industry.html" class="block py-2 hover:underline">E-Commerce</a>
+          <a href="event-management.html" class="block py-2 hover:underline">Event Management</a>
+          <a href="insurance.html" class="block py-2 hover:underline">Insurance</a>
+          <a href="saas.html" class="block py-2 hover:underline">Saas</a>
+          <a href="real-estate.html" class="block py-2 hover:underline">Real Estate</a>
+          <a href="travel.html" class="block py-2 hover:underline">Travel</a>
+          <a href="education.html" class="block py-2 hover:underline">Education</a>
+        </div>
+      </div>
+
+      <a href="case-studies.html" class="block py-4 nav-link relative">Case Studies</a>
       <a href="contact-us.html" class="block py-4 nav-link relative">Contact</a>
     </div>
 
@@ -269,6 +378,17 @@ include 'components/meta.php';
       btn.addEventListener("click", () => {
         menu.classList.toggle("hidden");
         arrow.classList.toggle("rotate-180");
+      });
+    }
+
+    const indBtn = document.getElementById("mobileIndustriesBtn");
+    const indMenu = document.getElementById("mobileIndustriesMenu");
+    const indArrow = document.getElementById("mobileIndustriesArrow");
+
+    if (indBtn && indMenu && indArrow) {
+      indBtn.addEventListener("click", () => {
+        indMenu.classList.toggle("hidden");
+        indArrow.classList.toggle("rotate-180");
       });
     }
 

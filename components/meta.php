@@ -119,6 +119,90 @@ conversions.";
       $canonical = "https://www.oakyweb.com/privacy.html";
       break;
 
+    case 'healthcare.php':
+      $title = "Healthcare Software Solutions & App Development | OakyWeb";
+      $description = "Custom Healthcare software development, HIPAA compliant apps, and digital health solutions by OakyWeb.";
+      $keywords = "healthcare web development, medical apps, HIPAA compliant solutions, telemedicine software";
+      $canonical = "https://www.oakyweb.com/healthcare.html";
+      break;
+
+    case 'industry-social-media.php':
+      $title = "Social Media Platform Development & Solutions | OakyWeb";
+      $description = "Custom social media platform development, community portals, and social network apps by OakyWeb.";
+      $keywords = "social media app development, community platform, social network script, OakyWeb social media";
+      $canonical = "https://www.oakyweb.com/industry-social-media.html";
+      break;
+
+    case 'media-entertainment.php':
+      $title = "Media & Entertainment Software Solutions | OakyWeb";
+      $description = "Digital media streaming platforms, content management systems, and entertainment apps by OakyWeb.";
+      $keywords = "media software development, OTT platform development, entertainment app development";
+      $canonical = "https://www.oakyweb.com/media-entertainment.html";
+      break;
+
+    case 'finance.php':
+      $title = "Fintech & Financial Software Development | OakyWeb";
+      $description = "Secure financial software, payment gateway integration, and fintech portal solutions by OakyWeb.";
+      $keywords = "fintech software development, banking app development, financial software company";
+      $canonical = "https://www.oakyweb.com/finance.html";
+      break;
+
+    case 'e-commerce-industry.php':
+      $title = "E-Commerce Industry Solutions & Portals | OakyWeb";
+      $description = "Scalable multi-vendor marketplaces, e-commerce storefronts, and online store development by OakyWeb.";
+      $keywords = "ecommerce industry solutions, multi vendor marketplace, online shop development";
+      $canonical = "https://www.oakyweb.com/e-commerce-industry.html";
+      break;
+
+    case 'event-management.php':
+      $title = "Event Management Software & Ticketing Solutions | OakyWeb";
+      $description = "Custom event management platforms, virtual event systems, and automated ticketing software by OakyWeb.";
+      $keywords = "event management software, event ticketing system, virtual event platform";
+      $canonical = "https://www.oakyweb.com/event-management.html";
+      break;
+
+    case 'insurance.php':
+      $title = "Insurtech & Insurance Software Solutions | OakyWeb";
+      $description = "Digital insurance portals, claim processing automation, and insurtech solutions by OakyWeb.";
+      $keywords = "insurtech software development, insurance portal, claim processing software";
+      $canonical = "https://www.oakyweb.com/insurance.html";
+      break;
+
+    case 'saas.php':
+      $title = "SaaS Product Development & Cloud Solutions | OakyWeb";
+      $description = "End-to-end SaaS platform development, cloud architecture, and multi-tenant web applications by OakyWeb.";
+      $keywords = "SaaS application development, cloud software company, multi tenant architecture";
+      $canonical = "https://www.oakyweb.com/saas.html";
+      break;
+
+    case 'real-estate.php':
+      $title = "Real Estate Software & Portal Development | OakyWeb";
+      $description = "Property listing portals, CRM for real estate, and virtual tour applications by OakyWeb.";
+      $keywords = "real estate portal development, property website development, real estate CRM";
+      $canonical = "https://www.oakyweb.com/real-estate.html";
+      break;
+
+    case 'travel.php':
+      $title = "Travel & Hospitality Software Solutions | OakyWeb";
+      $description = "Online booking engines, travel portal development, and hotel reservation systems by OakyWeb.";
+      $keywords = "travel portal development, booking engine software, hospitality app development";
+      $canonical = "https://www.oakyweb.com/travel.html";
+      break;
+
+    case 'education.php':
+      $title = "EdTech & Education Software Solutions | OakyWeb";
+      $description = "Custom Learning Management Systems (LMS), online examination portals, and educational apps by OakyWeb.";
+      $keywords = "edtech software development, custom LMS development, e-learning platform";
+      $canonical = "https://www.oakyweb.com/education.html";
+      break;
+
+    case 'case-studies.php':
+      $title = "Case Studies & Client Success Stories | OakyWeb";
+      $description = "Discover how OakyWeb builds transformational software, mobile apps, and digital platforms for global clients.";
+      $keywords = "OakyWeb case studies, client success stories, web development portfolio, project showcases";
+      $canonical = "https://www.oakyweb.com/case-studies.html";
+      break;
+
 
     default:
       $title = "Custom Software &amp; App Development Company in Delhi NCR | OakyWeb";

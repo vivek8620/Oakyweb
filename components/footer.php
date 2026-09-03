@@ -357,7 +357,7 @@
 
 <?php
 date_default_timezone_set('Asia/Kolkata');
-include("db_config.php");
+include_once("db_config.php");
 
 if (isset($_POST['subscribe'])) {
 
@@ -373,40 +373,50 @@ if (isset($_POST['subscribe'])) {
         exit;
     }
 
-
-    $checkStmt = $conn->prepare("SELECT id FROM subscribe WHERE email = ? LIMIT 1");
-    $checkStmt->bind_param("s", $email);
-    $checkStmt->execute();
-    $checkStmt->store_result();
-
-    if ($checkStmt->num_rows > 0) {
-
+    if (!$conn) {
         echo "<script>
-                showToast('This email is already subscribed.', 'error');
+                showToast('Database connection unavailable. Please try again later.', 'error');
                 setTimeout(() => { window.location.href = './'; }, 3000);
               </script>";
-    } else {
+        exit;
+    }
 
-        $insertStmt = $conn->prepare("INSERT INTO subscribe (name, email, create_at) VALUES (?, ?, ?)");
-        $insertStmt->bind_param("sss", $name, $email, $created_at);
+    $checkStmt = $conn->prepare("SELECT id FROM subscribe WHERE email = ? LIMIT 1");
+    if ($checkStmt) {
+        $checkStmt->bind_param("s", $email);
+        $checkStmt->execute();
+        $checkStmt->store_result();
 
+        if ($checkStmt->num_rows > 0) {
 
-        if ($insertStmt->execute()) {
             echo "<script>
-                    showToast('Subscribed to newsletter successfully.');
+                    showToast('This email is already subscribed.', 'error');
                     setTimeout(() => { window.location.href = './'; }, 3000);
                   </script>";
         } else {
-            echo "<script>
-                    showToast('Something went wrong. Please try again later.', 'error');
-                    setTimeout(() => { window.location.href = './'; }, 3000);
-                  </script>";
+
+            $insertStmt = $conn->prepare("INSERT INTO subscribe (name, email, create_at) VALUES (?, ?, ?)");
+            if ($insertStmt) {
+                $insertStmt->bind_param("sss", $name, $email, $created_at);
+
+                if ($insertStmt->execute()) {
+                    echo "<script>
+                            showToast('Subscribed to newsletter successfully.');
+                            setTimeout(() => { window.location.href = './'; }, 3000);
+                          </script>";
+                } else {
+                    echo "<script>
+                            showToast('Something went wrong. Please try again later.', 'error');
+                            setTimeout(() => { window.location.href = './'; }, 3000);
+                          </script>";
+                }
+
+                $insertStmt->close();
+            }
         }
 
-        $insertStmt->close();
+        $checkStmt->close();
+        $conn->close();
     }
-
-    $checkStmt->close();
-    $conn->close();
 }
 ?>

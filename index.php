@@ -19,6 +19,10 @@
 <?php include("components/homeComp/services.php") ?>
 
 
+<!-- AI Ecosystem Section -->
+<?php include("components/homeComp/aiEcosystem.php") ?>
+
+
 <!-- Footer -->
 <?php include("components/footer.php") ?>
 

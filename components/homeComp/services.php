@@ -74,19 +74,19 @@
                 <!-- Subtle Tech Grid Lines Overlay -->
                 <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:3.5rem_3.5rem] opacity-30"></div>
 
-                <!-- Animated Network & Light Pulse Container -->
-                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1300px] h-[750px] opacity-40">
+                <!-- Animated Network & Light Pulse Container (Compact / Shorter Size) -->
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] sm:w-[900px] lg:w-[950px] h-[520px] opacity-85 pointer-events-none">
                     
                     <!-- Outer Rotating Dashed Ring -->
                     <svg class="absolute inset-0 w-full h-full animate-spin-ultra-slow text-[#ffc835]" viewBox="0 0 1300 750" fill="none">
-                        <ellipse cx="650" cy="375" rx="580" ry="320" stroke="currentColor" stroke-width="1" stroke-dasharray="10 15" opacity="0.5" />
+                        <ellipse cx="650" cy="375" rx="580" ry="320" stroke="currentColor" stroke-width="1.2" stroke-dasharray="10 15" opacity="0.6" />
                     </svg>
 
                     <!-- Counter Rotating Ring -->
                     <svg class="absolute inset-0 w-full h-full animate-reverse-spin-slow text-[#ffc835]" viewBox="0 0 1300 750" fill="none">
-                        <ellipse cx="650" cy="375" rx="460" ry="240" stroke="currentColor" stroke-width="1.2" stroke-dasharray="6 24" opacity="0.6" />
-                        <circle cx="1110" cy="375" r="4" fill="#ffc835" />
-                        <circle cx="190" cy="375" r="4" fill="#ffc835" />
+                        <ellipse cx="650" cy="375" rx="460" ry="240" stroke="currentColor" stroke-width="1.5" stroke-dasharray="6 24" opacity="0.7" />
+                        <circle cx="1110" cy="375" r="4.5" fill="#ffc835" />
+                        <circle cx="190" cy="375" r="4.5" fill="#ffc835" />
                     </svg>
 
                     <!-- Intersecting Network Lines & Traveling Light Beams -->
@@ -95,14 +95,14 @@
                             <!-- Light beam gradient 1 -->
                             <linearGradient id="beamGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
                                 <stop offset="0%" stop-color="#ffc835" stop-opacity="0" />
-                                <stop offset="60%" stop-color="#ffc835" stop-opacity="0.9" />
+                                <stop offset="50%" stop-color="#ffc835" stop-opacity="1" />
                                 <stop offset="100%" stop-color="#ffffff" stop-opacity="1" />
                             </linearGradient>
 
                             <!-- Light beam gradient 2 -->
                             <linearGradient id="beamGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
                                 <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
-                                <stop offset="40%" stop-color="#ffc835" stop-opacity="0.9" />
+                                <stop offset="50%" stop-color="#ffc835" stop-opacity="1" />
                                 <stop offset="100%" stop-color="#ffc835" stop-opacity="0" />
                             </linearGradient>
 
@@ -114,21 +114,21 @@
                         </defs>
 
                         <!-- Base mesh paths -->
-                        <path d="M 60 375 Q 650 40 1240 375" stroke="currentColor" stroke-width="1" opacity="0.25" />
-                        <path d="M 60 375 Q 650 710 1240 375" stroke="currentColor" stroke-width="1" opacity="0.25" />
-                        <path d="M 650 40 Q 300 375 650 710" stroke="currentColor" stroke-width="1" opacity="0.2" />
-                        <path d="M 650 40 Q 1000 375 650 710" stroke="currentColor" stroke-width="1" opacity="0.2" />
+                        <path d="M 60 375 Q 650 40 1240 375" stroke="currentColor" stroke-width="1.2" opacity="0.4" />
+                        <path d="M 60 375 Q 650 710 1240 375" stroke="currentColor" stroke-width="1.2" opacity="0.4" />
+                        <path d="M 650 40 Q 300 375 650 710" stroke="currentColor" stroke-width="1.2" opacity="0.35" />
+                        <path d="M 650 40 Q 1000 375 650 710" stroke="currentColor" stroke-width="1.2" opacity="0.35" />
 
                         <!-- Traveling Light Beams (GIF effect equivalent) -->
-                        <path d="M 60 375 Q 650 40 1240 375" stroke="url(#beamGrad1)" stroke-width="2.5" class="animate-dash-flow" />
-                        <path d="M 1240 375 Q 650 710 60 375" stroke="url(#beamGrad2)" stroke-width="2.5" class="animate-dash-flow-rev" />
+                        <path d="M 60 375 Q 650 40 1240 375" stroke="url(#beamGrad1)" stroke-width="3.5" class="animate-dash-flow" />
+                        <path d="M 1240 375 Q 650 710 60 375" stroke="url(#beamGrad2)" stroke-width="3.5" class="animate-dash-flow-rev" />
 
                         <!-- Pulsing Network Nodes -->
                         <g>
-                            <circle cx="650" cy="207" r="5" fill="url(#glowDot)" class="animate-node-pulse" />
-                            <circle cx="475" cy="375" r="4" fill="url(#glowDot)" class="animate-node-pulse" style="animation-delay: 1s;" />
-                            <circle cx="825" cy="375" r="4" fill="url(#glowDot)" class="animate-node-pulse" style="animation-delay: 2s;" />
-                            <circle cx="650" cy="542" r="5" fill="url(#glowDot)" class="animate-node-pulse" style="animation-delay: 1.5s;" />
+                            <circle cx="650" cy="207" r="6" fill="url(#glowDot)" class="animate-node-pulse" />
+                            <circle cx="475" cy="375" r="5" fill="url(#glowDot)" class="animate-node-pulse" style="animation-delay: 1s;" />
+                            <circle cx="825" cy="375" r="5" fill="url(#glowDot)" class="animate-node-pulse" style="animation-delay: 2s;" />
+                            <circle cx="650" cy="542" r="6" fill="url(#glowDot)" class="animate-node-pulse" style="animation-delay: 1.5s;" />
                         </g>
                     </svg>
 
@@ -171,7 +171,7 @@
         btlink
     }) {
         return `
-    <div class="group relative flex flex-col justify-between bg-[#0e1424]/80 backdrop-blur-md border border-white/10 hover:border-[#ffc835]/50 rounded-[20px] p-5 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_12px_28px_rgba(0,0,0,0.6),0_0_20px_rgba(255,200,53,0.12)]">
+    <div class="group relative flex flex-col justify-between bg-[#070b16]/40 hover:bg-[#070b16]/65 backdrop-blur-md border border-white/10 hover:border-[#ffc835]/50 rounded-[20px] p-5 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_12px_28px_rgba(0,0,0,0.6),0_0_20px_rgba(255,200,53,0.12)]">
       
       <!-- Subtle internal hover glow -->
       <div class="absolute inset-0 rounded-[20px] bg-gradient-to-b from-[#ffc835]/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>

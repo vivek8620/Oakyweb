@@ -8,7 +8,7 @@
 
 
 <!-- Impact & Stats Section (Moved below Hero) -->
-<?php include("components/homeComp/stats.php") ?>
+<?php //include("components/homeComp/stats.php") ?>
 
 
 <!-- Transformation / Beyond Development Section -->

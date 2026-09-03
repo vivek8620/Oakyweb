@@ -267,16 +267,26 @@
     window.addEventListener("scroll", onScrollOrResize, { passive: true });
     window.addEventListener("resize", onScrollOrResize, { passive: true });
 
+    if (window.lenis) {
+      window.lenis.on('scroll', onScrollOrResize);
+    }
+
     document.addEventListener("DOMContentLoaded", () => {
       targetProgress = calcTargetProgress();
       currentProgress = targetProgress;
+      if (window.lenis) {
+        window.lenis.on('scroll', onScrollOrResize);
+      }
       onScrollOrResize();
     });
 
     setTimeout(() => {
       targetProgress = calcTargetProgress();
       currentProgress = targetProgress;
+      if (window.lenis) {
+        window.lenis.on('scroll', onScrollOrResize);
+      }
       onScrollOrResize();
-    }, 100);
+    }, 200);
   })();
 </script>

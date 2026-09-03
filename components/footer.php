@@ -353,6 +353,29 @@
 
 <script src="script79.js"></script>
 
+<!-- Initialize Lenis Smooth Scroll -->
+<script>
+  if (typeof Lenis !== 'undefined') {
+    window.lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      orientation: 'vertical',
+      gestureOrientation: 'vertical',
+      smoothWheel: true,
+      wheelMultiplier: 1.0,
+      touchMultiplier: 1.5,
+      infinite: false,
+    });
+
+    function raf(time) {
+      window.lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }
+</script>
+
 </html>
 
 <?php

@@ -39,21 +39,6 @@ $heroStats = [
 
     <div class="contain relative z-10">
 
-        <!-- Top Header / Intro Tagline -->
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 lg:mb-12 pb-6 border-b border-white/10 gap-4">
-            <div>
-                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-[#ffc835] text-xs font-semibold uppercase tracking-[2px] mb-3">
-                    <i class="fa-solid fa-chart-line"></i> Proven Track Record
-                </div>
-                <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white">
-                    Driving Measurable Business Impact
-                </h3>
-            </div>
-            <p class="text-gray-400 text-sm sm:text-base max-w-md">
-                Empowering startups and Fortune 500s worldwide with scalable digital engineering, high-availability architecture, and rapid deployment.
-            </p>
-        </div>
-
         <!-- 4-Column High-Tech Metric Cards Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <?php foreach ($heroStats as $index => $stat): ?>

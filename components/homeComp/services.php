@@ -159,7 +159,7 @@
 
                     <h2 class="text-3xl sm:text-4xl lg:text-5xl leading-tight font-medium text-white tracking-tight">
                         We craft services that drive <br class="hidden md:inline" />
-                        <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-[#ffc835]">transformational change</span>
+                        <span class="font-extrabold text-[#ffc835]">transformational change</span>
                     </h2>
                 </div>
 

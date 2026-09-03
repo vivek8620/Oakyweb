@@ -49,7 +49,7 @@
         <div>
           <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-[44px] xl:text-[50px] 2xl:text-[54px] text-white leading-[1.14] font-medium tracking-tight">
             Building AI Ecosystem<br />
-            <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-[#ffc835]">That Align With Your Organization</span>
+            <span class="font-extrabold text-[#ffc835]">That Align With Your Organization</span>
           </h2>
 
           <p class="text-[15px] sm:text-[16px] text-[#A1A1AA] font-normal leading-relaxed mt-4 sm:mt-5 max-w-3xl">

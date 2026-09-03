@@ -8,7 +8,7 @@
     <div class="text-center max-w-4xl mx-auto mb-6 lg:mb-10">
       <h2 class="Abhaya text-3xl sm:text-4xl md:text-5xl lg:text-[54px] xl:text-[60px] font-extrabold text-black leading-tight tracking-tight">
         Beyond Development.<br />
-        <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-black via-black to-[#ffc835]">We Deliver Transformation.</span>
+        <span class="font-extrabold text-black">We Deliver <span class="text-[#ffc835]">Transformation.</span></span>
       </h2>
     </div>
 

@@ -108,8 +108,8 @@
 
                         <?php
                         $heroItems = [
-                            ["250+", "Successful Projects", "Global Delivery"],
-                            ["8+ Yrs", "Years Experience", "Industry Leadership"],
+                            ["300+", "Successful Projects", "Global Delivery"],
+                            ["9+ Yrs", "Years Experience", "Industry Leadership"],
                             ["95%", "Client Retention", "Proven Trust"],
                         ];
                         ?>

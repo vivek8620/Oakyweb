@@ -14,15 +14,13 @@
             <!-- Left Content Area (Aligned to Top) -->
             <div class="lg:col-span-7 flex flex-col justify-start items-start text-left pt-2 sm:pt-4">
                 
-                <!-- Main Headings (Exact Reference Spacing & Line-Breaks with Brand Gradient) -->
+                <!-- Main Headings (Exact Reference Spacing & Line-Breaks) -->
                 <div class="flex flex-col justify-start">
-                    <h2 class="text-manually-hero leading-tight font-medium drop-shadow-md">
-                        <span class="bg-gradient-to-r from-white via-white to-slate-200 bg-clip-text text-transparent">Your</span> 
-                        <span class="font-extrabold bg-gradient-to-r from-[#ffe57f] via-[#ffc835] to-[#f59e0b] bg-clip-text text-transparent drop-shadow-lg">Vision</span>
+                    <h2 class="text-manually-hero leading-tight text-white font-medium drop-shadow-md">
+                        Your <span class="font-extrabold text-[#ffc835]">Vision</span>
                     </h2>
-                    <h2 class="text-manually-hero leading-none font-bold -mt-2 sm:-mt-4 md:-mt-5 drop-shadow-md">
-                        <span class="bg-gradient-to-r from-white via-slate-100 to-slate-200 bg-clip-text text-transparent">Our Tech</span> 
-                        <span class="font-extrabold tracking-relaxed bg-gradient-to-r from-white via-gray-100 to-slate-300 bg-clip-text text-transparent"><br/>Solutions</span>
+                    <h2 class="text-manually-hero leading-none font-bold -mt-2 sm:-mt-4 md:-mt-5 text-white drop-shadow-md">
+                        Our Tech <span class="font-extrabold tracking-relaxed"><br/>Solutions</span>
                     </h2>
 
                     <p class="text-20 mt-4 sm:mt-5 text-gray-200/95 max-w-xl font-normal leading-relaxed drop-shadow">
@@ -66,17 +64,24 @@
                         </div>
                     </div>
 
-                    <!-- Card 3: Clutch Reviews Badge (Fixed No Clipping) -->
-                    <div class="bg-[#121620]/85 hover:bg-[#181e2c]/95 backdrop-blur-md border border-white/15 hover:border-white/30 rounded-2xl h-24 sm:h-28 w-44 sm:w-52 md:w-56 flex items-center justify-center px-3 sm:px-4 py-2 shadow-2xl transition-all duration-300 hover:-translate-y-1 shrink-0">
-                        <div class="flex items-center justify-center w-full">
-                            <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
-                            <div class="clutch-widget"
-                                data-url="https://widget.clutch.co"
-                                data-widget-type="1"
-                                data-height="48"
-                                data-nofollow="false"
-                                data-expandifr="true"
-                                data-clutchcompany-id="2586525">
+                    <!-- Card 3: Clutch Reviews Badge (Perfect Dead Center) -->
+                    <div class="bg-[#121620]/85 hover:bg-[#181e2c]/95 backdrop-blur-md border border-white/15 hover:border-white/30 rounded-2xl h-24 sm:h-28 w-36 sm:w-44 md:w-48 flex items-center justify-center p-3 shadow-2xl transition-all duration-300 hover:-translate-y-1 shrink-0">
+                        <div class="flex items-center justify-center gap-2 sm:gap-3 w-full">
+                            <!-- Clutch 'C' Mark -->
+                            <svg class="w-8 sm:w-10 h-8 sm:h-10 shrink-0" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 4C11.1634 4 4 11.1634 4 20C4 28.8366 11.1634 36 20 36C25.074 36 29.5898 33.6429 32.5539 29.9328L26.5414 24.9085C25.0211 26.8122 22.6583 28 20 28C15.5817 28 12 24.4183 12 20C12 15.5817 15.5817 12 20 12C22.6583 12 25.0211 13.1878 26.5414 15.0915L32.5539 10.0672C29.5898 6.35713 25.074 4 20 4Z" fill="#1C303A"/>
+                                <circle cx="20" cy="20" r="5.5" fill="#FF3722"/>
+                            </svg>
+                            <!-- 5 Red Stars & 1 Review -->
+                            <div class="flex flex-col items-start justify-center">
+                                <div class="flex items-center gap-0.5 text-[#FF3722] text-xs sm:text-[14px] leading-none">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="text-[10px] sm:text-[11px] font-bold text-gray-400 uppercase tracking-wider mt-1 leading-none">1 REVIEW</span>
                             </div>
                         </div>
                     </div>
@@ -88,3 +93,15 @@
         </div>
     </div>
 </section>
+
+<style>
+    .clutch-center-wrap,
+    .clutch-center-wrap .clutch-widget,
+    .clutch-center-wrap .clutch-widget iframe {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+    }
+</style>

@@ -8,10 +8,10 @@
   </div>
 
   <!-- Full-Width Fluid Container -->
-  <div class="relative z-10 w-full max-w-[1720px] mx-auto px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16">
+  <div class="contain relative z-10">
 
     <!-- 2-Column Grid: Left Video / Right Content -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-14 items-stretch">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 xl:gap-12 items-stretch">
 
       <!-- Left Column: Video Container -->
       <div class="lg:col-span-5 w-full flex">

@@ -43,7 +43,7 @@ $allClientLogos = [
         </div>
 
         <!-- High-Visibility Responsive Grid Showing All 20 Logos (Significantly Bigger) -->
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 sm:gap-7 lg:gap-8 items-center justify-items-center max-w-[1500px] mx-auto">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 sm:gap-7 lg:gap-8 items-center justify-items-center w-full">
             <?php foreach ($allClientLogos as $logo): ?>
                 <div class="client-grid-card group flex items-center justify-center w-full bg-white rounded-2xl p-2 sm:p-3 h-28 sm:h-32 md:h-36 shadow-2xl hover:shadow-[0_15px_40px_rgba(255,200,53,0.3)] border border-white/30 hover:border-[#ffc835] transition-all duration-300 hover:-translate-y-2 hover:scale-[1.04] overflow-hidden">
                     <img src="<?= $logo['src'] ?>" 

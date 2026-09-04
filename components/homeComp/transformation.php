@@ -2,176 +2,180 @@
 <section id="transformation-scroll-container" class="relative w-full lg:h-[320vh] bg-[#FBFBFC]">
 
   <!-- Sticky Viewport Area (Active on lg+ screens) -->
-  <div class="lg:sticky lg:top-[75px] lg:h-[calc(100vh-75px)] w-full flex flex-col justify-between py-6 lg:py-8 px-4 sm:px-6 lg:px-12 xl:px-16 overflow-hidden">
+  <div class="lg:sticky lg:top-[75px] lg:h-[calc(100vh-75px)] w-full flex flex-col justify-between py-6 lg:py-8 overflow-hidden">
     
-    <!-- Top Header -->
-    <div class="text-center max-w-4xl mx-auto mb-6 lg:mb-10">
-      <h2 class="Abhaya text-3xl sm:text-4xl md:text-5xl lg:text-[54px] xl:text-[60px] font-extrabold text-black leading-tight tracking-tight">
-        Beyond Development.<br />
-        <span class="font-extrabold text-black">We Deliver <span class="text-[#ffc835]">Transformation.</span></span>
-      </h2>
-    </div>
+    <div class="contain h-full flex flex-col justify-between">
 
-    <!-- 4-Column Cards Wrapper -->
-    <div class="w-full max-w-[1600px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-6 xl:gap-8 items-stretch">
-
-      <!-- Column 1 (Base - Anchored) -->
-      <div id="scroll-card-1" class="w-full will-change-transform">
-        <div class="group h-full flex flex-col justify-between bg-white border border-[#E5E7EB] hover:border-[#ffc835] rounded-[24px] p-6 sm:p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-          
-          <!-- Top: Icon & Content -->
-          <div>
-            <div class="w-14 h-14 rounded-2xl bg-[#F3F4F6] group-hover:bg-[#ffc835] flex items-center justify-center mb-6 lg:mb-8 transition-all duration-300 shadow-sm">
-              <svg class="w-7 h-7 text-[#111827]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.322V19a2.25 2.25 0 002.25 2.25h9.5A2.25 2.25 0 0019 19v-4.678l-4.091-3.913a2.25 2.25 0 01-.659-1.591V3.104" />
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 3h6M10 9h4" />
-              </svg>
-            </div>
-
-            <h3 class="text-xl lg:text-[22px] font-bold text-[#111827] leading-snug mb-3 lg:mb-4">
-              Strategic Technology<br class="hidden xl:inline" /> Consulting
-            </h3>
-
-            <p class="text-[14px] lg:text-[15px] text-[#4B5563] leading-relaxed font-normal">
-              From architecture audits to digital transformation strategy, we help leaders align technology with business goals for measurable ROI.
-            </p>
-          </div>
-
-          <!-- Bottom: Button -->
-          <div class="pt-6 lg:pt-8 mt-2">
-            <a href="custom-software-solution.html" class="inline-flex items-center justify-center w-full sm:w-auto px-5 py-2.5 rounded-full border border-[#111827] text-[#111827] text-[13px] font-semibold transition-all duration-300 hover:bg-[#ffc835] hover:border-[#ffc835] hover:text-black group/btn">
-              <span>View Consulting Services</span>
-              <svg class="w-3.5 h-3.5 ml-1.5 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </a>
-          </div>
-
-        </div>
+      <!-- Top Header -->
+      <div class="text-center max-w-4xl mx-auto mb-4 lg:mb-8">
+        <h2 class="Abhaya text-3xl sm:text-4xl md:text-5xl lg:text-[48px] xl:text-[56px] font-extrabold text-black leading-tight tracking-tight">
+          Beyond Development.<br />
+          <span class="font-extrabold text-black">We Deliver <span class="text-[#ffc835]">Transformation.</span></span>
+        </h2>
       </div>
 
+      <!-- 4-Column Cards Wrapper -->
+      <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-4 xl:gap-6 items-stretch">
 
-      <!-- Column 2 (Smooth Fluid Glide Up) -->
-      <div id="scroll-card-2" class="w-full lg:translate-y-[280px] lg:opacity-20 will-change-transform">
-        <div class="group h-full flex flex-col justify-between bg-white border border-[#E5E7EB] hover:border-[#ffc835] rounded-[24px] p-6 sm:p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-          
-          <!-- Top: Icon & Content -->
-          <div>
-            <div class="w-14 h-14 rounded-2xl bg-[#F3F4F6] group-hover:bg-[#ffc835] flex items-center justify-center mb-6 lg:mb-8 transition-all duration-300 shadow-sm">
-              <svg class="w-7 h-7 text-[#111827]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
-              </svg>
+        <!-- Column 1 (Base - Anchored) -->
+        <div id="scroll-card-1" class="w-full will-change-transform">
+          <div class="group h-full flex flex-col justify-between bg-white border border-[#E5E7EB] hover:border-[#ffc835] rounded-[24px] p-5 sm:p-6 xl:p-7 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+            
+            <!-- Top: Icon & Content -->
+            <div>
+              <div class="w-12 h-12 xl:w-14 xl:h-14 rounded-2xl bg-[#F3F4F6] group-hover:bg-[#ffc835] flex items-center justify-center mb-4 xl:mb-6 transition-all duration-300 shadow-sm">
+                <svg class="w-6 h-6 xl:w-7 xl:h-7 text-[#111827]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.322V19a2.25 2.25 0 002.25 2.25h9.5A2.25 2.25 0 0019 19v-4.678l-4.091-3.913a2.25 2.25 0 01-.659-1.591V3.104" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 3h6M10 9h4" />
+                </svg>
+              </div>
+
+              <h3 class="text-lg lg:text-[19px] xl:text-[22px] font-bold text-[#111827] leading-snug mb-2 xl:mb-3">
+                Strategic Technology<br class="hidden xl:inline" /> Consulting
+              </h3>
+
+              <p class="text-[13px] lg:text-[13.5px] xl:text-[15px] text-[#4B5563] leading-relaxed font-normal">
+                From architecture audits to digital transformation strategy, we help leaders align technology with business goals for measurable ROI.
+              </p>
             </div>
 
-            <h3 class="text-xl lg:text-[22px] font-bold text-[#111827] leading-snug mb-3 lg:mb-4">
-              Digital Product<br class="hidden xl:inline" /> Development & Engineering
-            </h3>
-
-            <p class="text-[14px] lg:text-[15px] text-[#4B5563] leading-relaxed font-normal">
-              As your digital product engineering company, we handle the full lifecycle of software development—from cloud-native applications to complex ERP systems.
-            </p>
-          </div>
-
-          <!-- Bottom: Button -->
-          <div class="pt-6 lg:pt-8 mt-2">
-            <a href="web-design-development.html" class="inline-flex items-center justify-center w-full sm:w-auto px-5 py-2.5 rounded-full border border-[#111827] text-[#111827] text-[13px] font-semibold transition-all duration-300 hover:bg-[#ffc835] hover:border-[#ffc835] hover:text-black group/btn">
-              <span>View Product Engineering</span>
-              <svg class="w-3.5 h-3.5 ml-1.5 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </a>
-          </div>
-
-        </div>
-      </div>
-
-
-      <!-- Column 3 (Smooth Fluid Glide Up - Wave 2) -->
-      <div id="scroll-card-3" class="w-full lg:translate-y-[460px] lg:opacity-10 will-change-transform">
-        <div class="group h-full flex flex-col justify-between bg-white border border-[#E5E7EB] hover:border-[#ffc835] rounded-[24px] p-6 sm:p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-          
-          <!-- Top: Icon & Content -->
-          <div>
-            <div class="w-14 h-14 rounded-2xl bg-[#F3F4F6] group-hover:bg-[#ffc835] flex items-center justify-center mb-6 lg:mb-8 transition-all duration-300 shadow-sm">
-              <svg class="w-7 h-7 text-[#111827]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
-              </svg>
+            <!-- Bottom: Button -->
+            <div class="pt-4 xl:pt-6 mt-2">
+              <a href="custom-software-solution.html" class="inline-flex items-center justify-center w-full sm:w-auto px-4 py-2 xl:px-5 xl:py-2.5 rounded-full border border-[#111827] text-[#111827] text-[12px] xl:text-[13px] font-semibold transition-all duration-300 hover:bg-[#ffc835] hover:border-[#ffc835] hover:text-black group/btn">
+                <span>View Consulting Services</span>
+                <svg class="w-3.5 h-3.5 ml-1.5 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
             </div>
 
-            <h3 class="text-xl lg:text-[22px] font-bold text-[#111827] leading-snug mb-3 lg:mb-4">
-              AI, Data and<br class="hidden xl:inline" /> Analytics Solutions
-            </h3>
-
-            <p class="text-[14px] lg:text-[15px] text-[#4B5563] leading-relaxed font-normal">
-              We integrate advanced AI, generative AI, and machine learning models to automate operations, predict trends, and personalize customer experiences at scale.
-            </p>
           </div>
-
-          <!-- Bottom: Button -->
-          <div class="pt-6 lg:pt-8 mt-2">
-            <a href="mobile-application.html" class="inline-flex items-center justify-center w-full sm:w-auto px-5 py-2.5 rounded-full border border-[#111827] text-[#111827] text-[13px] font-semibold transition-all duration-300 hover:bg-[#ffc835] hover:border-[#ffc835] hover:text-black group/btn">
-              <span>View AI Solutions</span>
-              <svg class="w-3.5 h-3.5 ml-1.5 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </a>
-          </div>
-
         </div>
-      </div>
 
 
-      <!-- Column 4 (Smooth Fluid Glide Up - Wave 3) -->
-      <div id="scroll-card-4" class="w-full lg:translate-y-[640px] lg:opacity-0 will-change-transform">
-        <div class="group h-full flex flex-col justify-between bg-white border border-[#E5E7EB] hover:border-[#ffc835] rounded-[24px] p-6 sm:p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-          
-          <!-- Top: Icon & Content -->
-          <div>
-            <div class="w-14 h-14 rounded-2xl bg-[#F3F4F6] group-hover:bg-[#ffc835] flex items-center justify-center mb-6 lg:mb-8 transition-all duration-300 shadow-sm">
-              <svg class="w-7 h-7 text-[#111827]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.25-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
-              </svg>
+        <!-- Column 2 (Smooth Fluid Glide Up) -->
+        <div id="scroll-card-2" class="w-full lg:translate-y-[280px] lg:opacity-20 will-change-transform">
+          <div class="group h-full flex flex-col justify-between bg-white border border-[#E5E7EB] hover:border-[#ffc835] rounded-[24px] p-5 sm:p-6 xl:p-7 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+            
+            <!-- Top: Icon & Content -->
+            <div>
+              <div class="w-12 h-12 xl:w-14 xl:h-14 rounded-2xl bg-[#F3F4F6] group-hover:bg-[#ffc835] flex items-center justify-center mb-4 xl:mb-6 transition-all duration-300 shadow-sm">
+                <svg class="w-6 h-6 xl:w-7 xl:h-7 text-[#111827]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                </svg>
+              </div>
+
+              <h3 class="text-lg lg:text-[19px] xl:text-[22px] font-bold text-[#111827] leading-snug mb-2 xl:mb-3">
+                Digital Product<br class="hidden xl:inline" /> Development & Engineering
+              </h3>
+
+              <p class="text-[13px] lg:text-[13.5px] xl:text-[15px] text-[#4B5563] leading-relaxed font-normal">
+                As your digital product engineering company, we handle the full lifecycle of software development—from cloud-native applications to complex ERP systems.
+              </p>
             </div>
 
-            <h3 class="text-xl lg:text-[22px] font-bold text-[#111827] leading-snug mb-3 lg:mb-4">
-              Cloud Operations<br class="hidden xl:inline" /> and Cybersecurity
-            </h3>
+            <!-- Bottom: Button -->
+            <div class="pt-4 xl:pt-6 mt-2">
+              <a href="web-design-development.html" class="inline-flex items-center justify-center w-full sm:w-auto px-4 py-2 xl:px-5 xl:py-2.5 rounded-full border border-[#111827] text-[#111827] text-[12px] xl:text-[13px] font-semibold transition-all duration-300 hover:bg-[#ffc835] hover:border-[#ffc835] hover:text-black group/btn">
+                <span>View Product Engineering</span>
+                <svg class="w-3.5 h-3.5 ml-1.5 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
+            </div>
 
-            <p class="text-[14px] lg:text-[15px] text-[#4B5563] leading-relaxed font-normal">
-              As your IT service company, we engineer cloud-native environments rooted in Zero Trust principles, ensuring your infrastructure is as scalable as it is impenetrable.
-            </p>
           </div>
-
-          <!-- Bottom: Button -->
-          <div class="pt-6 lg:pt-8 mt-2">
-            <a href="web-hosting.html" class="inline-flex items-center justify-center w-full sm:w-auto px-5 py-2.5 rounded-full border border-[#111827] text-[#111827] text-[13px] font-semibold transition-all duration-300 hover:bg-[#ffc835] hover:border-[#ffc835] hover:text-black group/btn">
-              <span>View Cybersecurity</span>
-              <svg class="w-3.5 h-3.5 ml-1.5 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </a>
-          </div>
-
         </div>
+
+
+        <!-- Column 3 (Smooth Fluid Glide Up - Wave 2) -->
+        <div id="scroll-card-3" class="w-full lg:translate-y-[460px] lg:opacity-10 will-change-transform">
+          <div class="group h-full flex flex-col justify-between bg-white border border-[#E5E7EB] hover:border-[#ffc835] rounded-[24px] p-5 sm:p-6 xl:p-7 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+            
+            <!-- Top: Icon & Content -->
+            <div>
+              <div class="w-12 h-12 xl:w-14 xl:h-14 rounded-2xl bg-[#F3F4F6] group-hover:bg-[#ffc835] flex items-center justify-center mb-4 xl:mb-6 transition-all duration-300 shadow-sm">
+                <svg class="w-6 h-6 xl:w-7 xl:h-7 text-[#111827]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+                </svg>
+              </div>
+
+              <h3 class="text-lg lg:text-[19px] xl:text-[22px] font-bold text-[#111827] leading-snug mb-2 xl:mb-3">
+                AI, Data and<br class="hidden xl:inline" /> Analytics Solutions
+              </h3>
+
+              <p class="text-[13px] lg:text-[13.5px] xl:text-[15px] text-[#4B5563] leading-relaxed font-normal">
+                We integrate advanced AI, generative AI, and machine learning models to automate operations, predict trends, and personalize customer experiences at scale.
+              </p>
+            </div>
+
+            <!-- Bottom: Button -->
+            <div class="pt-4 xl:pt-6 mt-2">
+              <a href="mobile-application.html" class="inline-flex items-center justify-center w-full sm:w-auto px-4 py-2 xl:px-5 xl:py-2.5 rounded-full border border-[#111827] text-[#111827] text-[12px] xl:text-[13px] font-semibold transition-all duration-300 hover:bg-[#ffc835] hover:border-[#ffc835] hover:text-black group/btn">
+                <span>View AI Solutions</span>
+                <svg class="w-3.5 h-3.5 ml-1.5 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- Column 4 (Smooth Fluid Glide Up - Wave 3) -->
+        <div id="scroll-card-4" class="w-full lg:translate-y-[640px] lg:opacity-0 will-change-transform">
+          <div class="group h-full flex flex-col justify-between bg-white border border-[#E5E7EB] hover:border-[#ffc835] rounded-[24px] p-5 sm:p-6 xl:p-7 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+            
+            <!-- Top: Icon & Content -->
+            <div>
+              <div class="w-12 h-12 xl:w-14 xl:h-14 rounded-2xl bg-[#F3F4F6] group-hover:bg-[#ffc835] flex items-center justify-center mb-4 xl:mb-6 transition-all duration-300 shadow-sm">
+                <svg class="w-6 h-6 xl:w-7 xl:h-7 text-[#111827]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.25-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
+                </svg>
+              </div>
+
+              <h3 class="text-lg lg:text-[19px] xl:text-[22px] font-bold text-[#111827] leading-snug mb-2 xl:mb-3">
+                Cloud Operations<br class="hidden xl:inline" /> and Cybersecurity
+              </h3>
+
+              <p class="text-[13px] lg:text-[13.5px] xl:text-[15px] text-[#4B5563] leading-relaxed font-normal">
+                As your IT service company, we engineer cloud-native environments rooted in Zero Trust principles, ensuring your infrastructure is as scalable as it is impenetrable.
+              </p>
+            </div>
+
+            <!-- Bottom: Button -->
+            <div class="pt-4 xl:pt-6 mt-2">
+              <a href="web-hosting.html" class="inline-flex items-center justify-center w-full sm:w-auto px-4 py-2 xl:px-5 xl:py-2.5 rounded-full border border-[#111827] text-[#111827] text-[12px] xl:text-[13px] font-semibold transition-all duration-300 hover:bg-[#ffc835] hover:border-[#ffc835] hover:text-black group/btn">
+                <span>View Cybersecurity</span>
+                <svg class="w-3.5 h-3.5 ml-1.5 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
       </div>
 
-    </div>
+      <!-- Bottom Center "View All Services" Button (Matches Talk to Us style) -->
+      <div class="text-center mt-4 lg:mt-6 flex justify-center">
+        <a href="start-project.php">
+          <button
+            class="bg-[#0f172a] text-white text-[14px] px-6 py-3.5 xl:px-7 xl:py-3.5 flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-[#ffc835] hover:text-black hover:shadow-lg font-medium shadow-md">
+            View All Services
+            <span class="pl-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.8" stroke="currentColor" class="w-3.5 h-3.5 xl:w-4 xl:h-4">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+            </span>
+          </button>
+        </a>
+      </div>
 
-    <!-- Bottom Center "View All Services" Button (Matches Talk to Us style) -->
-    <div class="text-center mt-6 lg:mt-8 flex justify-center">
-      <a href="start-project.php">
-        <button
-          class="bg-[#0f172a] text-white text-[14px] px-6 py-3.5 xl:px-7 xl:py-3.5 flex items-center justify-center transition-all duration-300 ease-in-out hover:bg-[#ffc835] hover:text-black hover:shadow-lg font-medium shadow-md">
-          View All Services
-          <span class="pl-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-              stroke-width="1.8" stroke="currentColor" class="w-3.5 h-3.5 xl:w-4 xl:h-4">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-            </svg>
-          </span>
-        </button>
-      </a>
     </div>
 
   </div>

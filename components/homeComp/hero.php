@@ -53,19 +53,19 @@
                 <div class="flex items-center justify-start lg:justify-end gap-3.5 sm:gap-4 w-full flex-wrap sm:flex-nowrap">
                     
                     <!-- Card 1: ISO Certified -->
-                    <div class="bg-[#121620]/85 hover:bg-[#181e2c]/95 backdrop-blur-md border border-white/15 hover:border-white/30 rounded-2xl h-24 sm:h-28 w-36 sm:w-44 md:w-48 flex items-center justify-center p-3 shadow-2xl transition-all duration-300 hover:-translate-y-1 shrink-0">
+                    <div class="bg-white/10 hover:bg-white/[0.18] backdrop-blur-md border border-white/15 hover:border-white/30 rounded-2xl h-24 sm:h-28 w-36 sm:w-44 md:w-48 flex items-center justify-center p-3 shadow-2xl transition-all duration-300 hover:-translate-y-1 shrink-0">
                         <img src="./assets/homeImages/iso.png" alt="ISO 9001:2015 Certified" class="h-16 sm:h-20 w-auto max-w-full object-contain bg-white rounded-full p-0.5 shadow-md" />
                     </div>
 
                     <!-- Card 2: AWS Partner Network -->
-                    <div class="bg-[#121620]/85 hover:bg-[#181e2c]/95 backdrop-blur-md border border-white/15 hover:border-white/30 rounded-2xl h-24 sm:h-28 w-36 sm:w-44 md:w-48 flex items-center justify-center p-3 shadow-2xl transition-all duration-300 hover:-translate-y-1 shrink-0">
+                    <div class="bg-white/10 hover:bg-white/[0.18] backdrop-blur-md border border-white/15 hover:border-white/30 rounded-2xl h-24 sm:h-28 w-36 sm:w-44 md:w-48 flex items-center justify-center p-3 shadow-2xl transition-all duration-300 hover:-translate-y-1 shrink-0">
                         <div class="bg-white rounded-xl px-3 py-1.5 shadow-md flex items-center justify-center max-w-[90%]">
                             <img src="./assets/homeImages/aws.png" alt="AWS Partner Network" class="h-9 sm:h-11 md:h-12 w-auto object-contain" />
                         </div>
                     </div>
 
                     <!-- Card 3: Clutch Reviews Badge (Bigger & Perfect Center) -->
-                    <div class="bg-[#121620]/85 hover:bg-[#181e2c]/95 backdrop-blur-md border border-white/15 hover:border-white/30 rounded-2xl h-24 sm:h-28 w-36 sm:w-44 md:w-48 flex items-center justify-center p-2.5 sm:p-3 shadow-2xl transition-all duration-300 hover:-translate-y-1 shrink-0">
+                    <div class="bg-white/10 hover:bg-white/[0.18] backdrop-blur-md border border-white/15 hover:border-white/30 rounded-2xl h-24 sm:h-28 w-36 sm:w-44 md:w-48 flex items-center justify-center p-2.5 sm:p-3 shadow-2xl transition-all duration-300 hover:-translate-y-1 shrink-0">
                         <div class="flex items-center justify-center gap-2.5 sm:gap-3.5 w-full">
                             <!-- Clutch 'C' Mark (Larger) -->
                             <svg class="w-10 sm:w-12 h-10 sm:h-12 shrink-0 drop-shadow" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">

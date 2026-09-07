@@ -14,27 +14,47 @@ function renderIndustryPage($data) {
   $description = $data['description'] ?? 'We build enterprise platforms, modern web and mobile apps, and AI-powered tools engineered specifically for ' . $name . ' organisations.';
   $compliance = $data['compliance'] ?? ['ISO 9001:2015', 'AI-First Architecture', '24/7 Production SLA', 'Enterprise Grade'];
   
-  // Image resolution
+  // Image resolution for all 15 industries
   $image = $data['image'] ?? '';
   if (empty($image)) {
+    $industryImageMap = [
+      'real-estate' => 'assets/industries/real-estate.jpg',
+      'healthcare' => 'assets/industries/healthcare.jpg',
+      'retail' => 'assets/industries/retail-ecommerce.jpg',
+      'commerce' => 'assets/industries/retail-ecommerce.jpg',
+      'media' => 'assets/industries/media-entertainment.jpg',
+      'entertainment' => 'assets/industries/media-entertainment.jpg',
+      'finance' => 'assets/industries/finance-banking.jpg',
+      'banking' => 'assets/industries/finance-banking.jpg',
+      'auto' => 'assets/industries/automotive.jpg',
+      'agri' => 'assets/industries/agriculture.jpg',
+      'telecom' => 'assets/industries/telecommunication.jpg',
+      'manufactur' => 'assets/industries/manufacturing.jpg',
+      'public' => 'assets/industries/public-sector-government.jpg',
+      'govt' => 'assets/industries/public-sector-government.jpg',
+      'energy' => 'assets/industries/energy-utilities.jpg',
+      'utilit' => 'assets/industries/energy-utilities.jpg',
+      'travel' => 'assets/industries/travel-hospitality.jpg',
+      'hospitality' => 'assets/industries/travel-hospitality.jpg',
+      'education' => 'assets/industries/education-elearning.jpg',
+      'elearning' => 'assets/industries/education-elearning.jpg',
+      'insurance' => 'assets/industries/insurance.jpg',
+      'logistic' => 'assets/industries/logistics-supply-chain.jpg',
+      'supply' => 'assets/industries/logistics-supply-chain.jpg',
+    ];
+
     if (file_exists("assets/industries/{$slug}.jpg")) {
       $image = "assets/industries/{$slug}.jpg";
-    } elseif (strpos($slug, 'real') !== false) {
-      $image = "assets/industries/real-estate.jpg";
-    } elseif (strpos($slug, 'finance') !== false) {
-      $image = "assets/industries/finance.jpg";
-    } elseif (strpos($slug, 'retail') !== false || strpos($slug, 'commerce') !== false) {
-      $image = "assets/industries/retail.jpg";
-    } elseif (strpos($slug, 'auto') !== false) {
-      $image = "assets/industries/automotive.jpg";
-    } elseif (strpos($slug, 'manufactur') !== false) {
-      $image = "assets/industries/manufacturing.jpg";
-    } elseif (strpos($slug, 'logistic') !== false) {
-      $image = "assets/industries/logistics.jpg";
-    } elseif (file_exists("assets/industries/healthcare.jpg")) {
-      $image = "assets/industries/healthcare.jpg";
     } else {
-      $image = "assets/industries/default.jpg";
+      foreach ($industryImageMap as $key => $imgPath) {
+        if (strpos($slug, $key) !== false && file_exists($imgPath)) {
+          $image = $imgPath;
+          break;
+        }
+      }
+      if (empty($image)) {
+        $image = file_exists("assets/industries/healthcare.jpg") ? "assets/industries/healthcare.jpg" : "assets/industries/default.jpg";
+      }
     }
   }
 
@@ -297,14 +317,14 @@ function renderIndustryPage($data) {
       </div>
 
       <!-- Right Column: Hero Image -->
-      <div class="lg:col-span-6 relative mt-6 lg:mt-0">
+      <div class="lg:col-span-6 relative mt-6 lg:mt-0 flex items-center justify-center">
         
-        <!-- Main Image Container -->
-        <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-white/15 group">
+        <!-- Main Image Container with Equal Uniform Height -->
+        <div class="relative w-full h-[360px] sm:h-[440px] lg:h-[480px] xl:h-[500px] rounded-3xl overflow-hidden shadow-2xl border border-white/15 group">
           <img 
             src="<?php echo htmlspecialchars($image); ?>" 
             alt="<?php echo htmlspecialchars($name); ?> Software Engineering" 
-            class="w-full h-auto object-cover max-h-[500px] lg:max-h-[540px] transform group-hover:scale-105 transition-transform duration-700" 
+            class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700" 
           />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20 pointer-events-none"></div>
         </div>

@@ -1,5 +1,5 @@
 <!-- Beyond Development / Transformation Services Section with Ultra-Smooth Physics LERP Scroll Animations -->
-<section id="transformation-scroll-container" class="relative w-full lg:h-[320vh] bg-[#FBFBFC]">
+<section id="transformation-scroll-container" class="relative w-full lg:h-[200vh] bg-[#FBFBFC]">
 
   <!-- Sticky Viewport Area (Active on lg+ screens) -->
   <div class="lg:sticky lg:top-[75px] lg:h-[calc(100vh-75px)] w-full flex flex-col justify-between py-6 lg:py-8 overflow-hidden">
@@ -222,38 +222,38 @@
         return;
       }
 
-      // Physics damping interpolation (LERP factor 0.085 for buttery inertia)
+      // Physics damping interpolation (Faster & responsive LERP factor)
       const diff = targetProgress - currentProgress;
-      currentProgress += diff * 0.085;
+      currentProgress += diff * 0.14;
 
       if (Math.abs(diff) < 0.0003) {
         currentProgress = targetProgress;
       }
 
-      // Card 2 Glide (starts at 0.04, reaches top at 0.44)
-      const p2 = Math.min(Math.max((currentProgress - 0.04) / 0.40, 0), 1);
+      // Card 2 Glide (starts at 0.03, reaches top at 0.38)
+      const p2 = Math.min(Math.max((currentProgress - 0.03) / 0.35, 0), 1);
       const e2 = smoothstep(p2);
-      const y2 = (1 - e2) * 280;
+      const y2 = (1 - e2) * 260;
       const op2 = 0.25 + (e2 * 0.75);
       if (card2) {
         card2.style.transform = `translate3d(0, ${y2.toFixed(2)}px, 0)`;
         card2.style.opacity = op2.toFixed(3);
       }
 
-      // Card 3 Glide (starts at 0.26, reaches top at 0.72)
-      const p3 = Math.min(Math.max((currentProgress - 0.26) / 0.46, 0), 1);
+      // Card 3 Glide (starts at 0.20, reaches top at 0.65)
+      const p3 = Math.min(Math.max((currentProgress - 0.20) / 0.45, 0), 1);
       const e3 = smoothstep(p3);
-      const y3 = (1 - e3) * 460;
+      const y3 = (1 - e3) * 420;
       const op3 = 0.15 + (e3 * 0.85);
       if (card3) {
         card3.style.transform = `translate3d(0, ${y3.toFixed(2)}px, 0)`;
         card3.style.opacity = op3.toFixed(3);
       }
 
-      // Card 4 Glide (starts at 0.50, reaches top at 0.96)
-      const p4 = Math.min(Math.max((currentProgress - 0.50) / 0.46, 0), 1);
+      // Card 4 Glide (starts at 0.42, reaches top at 0.88)
+      const p4 = Math.min(Math.max((currentProgress - 0.42) / 0.46, 0), 1);
       const e4 = smoothstep(p4);
-      const y4 = (1 - e4) * 640;
+      const y4 = (1 - e4) * 580;
       const op4 = 0.05 + (e4 * 0.95);
       if (card4) {
         card4.style.transform = `translate3d(0, ${y4.toFixed(2)}px, 0)`;

@@ -13,30 +13,32 @@
     <!-- 2-Column Grid: Left Video / Right Content -->
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 xl:gap-12 items-stretch">
 
-      <!-- Left Column: Video Container -->
+      <!-- Left Column: AI & Human Synergy Visual Container -->
       <div class="lg:col-span-5 w-full flex">
-        <div class="relative w-full min-h-[380px] sm:min-h-[460px] lg:min-h-[560px] h-full rounded-[24px] lg:rounded-[32px] overflow-hidden border border-[#262626] bg-[#0A0A0A] shadow-2xl group flex flex-col">
+        <div class="relative w-full min-h-[400px] sm:min-h-[480px] lg:min-h-[580px] h-full rounded-[24px] lg:rounded-[32px] overflow-hidden border border-[#262626] bg-[#0A0A0A] shadow-2xl group flex flex-col">
           
-          <!-- Video -->
-          <video 
-            class="w-full h-full object-cover flex-1 transform transition-transform duration-700 group-hover:scale-105"
-            autoplay 
-            muted 
-            loop 
-            playsinline
-            preload="auto">
-            <source src="assets/appi-home-inventivai/appi-home-inventivai-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+          <!-- High-Tech AI & Human Collaboration Visual with Hover Zoom -->
+          <img 
+            src="assets/appi-home-inventivai/inventivai-ai-human.jpg" 
+            alt="InventivAI - Human & AI Intelligence Collaboration"
+            class="w-full h-full object-cover flex-1 transform transition-transform duration-700 ease-out group-hover:scale-105"
+            loading="lazy"
+          />
 
-          <!-- Subtle Video Overlay Gradient -->
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/40 pointer-events-none"></div>
+          <!-- Subtle Visual Overlay Gradient for Depth -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-black/35 pointer-events-none"></div>
 
           <!-- Top-Left Logo Overlay: InventivAi with Teal Sparkle -->
-          <div class="absolute top-6 left-6 lg:top-8 lg:left-8 z-20 flex items-center">
+          <div class="absolute top-6 left-6 lg:top-8 lg:left-8 z-20 flex items-center bg-black/40 backdrop-blur-md px-4 py-2 rounded-2xl border border-white/10 shadow-lg">
             <span class="text-white font-bold text-2xl sm:text-3xl lg:text-4xl tracking-tight flex items-center">
-              InventivA<span class="relative inline-block">i<span class="absolute -top-2 -right-2 text-[#38bdf8] text-sm lg:text-base">✦</span></span>
+              InventivA<span class="relative inline-block">i<span class="absolute -top-2 -right-2 text-[#38bdf8] text-sm lg:text-base animate-pulse">✦</span></span>
             </span>
+          </div>
+
+          <!-- Bottom Live Status Pill: AI + Human Synergy -->
+          <div class="absolute bottom-6 left-6 z-20 flex items-center gap-2.5 bg-black/70 backdrop-blur-md px-4 py-2 rounded-full border border-white/15 shadow-xl">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+            <span class="text-xs text-gray-200 font-medium tracking-wide">Human + AI Intelligence Synergy</span>
           </div>
 
         </div>

@@ -296,7 +296,7 @@ function renderIndustryPage($data) {
         </div>
       </div>
 
-      <!-- Right Column: Hero Image with Floating Glass Cards -->
+      <!-- Right Column: Hero Image -->
       <div class="lg:col-span-6 relative mt-6 lg:mt-0">
         
         <!-- Main Image Container -->
@@ -307,50 +307,6 @@ function renderIndustryPage($data) {
             class="w-full h-auto object-cover max-h-[500px] lg:max-h-[540px] transform group-hover:scale-105 transition-transform duration-700" 
           />
           <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20 pointer-events-none"></div>
-        </div>
-
-        <!-- Floating Card 1: Top Right Overlay (AI-Powered Solutions) -->
-        <div class="absolute -top-6 -right-2 sm:-right-4 sm:-top-8 z-20 w-[240px] sm:w-[270px] bg-[#11172A]/95 backdrop-blur-xl border border-white/20 rounded-2xl p-4 shadow-2xl transition-transform hover:-translate-y-1 duration-300">
-          <div class="flex items-start justify-between gap-2 mb-1.5">
-            <h4 class="text-[13px] font-bold text-white leading-snug">
-              AI-Powered <?php echo htmlspecialchars($name); ?> Solutions
-            </h4>
-            <span class="w-6 h-6 rounded-lg bg-[#ffc835]/20 text-[#ffc835] flex items-center justify-center shrink-0">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-            </span>
-          </div>
-          <p class="text-[11px] text-slate-300 leading-tight mb-3">
-            Intelligent, scalable &amp; future-ready software for modern business.
-          </p>
-          <div class="flex items-center gap-2 pt-2 border-t border-white/10">
-            <!-- Avatars -->
-            <div class="flex -space-x-1.5 overflow-hidden">
-              <span class="inline-block h-5 w-5 rounded-full ring-1 ring-slate-900 bg-purple-500 text-[9px] font-bold text-white flex items-center justify-center">P</span>
-              <span class="inline-block h-5 w-5 rounded-full ring-1 ring-slate-900 bg-amber-500 text-[9px] font-bold text-white flex items-center justify-center">J</span>
-              <span class="inline-block h-5 w-5 rounded-full ring-1 ring-slate-900 bg-blue-500 text-[9px] font-bold text-white flex items-center justify-center">S</span>
-              <span class="inline-block h-5 w-5 rounded-full ring-1 ring-slate-900 bg-emerald-500 text-[9px] font-bold text-white flex items-center justify-center">A</span>
-            </div>
-            <span class="text-[10.5px] font-semibold text-slate-200">110+ Happy Clients</span>
-          </div>
-        </div>
-
-        <!-- Floating Card 2: Bottom Left Overlay (Proven Business Impact) -->
-        <div class="absolute -bottom-6 -left-2 sm:-left-4 sm:-bottom-8 z-20 w-[250px] sm:w-[290px] bg-[#11172A]/95 backdrop-blur-xl border border-white/20 rounded-2xl p-4 shadow-2xl transition-transform hover:-translate-y-1 duration-300">
-          <div class="flex items-center gap-2.5 mb-1.5">
-            <span class="w-6 h-6 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
-            </span>
-            <h4 class="text-[13px] font-bold text-white">Proven Business Impact</h4>
-          </div>
-          <p class="text-[11px] text-slate-300 leading-snug mb-2.5">
-            Our clients see measurable results within the first 90 days of launch.
-          </p>
-          <div class="flex items-center justify-between pt-2 border-t border-white/10 text-[10.5px]">
-            <div class="flex text-[#ffc835] tracking-widest">
-              ★★★★★
-            </div>
-            <span class="text-slate-300 font-semibold">5.0 Clutch • 4.9 Google</span>
-          </div>
         </div>
 
       </div>

@@ -35,12 +35,6 @@
             </span>
           </div>
 
-          <!-- Bottom Live Status Pill: AI + Human Synergy -->
-          <div class="absolute bottom-6 left-6 z-20 flex items-center gap-2.5 bg-black/70 backdrop-blur-md px-4 py-2 rounded-full border border-white/15 shadow-xl">
-            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
-            <span class="text-xs text-gray-200 font-medium tracking-wide">Human + AI Intelligence Synergy</span>
-          </div>
-
         </div>
       </div>
 

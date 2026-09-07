@@ -19,9 +19,9 @@ include 'components/meta.php';
 
 
       <!-- Desktop Menu -->
-      <div class="hidden lg:flex items-center gap-[50px] text-secondary font-medium text-[13px] xl:[text-17px]">
+      <div class="hidden lg:flex items-center gap-[50px] text-black font-medium text-[13px] xl:text-[15px] 2xl:text-[17px]">
         <a href="./"
-          class="relative link-underline tracking-[2px] <?php echo ($page === 'index.php') ? 'text-black' : ''; ?>">
+          class="relative link-underline tracking-[2px] <?php echo ($page === 'index.php') ? 'text-black font-bold' : ''; ?>">
           Home
         </a>
         <!-- About -->

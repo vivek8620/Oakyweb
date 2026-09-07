@@ -15,12 +15,12 @@
             <div class="lg:col-span-7 flex flex-col justify-start items-start text-left pt-6 sm:pt-10 lg:pt-14 xl:pt-16">
                 
                 <!-- Hero Text Content (Balanced & Enhanced Size) -->
-                <div class="hero-text-content flex flex-col justify-start max-w-[650px] xl:max-w-[740px]">
-                    <h1 class="text-[36px] sm:text-[44px] md:text-[50px] lg:text-[54px] xl:text-[58px] font-semibold text-white leading-[1.15] drop-shadow-md">
+                <div class="hero-text-content flex flex-col justify-start max-w-[680px] xl:max-w-[780px]">
+                    <h1 class="text-[38px] sm:text-[46px] md:text-[52px] lg:text-[58px] xl:text-[62px] font-semibold text-white leading-[1.15] drop-shadow-md">
                         Engineering the <span class="text-[#ffc835]">Next Generation</span> of Digital Systems
                     </h1>
 
-                    <p class="text-[16px] sm:text-[17px] md:text-[18px] leading-[1.65] font-normal sm:font-medium text-white/95 mt-4 sm:mt-5 max-w-[640px] drop-shadow">
+                    <p class="text-[17px] sm:text-[18px] md:text-[19px] lg:text-[20px] leading-[1.65] font-normal sm:font-medium text-white/95 mt-4 sm:mt-5 max-w-[660px] drop-shadow">
                         Oakyweb engineers secure, scalable digital systems by combining robust software architecture, modern web &amp; mobile engineering, and innovative tech capabilities, helping organizations move from strategy to reliable systems in production.
                     </p>
 

@@ -314,15 +314,6 @@ include 'components/meta.php';
               <span class="text-[13.5px] font-medium group-hover/item:text-black">Logistics &amp; Supply Chain</span>
             </a>
 
-            <!-- Full-width View All Industries bar at bottom -->
-            <div class="col-span-3 pt-3 border-t border-gray-100 mt-1 flex items-center justify-between">
-              <a href="industries.html" class="inline-flex items-center gap-2 text-[13px] font-bold text-black hover:text-[#ffc835] transition-colors">
-                <span>View All 15 Industries Overview</span>
-                <svg class="w-4 h-4 text-[#ffc835]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-              </a>
-              <span class="text-[12px] text-gray-400">Tailored Domain Engineering</span>
-            </div>
-
           </div>
         </div>
 

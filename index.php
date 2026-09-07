@@ -23,7 +23,11 @@
 <?php include("components/homeComp/aiEcosystem.php") ?>
 
 
-<!-- Client Section (Positioned directly below AI Ecosystem) -->
+<!-- Industries We Serve Section -->
+<?php include("components/homeComp/industries.php") ?>
+
+
+<!-- Client Section (Positioned directly below Industries Section) -->
 <?php include("components/homeComp/clients.php") ?>
 
 

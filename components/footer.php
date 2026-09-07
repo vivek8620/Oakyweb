@@ -172,12 +172,16 @@
                                 link1: "about-us.html"
                             },
                             {
+                                text: "Industries",
+                                link1: "industries.html"
+                            },
+                            {
                                 text: "Portfolio",
-                                link1: "#"
+                                link1: "case-studies.html#Portfolio"
                             },
                             {
                                 text: "Careers",
-                                link1: "#"
+                                link1: "contact-us.html"
                             },
                             {
                                 text: "Contact us",

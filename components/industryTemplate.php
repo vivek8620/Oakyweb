@@ -281,7 +281,7 @@ function renderIndustryPage($data) {
 
           <!-- CTA Action Buttons -->
           <div class="mt-8 flex flex-wrap items-center gap-4">
-            <a href="contact-us.html" class="inline-flex items-center gap-2 rounded-full px-7 py-3.5 bg-[#ffc835] hover:bg-white text-black font-semibold text-[14.5px] transition-all duration-300 shadow-[0_8px_25px_rgba(255,200,53,0.3)] hover:scale-105">
+            <a href="contact-us.html" class="inline-flex items-center gap-2 rounded-full px-7 py-3.5 bg-[#ffc835] hover:bg-white text-black font-semibold text-[14.5px] transition-all duration-300 hover:scale-105">
               <span>Book a Free Strategy Call</span>
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
             </a>

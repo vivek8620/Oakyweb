@@ -257,7 +257,7 @@ function renderIndustryPage($data) {
       <ol class="inline-flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-400">
         <li><a href="./" class="hover:text-white transition-colors">Home</a></li>
         <li class="text-slate-600">&gt;</li>
-        <li><a href="industries.html" class="hover:text-white transition-colors">Industries</a></li>
+        <li><a href="./#industries-we-serve" class="hover:text-white transition-colors">Industries</a></li>
         <li class="text-slate-600">&gt;</li>
         <li class="text-white font-semibold"><?php echo htmlspecialchars($name); ?></li>
       </ol>
@@ -654,8 +654,8 @@ $serviceIcons = [
         <span>Book a Discovery Call</span>
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
       </a>
-      <a href="industries.html" class="px-7 py-4 rounded-full bg-white/5 hover:bg-white/10 border border-white/20 text-white font-semibold text-sm sm:text-base transition-all">
-        Explore All 15 Industries
+      <a href="case-studies.html#Portfolio" class="px-7 py-4 rounded-full bg-white/5 hover:bg-white/10 border border-white/20 text-white font-semibold text-sm sm:text-base transition-all">
+        View Portfolio
       </a>
     </div>
   </div>

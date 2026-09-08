@@ -126,9 +126,9 @@ include 'components/meta.php';
         <!-- Industries -->
         <div class="relative group inline-block">
 
-          <a href="industries.html" class="flex items-center gap-1 cursor-pointer">
+          <a class="flex items-center gap-1 cursor-pointer">
 
-            <span class="relative link-underline tracking-[2px] <?php echo in_array($page, ['industries.php', 'healthcare.php', 'industry-social-media.php', 'media-entertainment.php', 'finance.php', 'finance-banking.php', 'e-commerce-industry.php', 'retail-ecommerce.php', 'event-management.php', 'insurance.php', 'saas.php', 'real-estate.php', 'travel.php', 'travel-hospitality.php', 'education.php', 'education-elearning.php', 'automotive.php', 'agriculture.php', 'telecommunication.php', 'manufacturing.php', 'public-sector-government.php', 'energy-utilities.php', 'logistics-supply-chain.php']) ? 'text-black font-bold' : ''; ?>">Industries</span>
+            <span class="relative link-underline tracking-[2px] <?php echo in_array($page, ['healthcare.php', 'industry-social-media.php', 'media-entertainment.php', 'finance.php', 'finance-banking.php', 'e-commerce-industry.php', 'retail-ecommerce.php', 'event-management.php', 'insurance.php', 'saas.php', 'real-estate.php', 'travel.php', 'travel-hospitality.php', 'education.php', 'education-elearning.php', 'automotive.php', 'agriculture.php', 'telecommunication.php', 'manufacturing.php', 'public-sector-government.php', 'energy-utilities.php', 'logistics-supply-chain.php']) ? 'text-black font-bold' : ''; ?>">Industries</span>
 
             <svg class="w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
               fill="currentColor" viewBox="0 0 20 20">
@@ -394,7 +394,6 @@ include 'components/meta.php';
         </button>
 
         <div id="mobileIndustriesMenu" class="hidden pl-6 pb-2 space-y-2 text-22">
-          <a href="industries.html" class="block py-2 font-bold text-primary hover:underline">All Industries Overview</a>
           <a href="real-estate.html" class="block py-2 hover:underline">Real Estate</a>
           <a href="healthcare.html" class="block py-2 hover:underline">Healthcare</a>
           <a href="retail-ecommerce.html" class="block py-2 hover:underline">Retail &amp; E-Commerce</a>

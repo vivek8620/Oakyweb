@@ -126,13 +126,6 @@ conversions.";
       $canonical = "https://www.oakyweb.com/privacy.html";
       break;
 
-    case 'industries.php':
-      $title = "Industries We Serve | Custom Software for 15 Verticals | OakyWeb";
-      $description = "OakyWeb builds bespoke software across 15 industries including Healthcare, Real Estate, Finance, Retail, Logistics, Automotive, and more.";
-      $keywords = "industries software development, custom software verticals, healthcare software, real estate tech, fintech, logistics software";
-      $canonical = "https://www.oakyweb.com/industries.html";
-      break;
-
     case 'healthcare.php':
       $title = "Healthcare Software Solutions & App Development | OakyWeb";
       $description = "Custom Healthcare software development, HIPAA compliant apps, and digital health solutions by OakyWeb.";

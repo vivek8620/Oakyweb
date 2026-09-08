@@ -173,7 +173,7 @@
                             },
                             {
                                 text: "Industries",
-                                link1: "industries.html"
+                                link1: "./#industries-we-serve"
                             },
                             {
                                 text: "Portfolio",

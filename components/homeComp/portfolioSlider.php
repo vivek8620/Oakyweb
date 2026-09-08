@@ -531,7 +531,7 @@
 
                 <!-- 2. Credai -->
                 <div data-portfolio-slider-item="" class="gsap-slider__item">
-                  <a href="https://credai.org/" target="_blank" rel="noopener noreferrer" class="portfolio-card br-28 is-credai">
+                  <a href="case-studies.php" class="portfolio-card br-28 is-credai">
                     <div class="fdc full-height">
                       <div class="portfolio-card-header fdc gap10">
                         <div class="appi-portfolio-title-header">
@@ -607,7 +607,7 @@
 
                 <!-- 4. Cytometry -->
                 <div data-portfolio-slider-item="" class="gsap-slider__item">
-                  <a href="https://tcs.res.in/" target="_blank" rel="noopener noreferrer" class="portfolio-card br-28 is-cytometry">
+                  <a href="case-studies.php" class="portfolio-card br-28 is-cytometry">
                     <div class="fdc full-height">
                       <div class="portfolio-card-header fdc gap10">
                         <div class="appi-portfolio-title-header">
@@ -683,7 +683,7 @@
 
                 <!-- 6. Credai (Loop 2) -->
                 <div data-portfolio-slider-item="" class="gsap-slider__item">
-                  <a href="https://credai.org/" target="_blank" rel="noopener noreferrer" class="portfolio-card br-28 is-credai">
+                  <a href="case-studies.php" class="portfolio-card br-28 is-credai">
                     <div class="fdc full-height">
                       <div class="portfolio-card-header fdc gap10">
                         <div class="appi-portfolio-title-header">
@@ -759,7 +759,7 @@
 
                 <!-- 8. Cytometry (Loop 2) -->
                 <div data-portfolio-slider-item="" class="gsap-slider__item">
-                  <a href="https://tcs.res.in/" target="_blank" rel="noopener noreferrer" class="portfolio-card br-28 is-cytometry">
+                  <a href="case-studies.php" class="portfolio-card br-28 is-cytometry">
                     <div class="fdc full-height">
                       <div class="portfolio-card-header fdc gap10">
                         <div class="appi-portfolio-title-header">
@@ -830,7 +830,7 @@
 
             <!-- 2. Credai -->
             <div class="item">
-              <a href="https://credai.org/" target="_blank" rel="noopener noreferrer" class="portfolio-card br-28 is-credai">
+              <a href="case-studies.php" class="portfolio-card br-28 is-credai">
                 <div class="fdc full-height">
                   <div class="portfolio-card-header fdc gap10">
                     <div class="appi-portfolio-title-header">
@@ -878,7 +878,7 @@
 
             <!-- 4. Cytometry -->
             <div class="item">
-              <a href="https://tcs.res.in/" target="_blank" rel="noopener noreferrer" class="portfolio-card br-28 is-cytometry">
+              <a href="case-studies.php" class="portfolio-card br-28 is-cytometry">
                 <div class="fdc full-height">
                   <div class="portfolio-card-header fdc gap10">
                     <div class="appi-portfolio-title-header">
@@ -1044,9 +1044,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Direct Card Hover & Click Engine
-  cards.forEach((cardItem, idx) => {
-    const cardLink = cardItem.querySelector(".portfolio-card");
-
+  cards.forEach((cardItem) => {
     // Mouse hover morph into "View case study" pill follower
     cardItem.addEventListener("mouseenter", () => {
       if (follower) {
@@ -1063,32 +1061,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     cardItem.addEventListener("click", (e) => {
-      e.preventDefault();
-      
       // If dragged significantly, prevent accidental click
       if (hasMovedFar) {
+        e.preventDefault();
         return;
       }
-
-      const activeInt = ((Math.round(currentPos) % total) + total) % total;
-
-      if (idx !== activeInt) {
-        // If side card clicked, bring it smoothly to center
-        setTarget(idx);
-      } else {
-        // If center card clicked, navigate only once
-        if (cardLink) {
-          const href = cardLink.getAttribute("href");
-          const target = cardLink.getAttribute("target");
-          if (href && href !== "#") {
-            if (target === "_blank") {
-              window.open(href, "_blank", "noopener,noreferrer");
-            } else {
-              window.location.href = href;
-            }
-          }
-        }
-      }
+      e.preventDefault();
+      window.location.href = "case-studies.php";
     });
   });
 

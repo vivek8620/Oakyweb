@@ -244,7 +244,7 @@ function renderIndustryPage($data) {
 <!-- ========================================== -->
 <!-- 1. HERO SECTION                            -->
 <!-- ========================================== -->
-<section class="relative overflow-hidden bg-[#0A0D18] pt-8 pb-16 lg:pt-12 lg:pb-24 text-white">
+<section class="relative overflow-hidden bg-[#0A0D18] pt-4 pb-8 lg:pt-6 lg:pb-10 text-white">
   <!-- Ambient Background Gradients -->
   <div class="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
     <div class="absolute -top-40 right-1/4 w-[750px] h-[750px] bg-[#ffc835]/10 blur-[190px] rounded-full"></div>
@@ -253,7 +253,7 @@ function renderIndustryPage($data) {
 
   <div class="contain relative z-10">
     <!-- Breadcrumb -->
-    <nav aria-label="Breadcrumb" class="mb-6 lg:mb-8">
+    <nav aria-label="Breadcrumb" class="mb-4 lg:mb-6">
       <ol class="inline-flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-400">
         <li><a href="./" class="hover:text-white transition-colors">Home</a></li>
         <li class="text-slate-600">&gt;</li>
@@ -264,7 +264,7 @@ function renderIndustryPage($data) {
     </nav>
 
     <!-- Main 2-Column Grid -->
-    <div class="grid items-center gap-12 lg:gap-14 lg:grid-cols-12">
+    <div class="grid items-center gap-10 lg:gap-12 lg:grid-cols-12">
       
       <!-- Left Column: Heading, Description, Buttons & 3 Stats -->
       <div class="lg:col-span-6 flex flex-col justify-between">
@@ -279,12 +279,12 @@ function renderIndustryPage($data) {
             <?php endif; ?>
           </h1>
 
-          <p class="mt-6 text-[15px] sm:text-[16.5px] text-slate-300 font-normal leading-[1.65] max-w-xl">
+          <p class="mt-5 text-[15px] sm:text-[16.5px] text-slate-300 font-normal leading-[1.65] max-w-xl">
             <?php echo htmlspecialchars($description); ?>
           </p>
 
           <!-- CTA Action Buttons -->
-          <div class="mt-8 flex flex-wrap items-center gap-4">
+          <div class="mt-7 flex flex-wrap items-center gap-4">
             <a href="contact-us.html" class="inline-flex items-center gap-2 rounded-full px-7 py-3.5 bg-[#ffc835] hover:bg-white text-black font-semibold text-[14.5px] transition-all duration-300 hover:scale-105">
               <span>Book a Free Strategy Call</span>
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
@@ -300,7 +300,7 @@ function renderIndustryPage($data) {
       <div class="lg:col-span-6 relative mt-6 lg:mt-0 flex items-center justify-center">
         
         <!-- Main Image Container with Equal Uniform Height -->
-        <div class="relative w-full h-[360px] sm:h-[440px] lg:h-[480px] xl:h-[500px] rounded-3xl overflow-hidden shadow-2xl border border-white/15 group">
+        <div class="relative w-full h-[340px] sm:h-[400px] lg:h-[440px] xl:h-[460px] rounded-3xl overflow-hidden shadow-2xl border border-white/15 group">
           <img 
             src="<?php echo htmlspecialchars($image); ?>" 
             alt="<?php echo htmlspecialchars($name); ?> Software Engineering" 
@@ -320,22 +320,22 @@ function renderIndustryPage($data) {
 <!-- ========================================== -->
 <!-- 2. PAIN POINTS / CHALLENGES SECTION        -->
 <!-- ========================================== -->
-<section class="bg-[#F8FAFF] py-16 sm:py-20 lg:py-24 text-slate-900">
+<section class="bg-[#F8FAFF] py-8 sm:py-10 lg:py-12 text-slate-900">
   <div class="contain">
-    <div class="mb-10 max-w-3xl">
+    <div class="mb-6 max-w-3xl">
       <span class="text-xs font-bold uppercase tracking-widest text-[#B45309]">Overcoming Operational Bottlenecks</span>
       <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight text-[#111827] mt-2">
         <?php echo htmlspecialchars($challengesTitle); ?>
       </h2>
-      <p class="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
+      <p class="mt-2.5 text-sm sm:text-base text-slate-600 leading-relaxed">
         <?php echo htmlspecialchars($challengesSubtitle); ?>
       </p>
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
       
       <!-- Left Visual Container with Floating Challenge Tags -->
-      <div class="lg:col-span-5 relative bg-[#0F172A] rounded-3xl p-6 sm:p-8 text-white border border-slate-800 shadow-xl overflow-hidden flex flex-col justify-between min-h-[440px]">
+      <div class="lg:col-span-5 relative bg-[#0F172A] rounded-3xl p-6 sm:p-7 text-white border border-slate-800 shadow-xl overflow-hidden flex flex-col justify-between min-h-[400px]">
         <div class="absolute inset-0 bg-gradient-to-br from-[#ffc835]/10 via-transparent to-[#3B82F6]/10 pointer-events-none"></div>
         
         <div>
@@ -354,7 +354,7 @@ function renderIndustryPage($data) {
           'fa-solid fa-user-xmark',
         ];
         ?>
-        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 relative z-10">
+        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 relative z-10">
           <?php foreach ($challengeBadges as $bIdx => $cb): ?>
             <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10 hover:border-[#ffc835]/50 transition-colors">
               <div class="flex items-center gap-2 mb-1.5">
@@ -368,7 +368,7 @@ function renderIndustryPage($data) {
           <?php endforeach; ?>
         </div>
 
-        <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-[11px] text-slate-400">
+        <div class="mt-5 pt-3.5 border-t border-white/10 flex items-center justify-between text-[11px] text-slate-400">
           <span>Enterprise Modernization</span>
           <span class="text-[#ffc835] font-semibold">Zero-Downtime Migration →</span>
         </div>
@@ -387,8 +387,8 @@ function renderIndustryPage($data) {
       ?>
       <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
         <?php foreach ($challenges as $idx => $item): ?>
-          <div class="p-5 sm:p-6 bg-white rounded-2xl border border-slate-200 hover:border-[#ffc835] hover:shadow-lg transition-all duration-300 flex flex-col justify-start">
-            <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center mb-3.5 text-base shadow-sm">
+          <div class="p-5 bg-white rounded-2xl border border-slate-200 hover:border-[#ffc835] hover:shadow-lg transition-all duration-300 flex flex-col justify-start">
+            <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center mb-3 text-base shadow-sm">
               <i class="<?php echo $item['icon'] ?? ($challengeIcons[$idx % count($challengeIcons)] ?? 'fa-solid fa-circle-exclamation'); ?>"></i>
             </div>
             <h4 class="text-[15px] font-bold text-slate-900 mb-1.5 leading-snug">
@@ -409,32 +409,32 @@ function renderIndustryPage($data) {
 <!-- ========================================== -->
 <!-- 3. ENGINEERING DELIVERY FRAMEWORK (01-04)  -->
 <!-- ========================================== -->
-<section class="bg-white py-16 sm:py-20 lg:py-24 text-slate-900 border-t border-slate-100">
+<section class="bg-white py-8 sm:py-10 lg:py-12 text-slate-900 border-t border-slate-100">
   <div class="contain">
-    <div class="text-center max-w-3xl mx-auto mb-14">
+    <div class="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
       <span class="text-xs font-bold uppercase tracking-widest text-[#B45309]">Our Engineering Methodology</span>
       <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight text-[#111827] mt-2">
         <?php echo htmlspecialchars($frameworkTitle); ?>
       </h2>
-      <p class="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
+      <p class="mt-2.5 text-sm sm:text-base text-slate-600 leading-relaxed">
         <?php echo htmlspecialchars($frameworkSubtitle); ?>
       </p>
     </div>
 
     <!-- 4 Numbered Steps Diagram with Connectors -->
-    <div class="max-w-4xl mx-auto space-y-6 sm:space-y-8">
+    <div class="max-w-4xl mx-auto space-y-5 sm:space-y-6">
       <?php foreach ($frameworkSteps as $idx => $step): ?>
         <?php $isEven = ($idx % 2 === 1); ?>
         <div class="flex items-center gap-4 sm:gap-6 <?php echo $isEven ? 'sm:pl-16' : 'sm:pr-16'; ?>">
           
           <!-- Number Badge -->
-          <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[#0F172A] text-white flex items-center justify-center font-extrabold text-lg sm:text-xl shrink-0 shadow-md">
+          <div class="w-12 h-12 sm:w-13 sm:h-13 rounded-2xl bg-[#0F172A] text-white flex items-center justify-center font-extrabold text-lg sm:text-xl shrink-0 shadow-md">
             <span class="text-[#ffc835]"><?php echo htmlspecialchars($step['num']); ?></span>
           </div>
 
           <!-- Content Card -->
-          <div class="flex-1 p-5 sm:p-6 bg-[#F8FAFF] rounded-2xl border border-slate-200 hover:border-[#ffc835] transition-colors shadow-sm">
-            <h3 class="text-base sm:text-lg font-bold text-slate-900 mb-1.5">
+          <div class="flex-1 p-5 bg-[#F8FAFF] rounded-2xl border border-slate-200 hover:border-[#ffc835] transition-colors shadow-sm">
+            <h3 class="text-base sm:text-lg font-bold text-slate-900 mb-1">
               <?php echo htmlspecialchars($step['title']); ?>
             </h3>
             <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -446,8 +446,8 @@ function renderIndustryPage($data) {
       <?php endforeach; ?>
     </div>
 
-    <div class="mt-12 text-center">
-      <a href="contact-us.html" class="inline-flex items-center gap-2 rounded-full px-8 py-4 bg-[#0F172A] hover:bg-[#ffc835] hover:text-black text-white font-semibold text-[14.5px] transition-all duration-300 shadow-xl hover:scale-105">
+    <div class="mt-7 text-center">
+      <a href="contact-us.html" class="inline-flex items-center gap-2 rounded-full px-8 py-3.5 bg-[#0F172A] hover:bg-[#ffc835] hover:text-black text-white font-semibold text-[14.5px] transition-all duration-300 shadow-lg hover:scale-105">
         <span>Let's Discuss Your <?php echo htmlspecialchars($name); ?> Platform</span>
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
       </a>
@@ -471,26 +471,26 @@ $serviceIcons = [
   'fa-solid fa-lock',
 ];
 ?>
-<section class="py-16 sm:py-20 lg:py-24 bg-[#0A0D18] text-white" id="services">
+<section class="py-8 sm:py-10 lg:py-12 bg-[#0A0D18] text-white" id="services">
   <div class="contain">
-    <div class="text-center max-w-3xl mx-auto mb-14">
+    <div class="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
       <span class="text-[#ffc835] font-bold text-xs uppercase tracking-widest">End-to-End Capabilities</span>
       <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mt-2">
         <?php echo htmlspecialchars($servicesTitle); ?>
       </h2>
-      <p class="text-slate-400 text-sm sm:text-base mt-3">
+      <p class="text-slate-400 text-sm sm:text-base mt-2.5">
         <?php echo htmlspecialchars($servicesSubtitle); ?>
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
       <?php foreach ($services as $sIdx => $srv): ?>
-        <div class="p-6 sm:p-7 rounded-3xl bg-[#11172A] border border-white/10 hover:border-[#ffc835]/70 hover:bg-[#161F38] transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between shadow-xl group">
+        <div class="p-5 sm:p-6 rounded-3xl bg-[#11172A] border border-white/10 hover:border-[#ffc835]/70 hover:bg-[#161F38] transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between shadow-xl group">
           <div>
-            <div class="w-11 h-11 rounded-xl bg-white/5 border border-white/10 text-[#ffc835] flex items-center justify-center mb-5 group-hover:bg-[#ffc835] group-hover:text-black transition-colors duration-300 text-lg">
+            <div class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 text-[#ffc835] flex items-center justify-center mb-4 group-hover:bg-[#ffc835] group-hover:text-black transition-colors duration-300 text-base">
               <i class="<?php echo $srv['icon'] ?? ($serviceIcons[$sIdx % count($serviceIcons)] ?? 'fa-solid fa-cube'); ?>"></i>
             </div>
-            <h3 class="text-base sm:text-lg font-bold text-white mb-2.5 leading-snug">
+            <h3 class="text-base sm:text-[17px] font-bold text-white mb-2 leading-snug">
               <?php echo htmlspecialchars($srv['title']); ?>
             </h3>
             <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
@@ -499,7 +499,7 @@ $serviceIcons = [
           </div>
 
           <?php if (!empty($srv['tags'])): ?>
-            <div class="mt-5 pt-4 border-t border-white/10 flex flex-wrap gap-1.5">
+            <div class="mt-4 pt-3.5 border-t border-white/10 flex flex-wrap gap-1.5">
               <?php foreach ($srv['tags'] as $tag): ?>
                 <span class="text-[10.5px] px-2 py-0.5 rounded-md bg-white/5 text-slate-300 font-mono border border-white/10"><?php echo htmlspecialchars($tag); ?></span>
               <?php endforeach; ?>
@@ -515,14 +515,14 @@ $serviceIcons = [
 <!-- ========================================== -->
 <!-- 5. OPERATIONAL TIMELINE / WORKFLOW (01-06) -->
 <!-- ========================================== -->
-<section class="w-full bg-white py-16 sm:py-20 lg:py-24 text-slate-900 border-t border-slate-100">
+<section class="w-full bg-white py-8 sm:py-10 lg:py-12 text-slate-900 border-t border-slate-100">
   <div class="contain">
-    <div class="text-center max-w-3xl mx-auto mb-14">
+    <div class="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
       <span class="text-xs font-bold uppercase tracking-widest text-[#B45309]">Built For Practical Operations</span>
       <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight text-[#111827] mt-2">
         <?php echo htmlspecialchars($workflowTitle); ?>
       </h2>
-      <p class="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
+      <p class="mt-2.5 text-sm sm:text-base text-slate-600 leading-relaxed">
         <?php echo htmlspecialchars($workflowSubtitle); ?>
       </p>
     </div>
@@ -538,7 +538,7 @@ $serviceIcons = [
             <h3 class="text-sm sm:text-[15px] font-bold text-slate-900 mb-1 leading-snug">
               <?php echo htmlspecialchars($ws['title']); ?>
             </h3>
-            <p class="text-[11px] font-semibold text-[#4F60B5] mb-3 leading-tight">
+            <p class="text-[11px] font-semibold text-[#4F60B5] mb-2.5 leading-tight">
               <?php echo htmlspecialchars($ws['tagline']); ?>
             </p>
           </div>
@@ -561,23 +561,23 @@ $serviceIcons = [
 <!-- ========================================== -->
 <!-- 6. REVENUE IMPACT GRID (6 CARDS)           -->
 <!-- ========================================== -->
-<section class="w-full py-16 sm:py-20 lg:py-24 bg-[#F8FAFF] text-slate-900 border-t border-slate-100">
+<section class="w-full py-8 sm:py-10 lg:py-12 bg-[#F8FAFF] text-slate-900 border-t border-slate-100">
   <div class="contain">
-    <div class="text-center max-w-3xl mx-auto mb-14">
+    <div class="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
       <span class="text-xs font-bold uppercase tracking-widest text-[#B45309]">Measurable Business ROI</span>
       <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight text-[#111827] mt-2">
         <?php echo htmlspecialchars($revenueTitle); ?>
       </h2>
-      <p class="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
+      <p class="mt-2.5 text-sm sm:text-base text-slate-600 leading-relaxed">
         <?php echo htmlspecialchars($revenueSubtitle); ?>
       </p>
     </div>
 
     <div class="max-w-4xl mx-auto bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-lg grid grid-cols-1 md:grid-cols-2">
       <?php foreach ($revenuePoints as $idx => $rp): ?>
-        <div class="p-6 sm:p-8 flex items-start gap-4 border-b border-slate-100 <?php echo ($idx % 2 === 0) ? 'md:border-r' : ''; ?>">
-          <div class="w-10 h-10 rounded-xl bg-[#0F172A] text-[#ffc835] flex items-center justify-center shrink-0 font-bold">
-            ✓
+        <div class="p-5 sm:p-6 flex items-start gap-4 border-b border-slate-100 <?php echo ($idx % 2 === 0) ? 'md:border-r' : ''; ?>">
+          <div class="w-9 h-9 rounded-xl bg-[#0F172A] text-[#ffc835] flex items-center justify-center shrink-0 font-bold text-sm">
+            <i class="fa-solid fa-check"></i>
           </div>
           <div>
             <h3 class="text-[15px] sm:text-[16px] font-bold text-slate-900 mb-1 leading-snug">
@@ -597,28 +597,28 @@ $serviceIcons = [
 <!-- ========================================== -->
 <!-- 7. FREQUENTLY ASKED QUESTIONS (FAQS)       -->
 <!-- ========================================== -->
-<section class="py-16 sm:py-20 lg:py-24 bg-white text-slate-900 border-t border-slate-100" id="faqs">
+<section class="py-8 sm:py-10 lg:py-12 bg-white text-slate-900 border-t border-slate-100" id="faqs">
   <div class="contain">
-    <div class="text-center max-w-3xl mx-auto mb-14">
+    <div class="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
       <span class="text-xs font-bold uppercase tracking-widest text-[#B45309]">Have Questions?</span>
       <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#111827] mt-2">
         Frequently Asked Questions about <?php echo htmlspecialchars($name); ?> Software
       </h2>
-      <p class="text-slate-600 text-sm sm:text-base mt-3">
+      <p class="text-slate-600 text-sm sm:text-base mt-2.5">
         Clear, direct answers regarding development workflows, compliance, pricing, and IP ownership.
       </p>
     </div>
 
-    <div class="max-w-3xl mx-auto space-y-4">
+    <div class="max-w-3xl mx-auto space-y-3.5">
       <?php foreach ($faqs as $i => $faq): ?>
-        <details class="group rounded-2xl bg-[#F8FAFF] border border-slate-200 p-5 sm:p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300" <?php echo ($i === 0) ? 'open' : ''; ?>>
+        <details class="group rounded-2xl bg-[#F8FAFF] border border-slate-200 p-4 sm:p-5 [&_summary::-webkit-details-marker]:hidden transition-all duration-300" <?php echo ($i === 0) ? 'open' : ''; ?>>
           <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-sm sm:text-base select-none">
             <span class="pr-4"><?php echo htmlspecialchars($faq['q']); ?></span>
             <span class="w-7 h-7 rounded-full bg-slate-200 text-slate-700 flex items-center justify-center shrink-0 transition-transform duration-300 group-open:rotate-180">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
             </span>
           </summary>
-          <div class="mt-4 pt-4 border-t border-slate-200 text-xs sm:text-sm text-slate-600 leading-relaxed">
+          <div class="mt-3.5 pt-3.5 border-t border-slate-200 text-xs sm:text-sm text-slate-600 leading-relaxed">
             <p><?php echo htmlspecialchars($faq['a']); ?></p>
           </div>
         </details>
@@ -631,21 +631,21 @@ $serviceIcons = [
 <!-- ========================================== -->
 <!-- 8. FINAL HIGH-CONVERTING CTA BANNER        -->
 <!-- ========================================== -->
-<section class="py-16 sm:py-20 bg-[#0A0D18] text-white relative overflow-hidden">
+<section class="py-8 sm:py-10 lg:py-12 bg-[#0A0D18] text-white relative overflow-hidden">
   <div class="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
     <div class="absolute -bottom-40 right-10 w-[500px] h-[500px] bg-[#ffc835]/10 blur-[180px] rounded-full"></div>
   </div>
 
   <div class="contain relative z-10 text-center max-w-3xl mx-auto">
-    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-[11px] font-bold text-[#ffc835] tracking-widest uppercase mb-4">
+    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-[11px] font-bold text-[#ffc835] tracking-widest uppercase mb-3">
       <span>Get Technical Scoping &amp; Estimates</span>
     </div>
 
-    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4">
+    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-3">
       Ready to Build Your <span class="text-[#ffc835]"><?php echo htmlspecialchars($name); ?></span> Platform?
     </h2>
 
-    <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-8 max-w-xl mx-auto">
+    <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6 max-w-xl mx-auto">
       Speak directly with a Solutions Architect. We will review your workflows, compliance needs, and provide a clear milestone roadmap.
     </p>
 

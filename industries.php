@@ -170,8 +170,8 @@ include("components/header.php");
       <!-- 1. Real Estate -->
       <div class="group flex flex-col justify-between rounded-3xl bg-[#0F1424] p-7 border border-[#222A42] hover:border-[#ffc835]/70 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_rgba(0,0,0,0.6)]">
         <div>
-          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors text-lg">
+            <i class="fa-solid fa-city"></i>
           </span>
           <h3 class="mt-5 text-xl font-semibold text-white group-hover:text-[#ffc835] transition-colors">Real Estate</h3>
           <p class="mt-3 text-sm text-slate-400 leading-relaxed">We build property marketplaces, brokerage CRMs, investment platforms, and management systems. AI built in from day one. Talk to us today.</p>
@@ -185,8 +185,8 @@ include("components/header.php");
       <!-- 2. Healthcare -->
       <div class="group flex flex-col justify-between rounded-3xl bg-[#0F1424] p-7 border border-[#222A42] hover:border-[#ffc835]/70 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_rgba(0,0,0,0.6)]">
         <div>
-          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors text-lg">
+            <i class="fa-solid fa-heart-pulse"></i>
           </span>
           <h3 class="mt-5 text-xl font-semibold text-white group-hover:text-[#ffc835] transition-colors">Healthcare</h3>
           <p class="mt-3 text-sm text-slate-400 leading-relaxed">We build EHR systems, telehealth platforms, HMS software, and AI diagnostic tools. HIPAA and DPDP compliant. Senior engineers. Reply in 30 minutes.</p>
@@ -200,8 +200,8 @@ include("components/header.php");
       <!-- 3. Retail & E-Commerce -->
       <div class="group flex flex-col justify-between rounded-3xl bg-[#0F1424] p-7 border border-[#222A42] hover:border-[#ffc835]/70 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_rgba(0,0,0,0.6)]">
         <div>
-          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors text-lg">
+            <i class="fa-solid fa-cart-shopping"></i>
           </span>
           <h3 class="mt-5 text-xl font-semibold text-white group-hover:text-[#ffc835] transition-colors">Retail &amp; E-Commerce</h3>
           <p class="mt-3 text-sm text-slate-400 leading-relaxed">We build custom retail and ecommerce software: storefronts, OMS, inventory systems, and AI personalisation engines. Senior engineers. Reply in 30 minutes.</p>
@@ -215,8 +215,8 @@ include("components/header.php");
       <!-- 4. Media & Entertainment -->
       <div class="group flex flex-col justify-between rounded-3xl bg-[#0F1424] p-7 border border-[#222A42] hover:border-[#ffc835]/70 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_rgba(0,0,0,0.6)]">
         <div>
-          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"/></svg>
+          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors text-lg">
+            <i class="fa-solid fa-film"></i>
           </span>
           <h3 class="mt-5 text-xl font-semibold text-white group-hover:text-[#ffc835] transition-colors">Media &amp; Entertainment</h3>
           <p class="mt-3 text-sm text-slate-400 leading-relaxed">We build OTT platforms, streaming apps, CMS, and AI content tools for media companies and entertainment businesses. Senior engineers. Reply in 30 minutes.</p>
@@ -230,8 +230,8 @@ include("components/header.php");
       <!-- 5. Finance & Banking -->
       <div class="group flex flex-col justify-between rounded-3xl bg-[#0F1424] p-7 border border-[#222A42] hover:border-[#ffc835]/70 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_rgba(0,0,0,0.6)]">
         <div>
-          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors text-lg">
+            <i class="fa-solid fa-building-columns"></i>
           </span>
           <h3 class="mt-5 text-xl font-semibold text-white group-hover:text-[#ffc835] transition-colors">Finance &amp; Banking</h3>
           <p class="mt-3 text-sm text-slate-400 leading-relaxed">We build digital banking platforms, lending systems, payment infrastructure, and AI fraud detection tools. RBI, PCI-DSS, and GDPR compliant.</p>
@@ -245,8 +245,8 @@ include("components/header.php");
       <!-- 6. Automotive -->
       <div class="group flex flex-col justify-between rounded-3xl bg-[#0F1424] p-7 border border-[#222A42] hover:border-[#ffc835]/70 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_rgba(0,0,0,0.6)]">
         <div>
-          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/></svg>
+          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors text-lg">
+            <i class="fa-solid fa-car-side"></i>
           </span>
           <h3 class="mt-5 text-xl font-semibold text-white group-hover:text-[#ffc835] transition-colors">Automotive</h3>
           <p class="mt-3 text-sm text-slate-400 leading-relaxed">We build fleet management systems, dealer platforms, connected vehicle software, and AI diagnostics tools for OEMs, dealers, and mobility businesses.</p>
@@ -260,8 +260,8 @@ include("components/header.php");
       <!-- 7. Agriculture -->
       <div class="group flex flex-col justify-between rounded-3xl bg-[#0F1424] p-7 border border-[#222A42] hover:border-[#ffc835]/70 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_rgba(0,0,0,0.6)]">
         <div>
-          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors text-lg">
+            <i class="fa-solid fa-seedling"></i>
           </span>
           <h3 class="mt-5 text-xl font-semibold text-white group-hover:text-[#ffc835] transition-colors">Agriculture</h3>
           <p class="mt-3 text-sm text-slate-400 leading-relaxed">We build farm management systems, precision agriculture platforms, IoT crop monitoring, and AI yield forecasting tools for agribusinesses and AgriTech startups</p>
@@ -275,8 +275,8 @@ include("components/header.php");
       <!-- 8. Telecommunication -->
       <div class="group flex flex-col justify-between rounded-3xl bg-[#0F1424] p-7 border border-[#222A42] hover:border-[#ffc835]/70 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_rgba(0,0,0,0.6)]">
         <div>
-          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.14 0M1.393 9.393c5.857-5.857 15.355-5.857 21.213 0"/></svg>
+          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors text-lg">
+            <i class="fa-solid fa-tower-broadcast"></i>
           </span>
           <h3 class="mt-5 text-xl font-semibold text-white group-hover:text-[#ffc835] transition-colors">Telecommunication</h3>
           <p class="mt-3 text-sm text-slate-400 leading-relaxed">We build BSS/OSS platforms, network management systems, VoIP infrastructure, and AI-powered churn and fraud tools for telcos and telecom software companies.</p>
@@ -290,8 +290,8 @@ include("components/header.php");
       <!-- 9. Manufacturing -->
       <div class="group flex flex-col justify-between rounded-3xl bg-[#0F1424] p-7 border border-[#222A42] hover:border-[#ffc835]/70 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_rgba(0,0,0,0.6)]">
         <div>
-          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors text-lg">
+            <i class="fa-solid fa-industry"></i>
           </span>
           <h3 class="mt-5 text-xl font-semibold text-white group-hover:text-[#ffc835] transition-colors">Manufacturing</h3>
           <p class="mt-3 text-sm text-slate-400 leading-relaxed">We build MES, ERP, IIoT, predictive maintenance, and supply chain platforms for manufacturers. AI-powered. ISO-compliant. Senior engineers. Reply in 30 minutes.</p>
@@ -305,8 +305,8 @@ include("components/header.php");
       <!-- 10. Public Sector & Government -->
       <div class="group flex flex-col justify-between rounded-3xl bg-[#0F1424] p-7 border border-[#222A42] hover:border-[#ffc835]/70 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_rgba(0,0,0,0.6)]">
         <div>
-          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"/></svg>
+          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors text-lg">
+            <i class="fa-solid fa-landmark-dome"></i>
           </span>
           <h3 class="mt-5 text-xl font-semibold text-white group-hover:text-[#ffc835] transition-colors">Public Sector &amp; Govt</h3>
           <p class="mt-3 text-sm text-slate-400 leading-relaxed">We build citizen portals, case management systems, and AI-powered public service tools for government bodies and public sector organisations.</p>
@@ -320,8 +320,8 @@ include("components/header.php");
       <!-- 11. Energy & Utilities -->
       <div class="group flex flex-col justify-between rounded-3xl bg-[#0F1424] p-7 border border-[#222A42] hover:border-[#ffc835]/70 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_rgba(0,0,0,0.6)]">
         <div>
-          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors text-lg">
+            <i class="fa-solid fa-bolt-lightning"></i>
           </span>
           <h3 class="mt-5 text-xl font-semibold text-white group-hover:text-[#ffc835] transition-colors">Energy &amp; Utilities</h3>
           <p class="mt-3 text-sm text-slate-400 leading-relaxed">We build smart grid platforms, energy management systems, and AI-powered consumption analytics for utilities and cleantech businesses.</p>
@@ -335,8 +335,8 @@ include("components/header.php");
       <!-- 12. Travel & Hospitality -->
       <div class="group flex flex-col justify-between rounded-3xl bg-[#0F1424] p-7 border border-[#222A42] hover:border-[#ffc835]/70 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_rgba(0,0,0,0.6)]">
         <div>
-          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors text-lg">
+            <i class="fa-solid fa-plane-departure"></i>
           </span>
           <h3 class="mt-5 text-xl font-semibold text-white group-hover:text-[#ffc835] transition-colors">Travel &amp; Hospitality</h3>
           <p class="mt-3 text-sm text-slate-400 leading-relaxed">We build OTA platforms, hotel management systems, booking engines, and AI-powered travel personalisation tools for travel companies.</p>
@@ -350,8 +350,8 @@ include("components/header.php");
       <!-- 13. Education & E-Learning -->
       <div class="group flex flex-col justify-between rounded-3xl bg-[#0F1424] p-7 border border-[#222A42] hover:border-[#ffc835]/70 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_rgba(0,0,0,0.6)]">
         <div>
-          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors text-lg">
+            <i class="fa-solid fa-graduation-cap"></i>
           </span>
           <h3 class="mt-5 text-xl font-semibold text-white group-hover:text-[#ffc835] transition-colors">Education &amp; E-Learning</h3>
           <p class="mt-3 text-sm text-slate-400 leading-relaxed">We build LMS platforms, eLearning apps, and AI-powered adaptive learning tools for EdTech startups, schools, and corporate training.</p>
@@ -365,8 +365,8 @@ include("components/header.php");
       <!-- 14. Insurance -->
       <div class="group flex flex-col justify-between rounded-3xl bg-[#0F1424] p-7 border border-[#222A42] hover:border-[#ffc835]/70 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_rgba(0,0,0,0.6)]">
         <div>
-          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors text-lg">
+            <i class="fa-solid fa-shield-halved"></i>
           </span>
           <h3 class="mt-5 text-xl font-semibold text-white group-hover:text-[#ffc835] transition-colors">Insurance</h3>
           <p class="mt-3 text-sm text-slate-400 leading-relaxed">We build policy management systems, claims platforms, underwriting tools, and AI fraud detection for insurers and InsurTech startups.</p>
@@ -380,8 +380,8 @@ include("components/header.php");
       <!-- 15. Logistics & Supply Chain -->
       <div class="group flex flex-col justify-between rounded-3xl bg-[#0F1424] p-7 border border-[#222A42] hover:border-[#ffc835]/70 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_rgba(0,0,0,0.6)]">
         <div>
-          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8"><path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/></svg>
+          <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#1A223B] group-hover:bg-[#ffc835]/20 border border-[#2C375C] group-hover:border-[#ffc835]/50 text-[#889AF5] group-hover:text-[#ffc835] transition-colors text-lg">
+            <i class="fa-solid fa-truck-fast"></i>
           </span>
           <h3 class="mt-5 text-xl font-semibold text-white group-hover:text-[#ffc835] transition-colors">Logistics &amp; Supply Chain</h3>
           <p class="mt-3 text-sm text-slate-400 leading-relaxed">We build TMS, WMS, fleet tracking, supply chain visibility, and AI route optimisation platforms for logistics companies and supply chain businesses.</p>

@@ -144,9 +144,7 @@ include 'components/meta.php';
             <a href="real-estate.html" style="animation-delay: .02s;"
               class="dropdown-item group/item flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-amber-50/60 transition-all duration-200 <?php echo ($page === 'real-estate.php') ? 'bg-amber-50 text-black font-semibold' : 'text-gray-700'; ?>">
               <span class="w-8 h-8 rounded-lg bg-slate-100 group-hover/item:bg-[#ffc835]/25 flex items-center justify-center shrink-0 transition-colors">
-                <svg class="w-4 h-4 text-slate-700 group-hover/item:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
+                <i class="fa-solid fa-city text-[14px] text-slate-700 group-hover/item:text-black"></i>
               </span>
               <span class="text-[13.5px] font-medium group-hover/item:text-black">Real Estate</span>
             </a>
@@ -155,9 +153,7 @@ include 'components/meta.php';
             <a href="healthcare.html" style="animation-delay: .04s;"
               class="dropdown-item group/item flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-amber-50/60 transition-all duration-200 <?php echo ($page === 'healthcare.php') ? 'bg-amber-50 text-black font-semibold' : 'text-gray-700'; ?>">
               <span class="w-8 h-8 rounded-lg bg-slate-100 group-hover/item:bg-[#ffc835]/25 flex items-center justify-center shrink-0 transition-colors">
-                <svg class="w-4 h-4 text-slate-700 group-hover/item:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
+                <i class="fa-solid fa-heart-pulse text-[14px] text-slate-700 group-hover/item:text-black"></i>
               </span>
               <span class="text-[13.5px] font-medium group-hover/item:text-black">Healthcare</span>
             </a>
@@ -166,9 +162,7 @@ include 'components/meta.php';
             <a href="retail-ecommerce.html" style="animation-delay: .06s;"
               class="dropdown-item group/item flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-amber-50/60 transition-all duration-200 <?php echo in_array($page, ['retail-ecommerce.php', 'e-commerce-industry.php']) ? 'bg-amber-50 text-black font-semibold' : 'text-gray-700'; ?>">
               <span class="w-8 h-8 rounded-lg bg-slate-100 group-hover/item:bg-[#ffc835]/25 flex items-center justify-center shrink-0 transition-colors">
-                <svg class="w-4 h-4 text-slate-700 group-hover/item:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                </svg>
+                <i class="fa-solid fa-cart-shopping text-[14px] text-slate-700 group-hover/item:text-black"></i>
               </span>
               <span class="text-[13.5px] font-medium group-hover/item:text-black">Retail &amp; E-Commerce</span>
             </a>
@@ -177,9 +171,7 @@ include 'components/meta.php';
             <a href="media-entertainment.html" style="animation-delay: .08s;"
               class="dropdown-item group/item flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-amber-50/60 transition-all duration-200 <?php echo ($page === 'media-entertainment.php') ? 'bg-amber-50 text-black font-semibold' : 'text-gray-700'; ?>">
               <span class="w-8 h-8 rounded-lg bg-slate-100 group-hover/item:bg-[#ffc835]/25 flex items-center justify-center shrink-0 transition-colors">
-                <svg class="w-4 h-4 text-slate-700 group-hover/item:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z" />
-                </svg>
+                <i class="fa-solid fa-film text-[14px] text-slate-700 group-hover/item:text-black"></i>
               </span>
               <span class="text-[13.5px] font-medium group-hover/item:text-black">Media &amp; Entertainment</span>
             </a>
@@ -188,9 +180,7 @@ include 'components/meta.php';
             <a href="finance-banking.html" style="animation-delay: .10s;"
               class="dropdown-item group/item flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-amber-50/60 transition-all duration-200 <?php echo in_array($page, ['finance-banking.php', 'finance.php']) ? 'bg-amber-50 text-black font-semibold' : 'text-gray-700'; ?>">
               <span class="w-8 h-8 rounded-lg bg-slate-100 group-hover/item:bg-[#ffc835]/25 flex items-center justify-center shrink-0 transition-colors">
-                <svg class="w-4 h-4 text-slate-700 group-hover/item:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-                </svg>
+                <i class="fa-solid fa-building-columns text-[14px] text-slate-700 group-hover/item:text-black"></i>
               </span>
               <span class="text-[13.5px] font-medium group-hover/item:text-black">Finance &amp; Banking</span>
             </a>
@@ -199,10 +189,7 @@ include 'components/meta.php';
             <a href="automotive.html" style="animation-delay: .12s;"
               class="dropdown-item group/item flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-amber-50/60 transition-all duration-200 <?php echo ($page === 'automotive.php') ? 'bg-amber-50 text-black font-semibold' : 'text-gray-700'; ?>">
               <span class="w-8 h-8 rounded-lg bg-slate-100 group-hover/item:bg-[#ffc835]/25 flex items-center justify-center shrink-0 transition-colors">
-                <svg class="w-4 h-4 text-slate-700 group-hover/item:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
-                </svg>
+                <i class="fa-solid fa-car-side text-[14px] text-slate-700 group-hover/item:text-black"></i>
               </span>
               <span class="text-[13.5px] font-medium group-hover/item:text-black">Automotive</span>
             </a>
@@ -211,9 +198,7 @@ include 'components/meta.php';
             <a href="agriculture.html" style="animation-delay: .14s;"
               class="dropdown-item group/item flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-amber-50/60 transition-all duration-200 <?php echo ($page === 'agriculture.php') ? 'bg-amber-50 text-black font-semibold' : 'text-gray-700'; ?>">
               <span class="w-8 h-8 rounded-lg bg-slate-100 group-hover/item:bg-[#ffc835]/25 flex items-center justify-center shrink-0 transition-colors">
-                <svg class="w-4 h-4 text-slate-700 group-hover/item:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                </svg>
+                <i class="fa-solid fa-seedling text-[14px] text-slate-700 group-hover/item:text-black"></i>
               </span>
               <span class="text-[13.5px] font-medium group-hover/item:text-black">Agriculture</span>
             </a>
@@ -222,9 +207,7 @@ include 'components/meta.php';
             <a href="telecommunication.html" style="animation-delay: .16s;"
               class="dropdown-item group/item flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-amber-50/60 transition-all duration-200 <?php echo ($page === 'telecommunication.php') ? 'bg-amber-50 text-black font-semibold' : 'text-gray-700'; ?>">
               <span class="w-8 h-8 rounded-lg bg-slate-100 group-hover/item:bg-[#ffc835]/25 flex items-center justify-center shrink-0 transition-colors">
-                <svg class="w-4 h-4 text-slate-700 group-hover/item:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.14 0M1.393 9.393c5.857-5.857 15.355-5.857 21.213 0" />
-                </svg>
+                <i class="fa-solid fa-tower-broadcast text-[14px] text-slate-700 group-hover/item:text-black"></i>
               </span>
               <span class="text-[13.5px] font-medium group-hover/item:text-black">Telecommunication</span>
             </a>
@@ -233,10 +216,7 @@ include 'components/meta.php';
             <a href="manufacturing.html" style="animation-delay: .18s;"
               class="dropdown-item group/item flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-amber-50/60 transition-all duration-200 <?php echo ($page === 'manufacturing.php') ? 'bg-amber-50 text-black font-semibold' : 'text-gray-700'; ?>">
               <span class="w-8 h-8 rounded-lg bg-slate-100 group-hover/item:bg-[#ffc835]/25 flex items-center justify-center shrink-0 transition-colors">
-                <svg class="w-4 h-4 text-slate-700 group-hover/item:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
+                <i class="fa-solid fa-industry text-[14px] text-slate-700 group-hover/item:text-black"></i>
               </span>
               <span class="text-[13.5px] font-medium group-hover/item:text-black">Manufacturing</span>
             </a>
@@ -245,9 +225,7 @@ include 'components/meta.php';
             <a href="public-sector-government.html" style="animation-delay: .20s;"
               class="dropdown-item group/item flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-amber-50/60 transition-all duration-200 <?php echo ($page === 'public-sector-government.php') ? 'bg-amber-50 text-black font-semibold' : 'text-gray-700'; ?>">
               <span class="w-8 h-8 rounded-lg bg-slate-100 group-hover/item:bg-[#ffc835]/25 flex items-center justify-center shrink-0 transition-colors">
-                <svg class="w-4 h-4 text-slate-700 group-hover/item:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
-                </svg>
+                <i class="fa-solid fa-landmark-dome text-[14px] text-slate-700 group-hover/item:text-black"></i>
               </span>
               <span class="text-[13.5px] font-medium group-hover/item:text-black">Public Sector &amp; Govt</span>
             </a>
@@ -256,9 +234,7 @@ include 'components/meta.php';
             <a href="energy-utilities.html" style="animation-delay: .22s;"
               class="dropdown-item group/item flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-amber-50/60 transition-all duration-200 <?php echo ($page === 'energy-utilities.php') ? 'bg-amber-50 text-black font-semibold' : 'text-gray-700'; ?>">
               <span class="w-8 h-8 rounded-lg bg-slate-100 group-hover/item:bg-[#ffc835]/25 flex items-center justify-center shrink-0 transition-colors">
-                <svg class="w-4 h-4 text-slate-700 group-hover/item:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
+                <i class="fa-solid fa-bolt-lightning text-[14px] text-slate-700 group-hover/item:text-black"></i>
               </span>
               <span class="text-[13.5px] font-medium group-hover/item:text-black">Energy &amp; Utilities</span>
             </a>
@@ -267,9 +243,7 @@ include 'components/meta.php';
             <a href="travel-hospitality.html" style="animation-delay: .24s;"
               class="dropdown-item group/item flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-amber-50/60 transition-all duration-200 <?php echo in_array($page, ['travel-hospitality.php', 'travel.php']) ? 'bg-amber-50 text-black font-semibold' : 'text-gray-700'; ?>">
               <span class="w-8 h-8 rounded-lg bg-slate-100 group-hover/item:bg-[#ffc835]/25 flex items-center justify-center shrink-0 transition-colors">
-                <svg class="w-4 h-4 text-slate-700 group-hover/item:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                </svg>
+                <i class="fa-solid fa-plane-departure text-[14px] text-slate-700 group-hover/item:text-black"></i>
               </span>
               <span class="text-[13.5px] font-medium group-hover/item:text-black">Travel &amp; Hospitality</span>
             </a>
@@ -278,10 +252,7 @@ include 'components/meta.php';
             <a href="education-elearning.html" style="animation-delay: .26s;"
               class="dropdown-item group/item flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-amber-50/60 transition-all duration-200 <?php echo in_array($page, ['education-elearning.php', 'education.php']) ? 'bg-amber-50 text-black font-semibold' : 'text-gray-700'; ?>">
               <span class="w-8 h-8 rounded-lg bg-slate-100 group-hover/item:bg-[#ffc835]/25 flex items-center justify-center shrink-0 transition-colors">
-                <svg class="w-4 h-4 text-slate-700 group-hover/item:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
-                  <path d="M12 14l9-5-9-5-9 5 9 5z" />
-                  <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-                </svg>
+                <i class="fa-solid fa-graduation-cap text-[14px] text-slate-700 group-hover/item:text-black"></i>
               </span>
               <span class="text-[13.5px] font-medium group-hover/item:text-black">Education &amp; E-Learning</span>
             </a>
@@ -290,9 +261,7 @@ include 'components/meta.php';
             <a href="insurance.html" style="animation-delay: .28s;"
               class="dropdown-item group/item flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-amber-50/60 transition-all duration-200 <?php echo ($page === 'insurance.php') ? 'bg-amber-50 text-black font-semibold' : 'text-gray-700'; ?>">
               <span class="w-8 h-8 rounded-lg bg-slate-100 group-hover/item:bg-[#ffc835]/25 flex items-center justify-center shrink-0 transition-colors">
-                <svg class="w-4 h-4 text-slate-700 group-hover/item:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
+                <i class="fa-solid fa-shield-halved text-[14px] text-slate-700 group-hover/item:text-black"></i>
               </span>
               <span class="text-[13.5px] font-medium group-hover/item:text-black">Insurance</span>
             </a>
@@ -301,10 +270,7 @@ include 'components/meta.php';
             <a href="logistics-supply-chain.html" style="animation-delay: .30s;"
               class="dropdown-item group/item flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-amber-50/60 transition-all duration-200 <?php echo ($page === 'logistics-supply-chain.php') ? 'bg-amber-50 text-black font-semibold' : 'text-gray-700'; ?>">
               <span class="w-8 h-8 rounded-lg bg-slate-100 group-hover/item:bg-[#ffc835]/25 flex items-center justify-center shrink-0 transition-colors">
-                <svg class="w-4 h-4 text-slate-700 group-hover/item:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.8">
-                  <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
-                </svg>
+                <i class="fa-solid fa-truck-fast text-[14px] text-slate-700 group-hover/item:text-black"></i>
               </span>
               <span class="text-[13.5px] font-medium group-hover/item:text-black">Logistics &amp; Supply Chain</span>
             </a>

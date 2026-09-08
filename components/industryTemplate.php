@@ -294,30 +294,6 @@ function renderIndustryPage($data) {
             </a>
           </div>
         </div>
-
-        <!-- 3 Stats Strip at Bottom Left (Matching Screenshot Exactly) -->
-        <div class="mt-12 pt-8 border-t border-white/10 grid grid-cols-3 gap-4">
-          <!-- Stat 1 -->
-          <div class="pr-2">
-            <p class="text-2xl sm:text-3xl font-extrabold text-white">180+</p>
-            <p class="text-[12px] sm:text-[13px] font-semibold text-slate-200 mt-1">Projects Delivered</p>
-            <p class="text-[11px] text-slate-400 mt-0.5 leading-tight">Across USA, Europe &amp; India</p>
-          </div>
-
-          <!-- Stat 2 -->
-          <div class="px-2 border-l border-white/10">
-            <p class="text-2xl sm:text-3xl font-extrabold text-white">97%</p>
-            <p class="text-[12px] sm:text-[13px] font-semibold text-slate-200 mt-1">Client Retention</p>
-            <p class="text-[11px] text-slate-400 mt-0.5 leading-tight">Year-on-year since 2017</p>
-          </div>
-
-          <!-- Stat 3 -->
-          <div class="pl-2 border-l border-white/10">
-            <p class="text-2xl sm:text-3xl font-extrabold text-white">15+</p>
-            <p class="text-[12px] sm:text-[13px] font-semibold text-slate-200 mt-1">Industries Served</p>
-            <p class="text-[11px] text-slate-400 mt-0.5 leading-tight">From FinTech to HealthTech</p>
-          </div>
-        </div>
       </div>
 
       <!-- Right Column: Hero Image -->
@@ -363,8 +339,8 @@ function renderIndustryPage($data) {
         <div class="absolute inset-0 bg-gradient-to-br from-[#ffc835]/10 via-transparent to-[#3B82F6]/10 pointer-events-none"></div>
         
         <div>
-          <div class="w-10 h-10 rounded-xl bg-[#ffc835]/20 text-[#ffc835] flex items-center justify-center font-bold text-lg mb-4">
-            ⚠️
+          <div class="w-11 h-11 rounded-2xl bg-amber-500/20 text-[#ffc835] border border-[#ffc835]/30 flex items-center justify-center text-xl mb-4 shadow-sm">
+            <i class="fa-solid fa-triangle-exclamation"></i>
           </div>
           <h3 class="text-xl font-bold text-white mb-2">The Hidden Cost of Legacy Workflows</h3>
           <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
@@ -372,12 +348,22 @@ function renderIndustryPage($data) {
           </p>
         </div>
 
-        <!-- 4 Badges in Grid -->
+        <!-- 4 Badges in Grid with Distinct Icons -->
+        <?php 
+        $badgeDefaultIcons = [
+          'fa-solid fa-database',
+          'fa-solid fa-calendar-xmark',
+          'fa-solid fa-eye-slash',
+          'fa-solid fa-user-xmark',
+        ];
+        ?>
         <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 relative z-10">
-          <?php foreach ($challengeBadges as $cb): ?>
+          <?php foreach ($challengeBadges as $bIdx => $cb): ?>
             <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10 hover:border-[#ffc835]/50 transition-colors">
-              <div class="flex items-center gap-2 mb-1">
-                <span class="w-2 h-2 rounded-full bg-[#ffc835]"></span>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span class="w-5 h-5 rounded-md bg-[#ffc835]/20 text-[#ffc835] flex items-center justify-center shrink-0 text-[10px]">
+                  <i class="<?php echo $cb['icon'] ?? ($badgeDefaultIcons[$bIdx % count($badgeDefaultIcons)] ?? 'fa-solid fa-circle-exclamation'); ?>"></i>
+                </span>
                 <p class="text-[12px] font-bold text-white leading-tight"><?php echo htmlspecialchars($cb['title']); ?></p>
               </div>
               <p class="text-[10.5px] text-slate-400 leading-tight"><?php echo htmlspecialchars($cb['desc']); ?></p>
@@ -392,11 +378,21 @@ function renderIndustryPage($data) {
       </div>
 
       <!-- Right Column: 6 Challenge Cards -->
+      <?php 
+      $challengeIcons = [
+        'fa-solid fa-shield-halved',
+        'fa-solid fa-network-wired',
+        'fa-solid fa-server',
+        'fa-solid fa-brain',
+        'fa-solid fa-user-clock',
+        'fa-solid fa-building-circle-arrow-right',
+      ];
+      ?>
       <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <?php foreach ($challenges as $item): ?>
-          <div class="p-5 sm:p-6 bg-white rounded-2xl border border-slate-200 hover:border-slate-300 hover:shadow-lg transition-all duration-300 flex flex-col justify-start">
-            <div class="w-9 h-9 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center mb-3 font-semibold text-sm">
-              <svg class="w-4 h-4 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+        <?php foreach ($challenges as $idx => $item): ?>
+          <div class="p-5 sm:p-6 bg-white rounded-2xl border border-slate-200 hover:border-[#ffc835] hover:shadow-lg transition-all duration-300 flex flex-col justify-start">
+            <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center mb-3.5 text-base shadow-sm">
+              <i class="<?php echo $item['icon'] ?? ($challengeIcons[$idx % count($challengeIcons)] ?? 'fa-solid fa-circle-exclamation'); ?>"></i>
             </div>
             <h4 class="text-[15px] font-bold text-slate-900 mb-1.5 leading-snug">
               <?php echo htmlspecialchars($item['title']); ?>
@@ -466,6 +462,18 @@ function renderIndustryPage($data) {
 <!-- ========================================== -->
 <!-- 4. CORE SERVICES GRID (8 CARDS)            -->
 <!-- ========================================== -->
+<?php 
+$serviceIcons = [
+  'fa-solid fa-laptop-code',
+  'fa-solid fa-mobile-screen-button',
+  'fa-solid fa-cloud-arrow-up',
+  'fa-solid fa-microchip',
+  'fa-solid fa-tower-broadcast',
+  'fa-solid fa-code-merge',
+  'fa-solid fa-layer-group',
+  'fa-solid fa-lock',
+];
+?>
 <section class="py-16 sm:py-20 lg:py-24 bg-[#0A0D18] text-white" id="services">
   <div class="contain">
     <div class="text-center max-w-3xl mx-auto mb-14">
@@ -479,11 +487,11 @@ function renderIndustryPage($data) {
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <?php foreach ($services as $srv): ?>
+      <?php foreach ($services as $sIdx => $srv): ?>
         <div class="p-6 sm:p-7 rounded-3xl bg-[#11172A] border border-white/10 hover:border-[#ffc835]/70 hover:bg-[#161F38] transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between shadow-xl group">
           <div>
-            <div class="w-11 h-11 rounded-xl bg-white/5 border border-white/10 text-[#ffc835] flex items-center justify-center mb-5 group-hover:bg-[#ffc835] group-hover:text-black transition-colors duration-300">
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            <div class="w-11 h-11 rounded-xl bg-white/5 border border-white/10 text-[#ffc835] flex items-center justify-center mb-5 group-hover:bg-[#ffc835] group-hover:text-black transition-colors duration-300 text-lg">
+              <i class="<?php echo $srv['icon'] ?? ($serviceIcons[$sIdx % count($serviceIcons)] ?? 'fa-solid fa-cube'); ?>"></i>
             </div>
             <h3 class="text-base sm:text-lg font-bold text-white mb-2.5 leading-snug">
               <?php echo htmlspecialchars($srv['title']); ?>

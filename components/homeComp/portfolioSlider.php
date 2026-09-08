@@ -156,7 +156,7 @@
 .portfolio-slider-collection {
   position: relative;
   width: 100%;
-  height: 540px;
+  height: 525px;
   overflow: hidden;
   user-select: none;
   cursor: grab;
@@ -236,7 +236,7 @@
   left: 50%;
   width: 410px;
   margin-left: -205px;
-  height: 505px;
+  height: 490px;
   transform-origin: 50% 1200px;
   user-select: none;
   will-change: transform, opacity;
@@ -245,24 +245,24 @@
 
 @media (max-width: 1280px) {
   .portfolio-slider-collection {
-    height: 500px;
+    height: 480px;
   }
   .gsap-slider__item {
     width: 360px;
     margin-left: -180px;
-    height: 470px;
+    height: 450px;
     transform-origin: 50% 1050px;
   }
 }
 
 @media (max-width: 768px) {
   .portfolio-slider-collection {
-    height: 460px;
+    height: 440px;
   }
   .gsap-slider__item {
     width: 300px;
     margin-left: -150px;
-    height: 435px;
+    height: 415px;
     transform-origin: 50% 850px;
   }
 }
@@ -271,10 +271,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 100%;
   height: 100%;
-  padding: 24px;
+  padding: 22px 22px 18px 22px;
   border-radius: 28px;
   text-decoration: none;
   box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.85);
@@ -320,9 +319,9 @@
 }
 
 .appi-portfolio-card-logo {
-  width: 42px;
-  height: 42px;
-  border-radius: 14px;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
   background: rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
@@ -341,31 +340,48 @@
 }
 
 .appi-portfolio-card-title span {
-  font-size: 1.2rem;
+  font-size: 1.35rem;
+  font-weight: 700;
   line-height: 1.2;
 }
 
 .appi-portfolio-card-description p {
-  font-size: var(--fs-para);
+  font-size: 14px;
   line-height: 1.45;
   margin-top: 6px;
-  opacity: 0.9;
+  opacity: 0.92;
+}
+
+.appi-portfolio-card-metrics {
+  margin-top: 8px;
 }
 
 .appi-portfolio-card-metrics .subtitle {
-  font-size: 1.45rem;
+  font-size: 1.55rem;
+  font-weight: 700;
   line-height: 1.1;
+  margin-bottom: 3px;
 }
 
 .appi-portfolio-card-metrics .fs-para {
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.35;
-  opacity: 0.85;
+  opacity: 0.88;
+}
+
+.portfolio-card-footer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  min-height: 0;
 }
 
 .appi-portfolio-card-image {
   width: 100%;
-  height: 200px;
+  height: 100%;
+  flex: 1;
+  min-height: 210px;
   border-radius: 20px;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.06);
@@ -373,6 +389,18 @@
   align-items: center;
   justify-content: center;
   padding: 0;
+}
+
+@media (max-width: 1280px) {
+  .appi-portfolio-card-image {
+    min-height: 190px;
+  }
+}
+
+@media (max-width: 768px) {
+  .appi-portfolio-card-image {
+    min-height: 180px;
+  }
 }
 
 .is-cytometry .appi-portfolio-card-image {
@@ -389,7 +417,7 @@
 }
 
 .portfolio-card:hover .appi-portfolio-card-image img {
-  transform: scale(1.08);
+  transform: scale(1.06);
 }
 
 /* Mobile Responsive */
@@ -411,7 +439,7 @@
   .portfolio-mobile-carousel .item {
     flex: 0 0 86%;
     scroll-snap-align: center;
-    height: 520px;
+    height: 480px;
   }
 }
 </style>
@@ -470,10 +498,10 @@
                 <!-- 1. 1Click -->
                 <div data-portfolio-slider-item="" class="gsap-slider__item">
                   <a href="case-studies.php" class="portfolio-card br-28 is-1click">
-                    <div class="fdc gap24 full-height justify-space-between">
-                      <div class="portfolio-card-header fdc gap24">
+                    <div class="fdc full-height">
+                      <div class="portfolio-card-header fdc gap10">
                         <div class="appi-portfolio-title-header">
-                          <div class="dp-flex gap16 flex-center">
+                          <div class="dp-flex gap12 flex-center">
                             <div class="appi-portfolio-card-logo">
                               <img src="assets/homeImages/1click.png" alt="1Click">
                             </div>
@@ -485,18 +513,18 @@
                         <div class="appi-portfolio-card-description">
                           <p class="fs-para weight500 blk-text">1Click Mobile App makes insurance policy management simple, smart, and accessible anytime.</p>
                         </div>
-                        <div class="grid-col2 gap24 appi-portfolio-card-metrics">
-                          <div class="fdc gap8">
+                        <div class="grid-col2 gap12 appi-portfolio-card-metrics">
+                          <div class="fdc gap4">
                             <div class="subtitle weight600 blk-text mb0">100%</div>
                             <div class="fs-para weight500 blk-text">Digital Policy Tracking</div>
                           </div>
-                          <div class="fdc gap8">
+                          <div class="fdc gap4">
                             <div class="subtitle weight600 blk-text mb0">3X</div>
                             <div class="fs-para weight500 blk-text">Faster Renewal & Alerts</div>
                           </div>
                         </div>
                       </div>
-                      <div class="portfolio-card-footer">
+                      <div class="portfolio-card-footer mt-auto">
                         <div class="appi-portfolio-card-image">
                           <img src="assets/homeImages/1click.png" alt="1Click App">
                         </div>
@@ -508,10 +536,10 @@
                 <!-- 2. Credai -->
                 <div data-portfolio-slider-item="" class="gsap-slider__item">
                   <a href="https://credai.org/" target="_blank" rel="noopener noreferrer" class="portfolio-card br-28 is-credai">
-                    <div class="fdc gap24 full-height justify-space-between">
-                      <div class="portfolio-card-header fdc gap24">
+                    <div class="fdc full-height">
+                      <div class="portfolio-card-header fdc gap10">
                         <div class="appi-portfolio-title-header">
-                          <div class="dp-flex gap16 flex-center">
+                          <div class="dp-flex gap12 flex-center">
                             <div class="appi-portfolio-card-logo">
                               <img src="assets/homeImages/credai.png" alt="Credai">
                             </div>
@@ -523,18 +551,18 @@
                         <div class="appi-portfolio-card-description">
                           <p class="fs-para weight500 blk-text">Creative corporate event management platform blending innovation with flawless execution.</p>
                         </div>
-                        <div class="grid-col2 gap24 appi-portfolio-card-metrics">
-                          <div class="fdc gap8">
+                        <div class="grid-col2 gap12 appi-portfolio-card-metrics">
+                          <div class="fdc gap4">
                             <div class="subtitle weight600 blk-text mb0">50K+</div>
                             <div class="fs-para weight500 blk-text">Event Attendees Managed</div>
                           </div>
-                          <div class="fdc gap8">
+                          <div class="fdc gap4">
                             <div class="subtitle weight600 blk-text mb0">99.9%</div>
                             <div class="fs-para weight500 blk-text">Operational Coordination</div>
                           </div>
                         </div>
                       </div>
-                      <div class="portfolio-card-footer">
+                      <div class="portfolio-card-footer mt-auto">
                         <div class="appi-portfolio-card-image">
                           <img src="assets/homeImages/credai.png" alt="Credai Events">
                         </div>
@@ -546,10 +574,10 @@
                 <!-- 3. HR BABU -->
                 <div data-portfolio-slider-item="" class="gsap-slider__item">
                   <a href="case-studies.php" class="portfolio-card br-28 is-hrbabu">
-                    <div class="fdc gap24 full-height justify-space-between">
-                      <div class="portfolio-card-header fdc gap24">
+                    <div class="fdc full-height">
+                      <div class="portfolio-card-header fdc gap10">
                         <div class="appi-portfolio-title-header">
-                          <div class="dp-flex gap16 flex-center">
+                          <div class="dp-flex gap12 flex-center">
                             <div class="appi-portfolio-card-logo">
                               <img src="assets/homeImages/hrbabu.png" alt="HR BABU">
                             </div>
@@ -561,18 +589,18 @@
                         <div class="appi-portfolio-card-description">
                           <p class="fs-para weight500 blk-text">Smart mobile app simplifying attendance, payroll, leaves, and enterprise workforce performance.</p>
                         </div>
-                        <div class="grid-col2 gap24 appi-portfolio-card-metrics">
-                          <div class="fdc gap8">
+                        <div class="grid-col2 gap12 appi-portfolio-card-metrics">
+                          <div class="fdc gap4">
                             <div class="subtitle weight600 blk-text mb0">85%</div>
                             <div class="fs-para weight500 blk-text">Workflow Automation</div>
                           </div>
-                          <div class="fdc gap8">
+                          <div class="fdc gap4">
                             <div class="subtitle weight600 blk-text mb0">10X</div>
                             <div class="fs-para weight500 blk-text">HR Time Saved</div>
                           </div>
                         </div>
                       </div>
-                      <div class="portfolio-card-footer">
+                      <div class="portfolio-card-footer mt-auto">
                         <div class="appi-portfolio-card-image">
                           <img src="assets/homeImages/hrbabu.png" alt="HR BABU App">
                         </div>
@@ -584,10 +612,10 @@
                 <!-- 4. Cytometry -->
                 <div data-portfolio-slider-item="" class="gsap-slider__item">
                   <a href="https://tcs.res.in/" target="_blank" rel="noopener noreferrer" class="portfolio-card br-28 is-cytometry">
-                    <div class="fdc gap24 full-height justify-space-between">
-                      <div class="portfolio-card-header fdc gap24">
+                    <div class="fdc full-height">
+                      <div class="portfolio-card-header fdc gap10">
                         <div class="appi-portfolio-title-header">
-                          <div class="dp-flex gap16 flex-center">
+                          <div class="dp-flex gap12 flex-center">
                             <div class="appi-portfolio-card-logo">
                               <img src="assets/homeImages/Cytometry.png" alt="Cytometry">
                             </div>
@@ -599,18 +627,18 @@
                         <div class="appi-portfolio-card-description">
                           <p class="fs-para weight500 wht-text">Digital ecosystem for organizing scientific conferences, medical summits, and academic collaboration.</p>
                         </div>
-                        <div class="grid-col2 gap24 appi-portfolio-card-metrics">
-                          <div class="fdc gap8">
+                        <div class="grid-col2 gap12 appi-portfolio-card-metrics">
+                          <div class="fdc gap4">
                             <div class="subtitle weight600 wht-text mb0">15+</div>
                             <div class="fs-para weight500 wht-text">Global Scientific Summits</div>
                           </div>
-                          <div class="fdc gap8">
+                          <div class="fdc gap4">
                             <div class="subtitle weight600 wht-text mb0">100%</div>
                             <div class="fs-para weight500 wht-text">Paperless Coordination</div>
                           </div>
                         </div>
                       </div>
-                      <div class="portfolio-card-footer">
+                      <div class="portfolio-card-footer mt-auto">
                         <div class="appi-portfolio-card-image">
                           <img src="assets/homeImages/Cytometry.png" alt="Cytometry Conference">
                         </div>
@@ -622,10 +650,10 @@
                 <!-- 5. 1Click (Loop 2) -->
                 <div data-portfolio-slider-item="" class="gsap-slider__item">
                   <a href="case-studies.php" class="portfolio-card br-28 is-1click">
-                    <div class="fdc gap24 full-height justify-space-between">
-                      <div class="portfolio-card-header fdc gap24">
+                    <div class="fdc full-height">
+                      <div class="portfolio-card-header fdc gap10">
                         <div class="appi-portfolio-title-header">
-                          <div class="dp-flex gap16 flex-center">
+                          <div class="dp-flex gap12 flex-center">
                             <div class="appi-portfolio-card-logo">
                               <img src="assets/homeImages/1click.png" alt="1Click">
                             </div>
@@ -637,18 +665,18 @@
                         <div class="appi-portfolio-card-description">
                           <p class="fs-para weight500 blk-text">1Click Mobile App makes insurance policy management simple, smart, and accessible anytime.</p>
                         </div>
-                        <div class="grid-col2 gap24 appi-portfolio-card-metrics">
-                          <div class="fdc gap8">
+                        <div class="grid-col2 gap12 appi-portfolio-card-metrics">
+                          <div class="fdc gap4">
                             <div class="subtitle weight600 blk-text mb0">100%</div>
                             <div class="fs-para weight500 blk-text">Digital Policy Tracking</div>
                           </div>
-                          <div class="fdc gap8">
+                          <div class="fdc gap4">
                             <div class="subtitle weight600 blk-text mb0">3X</div>
                             <div class="fs-para weight500 blk-text">Faster Renewal & Alerts</div>
                           </div>
                         </div>
                       </div>
-                      <div class="portfolio-card-footer">
+                      <div class="portfolio-card-footer mt-auto">
                         <div class="appi-portfolio-card-image">
                           <img src="assets/homeImages/1click.png" alt="1Click App">
                         </div>
@@ -660,10 +688,10 @@
                 <!-- 6. Credai (Loop 2) -->
                 <div data-portfolio-slider-item="" class="gsap-slider__item">
                   <a href="https://credai.org/" target="_blank" rel="noopener noreferrer" class="portfolio-card br-28 is-credai">
-                    <div class="fdc gap24 full-height justify-space-between">
-                      <div class="portfolio-card-header fdc gap24">
+                    <div class="fdc full-height">
+                      <div class="portfolio-card-header fdc gap10">
                         <div class="appi-portfolio-title-header">
-                          <div class="dp-flex gap16 flex-center">
+                          <div class="dp-flex gap12 flex-center">
                             <div class="appi-portfolio-card-logo">
                               <img src="assets/homeImages/credai.png" alt="Credai">
                             </div>
@@ -675,18 +703,18 @@
                         <div class="appi-portfolio-card-description">
                           <p class="fs-para weight500 blk-text">Creative corporate event management platform blending innovation with flawless execution.</p>
                         </div>
-                        <div class="grid-col2 gap24 appi-portfolio-card-metrics">
-                          <div class="fdc gap8">
+                        <div class="grid-col2 gap12 appi-portfolio-card-metrics">
+                          <div class="fdc gap4">
                             <div class="subtitle weight600 blk-text mb0">50K+</div>
                             <div class="fs-para weight500 blk-text">Event Attendees Managed</div>
                           </div>
-                          <div class="fdc gap8">
+                          <div class="fdc gap4">
                             <div class="subtitle weight600 blk-text mb0">99.9%</div>
                             <div class="fs-para weight500 blk-text">Operational Coordination</div>
                           </div>
                         </div>
                       </div>
-                      <div class="portfolio-card-footer">
+                      <div class="portfolio-card-footer mt-auto">
                         <div class="appi-portfolio-card-image">
                           <img src="assets/homeImages/credai.png" alt="Credai Events">
                         </div>
@@ -698,10 +726,10 @@
                 <!-- 7. HR BABU (Loop 2) -->
                 <div data-portfolio-slider-item="" class="gsap-slider__item">
                   <a href="case-studies.php" class="portfolio-card br-28 is-hrbabu">
-                    <div class="fdc gap24 full-height justify-space-between">
-                      <div class="portfolio-card-header fdc gap24">
+                    <div class="fdc full-height">
+                      <div class="portfolio-card-header fdc gap10">
                         <div class="appi-portfolio-title-header">
-                          <div class="dp-flex gap16 flex-center">
+                          <div class="dp-flex gap12 flex-center">
                             <div class="appi-portfolio-card-logo">
                               <img src="assets/homeImages/hrbabu.png" alt="HR BABU">
                             </div>
@@ -713,18 +741,18 @@
                         <div class="appi-portfolio-card-description">
                           <p class="fs-para weight500 blk-text">Smart mobile app simplifying attendance, payroll, leaves, and enterprise workforce performance.</p>
                         </div>
-                        <div class="grid-col2 gap24 appi-portfolio-card-metrics">
-                          <div class="fdc gap8">
+                        <div class="grid-col2 gap12 appi-portfolio-card-metrics">
+                          <div class="fdc gap4">
                             <div class="subtitle weight600 blk-text mb0">85%</div>
                             <div class="fs-para weight500 blk-text">Workflow Automation</div>
                           </div>
-                          <div class="fdc gap8">
+                          <div class="fdc gap4">
                             <div class="subtitle weight600 blk-text mb0">10X</div>
                             <div class="fs-para weight500 blk-text">HR Time Saved</div>
                           </div>
                         </div>
                       </div>
-                      <div class="portfolio-card-footer">
+                      <div class="portfolio-card-footer mt-auto">
                         <div class="appi-portfolio-card-image">
                           <img src="assets/homeImages/hrbabu.png" alt="HR BABU App">
                         </div>
@@ -736,10 +764,10 @@
                 <!-- 8. Cytometry (Loop 2) -->
                 <div data-portfolio-slider-item="" class="gsap-slider__item">
                   <a href="https://tcs.res.in/" target="_blank" rel="noopener noreferrer" class="portfolio-card br-28 is-cytometry">
-                    <div class="fdc gap24 full-height justify-space-between">
-                      <div class="portfolio-card-header fdc gap24">
+                    <div class="fdc full-height">
+                      <div class="portfolio-card-header fdc gap10">
                         <div class="appi-portfolio-title-header">
-                          <div class="dp-flex gap16 flex-center">
+                          <div class="dp-flex gap12 flex-center">
                             <div class="appi-portfolio-card-logo">
                               <img src="assets/homeImages/Cytometry.png" alt="Cytometry">
                             </div>
@@ -751,18 +779,18 @@
                         <div class="appi-portfolio-card-description">
                           <p class="fs-para weight500 wht-text">Digital ecosystem for organizing scientific conferences, medical summits, and academic collaboration.</p>
                         </div>
-                        <div class="grid-col2 gap24 appi-portfolio-card-metrics">
-                          <div class="fdc gap8">
+                        <div class="grid-col2 gap12 appi-portfolio-card-metrics">
+                          <div class="fdc gap4">
                             <div class="subtitle weight600 wht-text mb0">15+</div>
                             <div class="fs-para weight500 wht-text">Global Scientific Summits</div>
                           </div>
-                          <div class="fdc gap8">
+                          <div class="fdc gap4">
                             <div class="subtitle weight600 wht-text mb0">100%</div>
                             <div class="fs-para weight500 wht-text">Paperless Coordination</div>
                           </div>
                         </div>
                       </div>
-                      <div class="portfolio-card-footer">
+                      <div class="portfolio-card-footer mt-auto">
                         <div class="appi-portfolio-card-image">
                           <img src="assets/homeImages/Cytometry.png" alt="Cytometry Conference">
                         </div>
@@ -783,21 +811,21 @@
             <!-- 1. 1Click -->
             <div class="item">
               <a href="case-studies.php" class="portfolio-card br-28 is-1click">
-                <div class="fdc gap24 full-height justify-space-between">
-                  <div class="portfolio-card-header fdc gap24">
+                <div class="fdc full-height">
+                  <div class="portfolio-card-header fdc gap10">
                     <div class="appi-portfolio-title-header">
-                      <div class="dp-flex gap16 flex-center">
+                      <div class="dp-flex gap12 flex-center">
                         <div class="appi-portfolio-card-logo"><img src="assets/homeImages/1click.png" alt="1Click"></div>
                         <div class="appi-portfolio-card-title"><span class="subtitle weight600 blk-text mb0">1Click</span></div>
                       </div>
                     </div>
                     <div class="appi-portfolio-card-description"><p class="fs-para weight500 blk-text">1Click Mobile App makes insurance policy management simple, smart, and accessible anytime.</p></div>
-                    <div class="grid-col2 gap24 appi-portfolio-card-metrics">
-                      <div class="fdc gap8"><div class="subtitle weight600 blk-text mb0">100%</div><div class="fs-para weight500 blk-text">Digital Tracking</div></div>
-                      <div class="fdc gap8"><div class="subtitle weight600 blk-text mb0">3X</div><div class="fs-para weight500 blk-text">Faster Alerts</div></div>
+                    <div class="grid-col2 gap12 appi-portfolio-card-metrics">
+                      <div class="fdc gap4"><div class="subtitle weight600 blk-text mb0">100%</div><div class="fs-para weight500 blk-text">Digital Tracking</div></div>
+                      <div class="fdc gap4"><div class="subtitle weight600 blk-text mb0">3X</div><div class="fs-para weight500 blk-text">Faster Alerts</div></div>
                     </div>
                   </div>
-                  <div class="portfolio-card-footer">
+                  <div class="portfolio-card-footer mt-auto">
                     <div class="appi-portfolio-card-image"><img src="assets/homeImages/1click.png" alt="1Click"></div>
                   </div>
                 </div>
@@ -807,21 +835,21 @@
             <!-- 2. Credai -->
             <div class="item">
               <a href="https://credai.org/" target="_blank" rel="noopener noreferrer" class="portfolio-card br-28 is-credai">
-                <div class="fdc gap24 full-height justify-space-between">
-                  <div class="portfolio-card-header fdc gap24">
+                <div class="fdc full-height">
+                  <div class="portfolio-card-header fdc gap10">
                     <div class="appi-portfolio-title-header">
-                      <div class="dp-flex gap16 flex-center">
+                      <div class="dp-flex gap12 flex-center">
                         <div class="appi-portfolio-card-logo"><img src="assets/homeImages/credai.png" alt="Credai"></div>
                         <div class="appi-portfolio-card-title"><span class="subtitle weight600 blk-text mb0">Credai</span></div>
                       </div>
                     </div>
                     <div class="appi-portfolio-card-description"><p class="fs-para weight500 blk-text">Creative corporate event management platform blending innovation with flawless execution.</p></div>
-                    <div class="grid-col2 gap24 appi-portfolio-card-metrics">
-                      <div class="fdc gap8"><div class="subtitle weight600 blk-text mb0">50K+</div><div class="fs-para weight500 blk-text">Attendees</div></div>
-                      <div class="fdc gap8"><div class="subtitle weight600 blk-text mb0">99.9%</div><div class="fs-para weight500 blk-text">Coordination</div></div>
+                    <div class="grid-col2 gap12 appi-portfolio-card-metrics">
+                      <div class="fdc gap4"><div class="subtitle weight600 blk-text mb0">50K+</div><div class="fs-para weight500 blk-text">Attendees</div></div>
+                      <div class="fdc gap4"><div class="subtitle weight600 blk-text mb0">99.9%</div><div class="fs-para weight500 blk-text">Coordination</div></div>
                     </div>
                   </div>
-                  <div class="portfolio-card-footer">
+                  <div class="portfolio-card-footer mt-auto">
                     <div class="appi-portfolio-card-image"><img src="assets/homeImages/credai.png" alt="Credai"></div>
                   </div>
                 </div>
@@ -831,21 +859,21 @@
             <!-- 3. HR BABU -->
             <div class="item">
               <a href="case-studies.php" class="portfolio-card br-28 is-hrbabu">
-                <div class="fdc gap24 full-height justify-space-between">
-                  <div class="portfolio-card-header fdc gap24">
+                <div class="fdc full-height">
+                  <div class="portfolio-card-header fdc gap10">
                     <div class="appi-portfolio-title-header">
-                      <div class="dp-flex gap16 flex-center">
+                      <div class="dp-flex gap12 flex-center">
                         <div class="appi-portfolio-card-logo"><img src="assets/homeImages/hrbabu.png" alt="HR BABU"></div>
                         <div class="appi-portfolio-card-title"><span class="subtitle weight600 blk-text mb0">HR BABU</span></div>
                       </div>
                     </div>
                     <div class="appi-portfolio-card-description"><p class="fs-para weight500 blk-text">Smart mobile app simplifying attendance, payroll, leaves, and enterprise workforce performance.</p></div>
-                    <div class="grid-col2 gap24 appi-portfolio-card-metrics">
-                      <div class="fdc gap8"><div class="subtitle weight600 blk-text mb0">85%</div><div class="fs-para weight500 blk-text">Automation</div></div>
-                      <div class="fdc gap8"><div class="subtitle weight600 blk-text mb0">10X</div><div class="fs-para weight500 blk-text">Time Saved</div></div>
+                    <div class="grid-col2 gap12 appi-portfolio-card-metrics">
+                      <div class="fdc gap4"><div class="subtitle weight600 blk-text mb0">85%</div><div class="fs-para weight500 blk-text">Automation</div></div>
+                      <div class="fdc gap4"><div class="subtitle weight600 blk-text mb0">10X</div><div class="fs-para weight500 blk-text">Time Saved</div></div>
                     </div>
                   </div>
-                  <div class="portfolio-card-footer">
+                  <div class="portfolio-card-footer mt-auto">
                     <div class="appi-portfolio-card-image"><img src="assets/homeImages/hrbabu.png" alt="HR BABU"></div>
                   </div>
                 </div>
@@ -855,21 +883,21 @@
             <!-- 4. Cytometry -->
             <div class="item">
               <a href="https://tcs.res.in/" target="_blank" rel="noopener noreferrer" class="portfolio-card br-28 is-cytometry">
-                <div class="fdc gap24 full-height justify-space-between">
-                  <div class="portfolio-card-header fdc gap24">
+                <div class="fdc full-height">
+                  <div class="portfolio-card-header fdc gap10">
                     <div class="appi-portfolio-title-header">
-                      <div class="dp-flex gap16 flex-center">
+                      <div class="dp-flex gap12 flex-center">
                         <div class="appi-portfolio-card-logo"><img src="assets/homeImages/Cytometry.png" alt="Cytometry"></div>
                         <div class="appi-portfolio-card-title"><span class="subtitle weight600 wht-text mb0">Cytometry</span></div>
                       </div>
                     </div>
                     <div class="appi-portfolio-card-description"><p class="fs-para weight500 wht-text">Digital ecosystem for organizing scientific conferences, medical summits, and academic collaboration.</p></div>
-                    <div class="grid-col2 gap24 appi-portfolio-card-metrics">
-                      <div class="fdc gap8"><div class="subtitle weight600 wht-text mb0">15+</div><div class="fs-para weight500 wht-text">Global Summits</div></div>
-                      <div class="fdc gap8"><div class="subtitle weight600 wht-text mb0">100%</div><div class="fs-para weight500 wht-text">Paperless</div></div>
+                    <div class="grid-col2 gap12 appi-portfolio-card-metrics">
+                      <div class="fdc gap4"><div class="subtitle weight600 wht-text mb0">15+</div><div class="fs-para weight500 wht-text">Global Summits</div></div>
+                      <div class="fdc gap4"><div class="subtitle weight600 wht-text mb0">100%</div><div class="fs-para weight500 wht-text">Paperless</div></div>
                     </div>
                   </div>
-                  <div class="portfolio-card-footer">
+                  <div class="portfolio-card-footer mt-auto">
                     <div class="appi-portfolio-card-image"><img src="assets/homeImages/Cytometry.png" alt="Cytometry"></div>
                   </div>
                 </div>
@@ -921,7 +949,6 @@ document.addEventListener("DOMContentLoaded", () => {
     navButtons.forEach((btn, idx) => {
       if (idx === normalizedActive) {
         btn.setAttribute("data-portfolio-slider-control-status", "active");
-        btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
       } else {
         btn.setAttribute("data-portfolio-slider-control-status", "not-active");
       }

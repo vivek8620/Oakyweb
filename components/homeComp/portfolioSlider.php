@@ -156,7 +156,7 @@
 .portfolio-slider-collection {
   position: relative;
   width: 100%;
-  height: 580px;
+  height: 510px;
   overflow: hidden;
   user-select: none;
   cursor: grab;
@@ -234,10 +234,10 @@
   position: absolute;
   top: 10px;
   left: 50%;
-  width: 430px;
-  margin-left: -215px;
-  height: 550px;
-  transform-origin: 50% 1250px;
+  width: 410px;
+  margin-left: -205px;
+  height: 475px;
+  transform-origin: 50% 1200px;
   user-select: none;
   will-change: transform, opacity;
   transition: filter 0.3s ease;
@@ -245,25 +245,25 @@
 
 @media (max-width: 1280px) {
   .portfolio-slider-collection {
-    height: 540px;
+    height: 470px;
   }
   .gsap-slider__item {
-    width: 380px;
-    margin-left: -190px;
-    height: 510px;
-    transform-origin: 50% 1100px;
+    width: 360px;
+    margin-left: -180px;
+    height: 440px;
+    transform-origin: 50% 1050px;
   }
 }
 
 @media (max-width: 768px) {
   .portfolio-slider-collection {
-    height: 490px;
+    height: 440px;
   }
   .gsap-slider__item {
-    width: 310px;
-    margin-left: -155px;
-    height: 460px;
-    transform-origin: 50% 900px;
+    width: 300px;
+    margin-left: -150px;
+    height: 410px;
+    transform-origin: 50% 850px;
   }
 }
 
@@ -274,8 +274,8 @@
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  padding: 30px;
-  border-radius: 32px;
+  padding: 24px;
+  border-radius: 28px;
   text-decoration: none;
   box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.85);
   overflow: hidden;
@@ -320,8 +320,8 @@
 }
 
 .appi-portfolio-card-logo {
-  width: 44px;
-  height: 44px;
+  width: 42px;
+  height: 42px;
   border-radius: 14px;
   background: rgba(0, 0, 0, 0.05);
   display: flex;
@@ -341,19 +341,19 @@
 }
 
 .appi-portfolio-card-title span {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 1.2;
 }
 
 .appi-portfolio-card-description p {
   font-size: var(--fs-para);
-  line-height: 1.5;
-  margin-top: 8px;
+  line-height: 1.45;
+  margin-top: 6px;
   opacity: 0.9;
 }
 
 .appi-portfolio-card-metrics .subtitle {
-  font-size: 1.55rem;
+  font-size: 1.45rem;
   line-height: 1.1;
 }
 
@@ -365,14 +365,14 @@
 
 .appi-portfolio-card-image {
   width: 100%;
-  height: 180px;
-  border-radius: 20px;
+  height: 150px;
+  border-radius: 18px;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.04);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 8px;
 }
 
 .is-cytometry .appi-portfolio-card-image {

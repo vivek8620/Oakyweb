@@ -18,42 +18,46 @@ function renderIndustryPage($data) {
   $image = $data['image'] ?? '';
   if (empty($image)) {
     $industryImageMap = [
-      'real-estate' => 'assets/industries/real-estate.jpg',
-      'healthcare' => 'assets/industries/healthcare.jpg',
-      'retail' => 'assets/industries/retail-ecommerce.jpg',
-      'commerce' => 'assets/industries/retail-ecommerce.jpg',
-      'media' => 'assets/industries/media-entertainment.jpg',
-      'entertainment' => 'assets/industries/media-entertainment.jpg',
-      'finance' => 'assets/industries/finance-banking.jpg',
-      'banking' => 'assets/industries/finance-banking.jpg',
-      'auto' => 'assets/industries/automotive.jpg',
-      'agri' => 'assets/industries/agriculture.jpg',
-      'telecom' => 'assets/industries/telecommunication.jpg',
-      'manufactur' => 'assets/industries/manufacturing.jpg',
-      'public' => 'assets/industries/public-sector-government.jpg',
-      'govt' => 'assets/industries/public-sector-government.jpg',
-      'energy' => 'assets/industries/energy-utilities.jpg',
-      'utilit' => 'assets/industries/energy-utilities.jpg',
-      'travel' => 'assets/industries/travel-hospitality.jpg',
-      'hospitality' => 'assets/industries/travel-hospitality.jpg',
-      'education' => 'assets/industries/education-elearning.jpg',
-      'elearning' => 'assets/industries/education-elearning.jpg',
-      'insurance' => 'assets/industries/insurance.jpg',
-      'logistic' => 'assets/industries/logistics-supply-chain.jpg',
-      'supply' => 'assets/industries/logistics-supply-chain.jpg',
+      'real-estate' => 'assets/industries/industries/Real Estate.jpeg',
+      'healthcare' => 'assets/industries/industries/Healthcare.jpg',
+      'retail' => 'assets/industries/industries/Retail & E-Commerce.jpg',
+      'commerce' => 'assets/industries/industries/Retail & E-Commerce.jpg',
+      'media' => 'assets/industries/industries/Media & Entertainment.jpeg',
+      'entertainment' => 'assets/industries/industries/Media & Entertainment.jpeg',
+      'finance' => 'assets/industries/industries/Finance & Banking.jpeg',
+      'banking' => 'assets/industries/industries/Finance & Banking.jpeg',
+      'auto' => 'assets/industries/industries/Automotive.jpeg',
+      'agri' => 'assets/industries/industries/Agriculture.jpeg',
+      'telecom' => 'assets/industries/industries/Telecommunication.jpeg',
+      'manufactur' => 'assets/industries/industries/Manufacturing.jpeg',
+      'public' => 'assets/industries/industries/Public Sector & Govt.jpeg',
+      'govt' => 'assets/industries/industries/Public Sector & Govt.jpeg',
+      'energy' => 'assets/industries/industries/Energy & Utilities.jpeg',
+      'utilit' => 'assets/industries/industries/Energy & Utilities.jpeg',
+      'travel' => 'assets/industries/industries/Travel & Hospitality.jpeg',
+      'hospitality' => 'assets/industries/industries/Travel & Hospitality.jpeg',
+      'education' => 'assets/industries/industries/Education & E-Learning.jpeg',
+      'elearning' => 'assets/industries/industries/Education & E-Learning.jpeg',
+      'insurance' => 'assets/industries/industries/Insurance.jpeg',
+      'logistic' => 'assets/industries/industries/Logistics & Supply Chain.jpeg',
+      'supply' => 'assets/industries/industries/Logistics & Supply Chain.jpeg',
     ];
 
-    if (file_exists("assets/industries/{$slug}.jpg")) {
-      $image = "assets/industries/{$slug}.jpg";
-    } else {
-      foreach ($industryImageMap as $key => $imgPath) {
-        if (strpos($slug, $key) !== false && file_exists($imgPath)) {
-          $image = $imgPath;
-          break;
-        }
+    foreach ($industryImageMap as $key => $imgPath) {
+      if (strpos($slug, $key) !== false && file_exists($imgPath)) {
+        $image = $imgPath;
+        break;
       }
-      if (empty($image)) {
-        $image = file_exists("assets/industries/healthcare.jpg") ? "assets/industries/healthcare.jpg" : "assets/industries/default.jpg";
+    }
+    if (empty($image)) {
+      if (file_exists("assets/industries/industries/{$name}.jpeg")) {
+        $image = "assets/industries/industries/{$name}.jpeg";
+      } elseif (file_exists("assets/industries/industries/{$name}.jpg")) {
+        $image = "assets/industries/industries/{$name}.jpg";
+      } elseif (file_exists("assets/industries/{$slug}.jpg")) {
+        $image = "assets/industries/{$slug}.jpg";
+      } else {
+        $image = file_exists("assets/industries/industries/Healthcare.jpg") ? "assets/industries/industries/Healthcare.jpg" : "assets/industries/healthcare.jpg";
       }
     }
   }

@@ -1,4 +1,4 @@
-<section class="contain2 marginy relative" id="our-secvices">
+<section class="relative w-full py-12 sm:py-16 lg:py-20" id="our-secvices">
     <div class="contain relative z-10">
 
         <!-- Centered Header Section (No Badge) -->

@@ -1,5 +1,5 @@
 <!-- INDUSTRIES WE SERVE SECTION -->
-<section class="w-full bg-[#080B14] py-16 sm:py-20 lg:py-24 relative overflow-hidden text-white" id="industries-we-serve">
+<section class="w-full bg-[#080B14] py-12 sm:py-16 lg:py-20 relative overflow-hidden text-white" id="industries-we-serve">
 
   <!-- Ambient Glow Effects -->
   <div class="absolute inset-0 pointer-events-none overflow-hidden">

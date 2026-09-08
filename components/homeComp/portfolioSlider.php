@@ -12,7 +12,7 @@
   --color-text-white: #ffffff;
   --color-primary: #1a69fd;
   --color-primary-hover: #0c4fcb;
-  --section-padding-fluid: clamp(48px, 6vw, 84px);
+  --section-padding-fluid: clamp(48px, 5vw, 80px);
   --container-max-width: clamp(320px, 85vw, 1650px);
   --container-sm-max-width: 820px;
   --container-padding-inline: clamp(1rem, 4vw, 3rem);

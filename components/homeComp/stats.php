@@ -48,7 +48,7 @@ $heroStats = [
 ?>
 
 <!-- Clean Statistics Section without Dark Section Background -->
-<section class="relative w-full bg-[#FBFBFC] py-10 lg:py-12" id="experience-stats">
+<section class="relative w-full bg-[#FBFBFC] py-12 sm:py-16 lg:py-20" id="experience-stats">
     <div class="contain relative z-10">
 
         <!-- 4-Column Stats Cards Grid -->

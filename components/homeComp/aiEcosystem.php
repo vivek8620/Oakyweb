@@ -1,5 +1,5 @@
 <!-- AI Ecosystem Section - Full Width Edge-to-Edge Design (Appinventiv Style) -->
-<section class="w-full bg-[#000000] pt-6 sm:pt-8 lg:pt-12 pb-12 sm:pb-16 lg:pb-20 xl:pb-24 overflow-hidden relative" id="ai-ecosystem">
+<section class="w-full bg-[#000000] py-12 sm:py-16 lg:py-20 overflow-hidden relative" id="ai-ecosystem">
 
   <!-- Ambient Glow Effects -->
   <div class="absolute inset-0 pointer-events-none overflow-hidden">

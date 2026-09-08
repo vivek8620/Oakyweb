@@ -27,7 +27,7 @@ $allClientLogos = [
 ?>
 
 <!-- Client Logos Section - Appinventiv Dark Section with High-Contrast Crisp Cards -->
-<section class="relative w-full bg-[#000000] py-16 sm:py-20 lg:py-24 text-white border-t border-white/10 overflow-hidden" id="clients-section">
+<section class="relative w-full bg-[#000000] py-12 sm:py-16 lg:py-20 text-white border-t border-white/10 overflow-hidden" id="clients-section">
     
     <!-- Background Ambient Glow -->
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-blue-600/10 rounded-full blur-[140px] pointer-events-none"></div>

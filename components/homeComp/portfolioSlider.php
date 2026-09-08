@@ -171,9 +171,9 @@
 .portfolio-mouse-follower {
   pointer-events: none;
   position: fixed;
-  z-index: 9999;
-  width: 84px;
-  height: 84px;
+  z-index: 99999;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   background: rgba(20, 20, 25, 0.9);
   backdrop-filter: blur(10px);
@@ -187,8 +187,9 @@
   color: #ffffff;
   opacity: 0;
   transform: translate(-50%, -50%) scale(0.85);
-  transition: opacity 0.25s ease, transform 0.15s ease-out;
+  transition: opacity 0.25s ease, transform 0.12s ease-out, width 0.3s cubic-bezier(0.16, 1, 0.3, 1), height 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-radius 0.3s cubic-bezier(0.16, 1, 0.3, 1), background 0.3s ease;
   box-shadow: 0 14px 35px rgba(0, 0, 0, 0.85);
+  white-space: nowrap;
 }
 
 .portfolio-mouse-follower.is-visible {
@@ -201,6 +202,22 @@
   background: rgba(255, 200, 53, 0.95);
   color: #000;
   border-color: #ffc835;
+}
+
+/* Card Hover Morph into "View case study" pill */
+.portfolio-mouse-follower.is-card-hover {
+  width: auto;
+  height: auto;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  background: rgba(18, 18, 22, 0.94);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  color: #ffffff;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.85);
 }
 
 .gsap-slider__list {
@@ -265,43 +282,18 @@
   transition: box-shadow 0.3s ease;
   user-select: none;
   -webkit-user-select: none;
+  cursor: pointer;
 }
 
 .portfolio-card * {
   user-select: none;
   -webkit-user-select: none;
   -webkit-user-drag: none;
-  pointer-events: auto;
 }
 
 .portfolio-card img {
   pointer-events: none;
   -webkit-user-drag: none;
-}
-
-.portfolio-card-btn-pill {
-  position: absolute;
-  bottom: 24px;
-  left: 24px;
-  background: rgba(20, 20, 20, 0.9);
-  backdrop-filter: blur(10px);
-  color: #ffffff;
-  font-size: 13.5px;
-  font-weight: 600;
-  padding: 10px 22px;
-  border-radius: 9999px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  pointer-events: none;
-  z-index: 10;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
-}
-
-.gsap-slider__item:hover .portfolio-card-btn-pill {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .gsap-slider__item:hover .portfolio-card {
@@ -508,7 +500,6 @@
                           <img src="assets/homeImages/1click.png" alt="1Click App">
                         </div>
                       </div>
-                      <div class="portfolio-card-btn-pill">View case study</div>
                     </div>
                   </a>
                 </div>
@@ -547,7 +538,6 @@
                           <img src="assets/homeImages/credai.png" alt="Credai Events">
                         </div>
                       </div>
-                      <div class="portfolio-card-btn-pill">View case study</div>
                     </div>
                   </a>
                 </div>
@@ -586,7 +576,6 @@
                           <img src="assets/homeImages/hrbabu.png" alt="HR BABU App">
                         </div>
                       </div>
-                      <div class="portfolio-card-btn-pill">View case study</div>
                     </div>
                   </a>
                 </div>
@@ -625,7 +614,6 @@
                           <img src="assets/homeImages/Cytometry.png" alt="Cytometry Conference">
                         </div>
                       </div>
-                      <div class="portfolio-card-btn-pill">View case study</div>
                     </div>
                   </a>
                 </div>
@@ -664,7 +652,6 @@
                           <img src="assets/homeImages/1click.png" alt="1Click App">
                         </div>
                       </div>
-                      <div class="portfolio-card-btn-pill">View case study</div>
                     </div>
                   </a>
                 </div>
@@ -703,7 +690,6 @@
                           <img src="assets/homeImages/credai.png" alt="Credai Events">
                         </div>
                       </div>
-                      <div class="portfolio-card-btn-pill">View case study</div>
                     </div>
                   </a>
                 </div>
@@ -742,7 +728,6 @@
                           <img src="assets/homeImages/hrbabu.png" alt="HR BABU App">
                         </div>
                       </div>
-                      <div class="portfolio-card-btn-pill">View case study</div>
                     </div>
                   </a>
                 </div>
@@ -781,7 +766,6 @@
                           <img src="assets/homeImages/Cytometry.png" alt="Cytometry Conference">
                         </div>
                       </div>
-                      <div class="portfolio-card-btn-pill">View case study</div>
                     </div>
                   </a>
                 </div>
@@ -1035,13 +1019,51 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Direct Card Click (bring card to front)
-  cards.forEach((card, idx) => {
-    card.addEventListener("click", (e) => {
+  // Direct Card Hover & Click Engine
+  cards.forEach((cardItem, idx) => {
+    const cardLink = cardItem.querySelector(".portfolio-card");
+
+    // Mouse hover morph into "View case study" pill follower
+    cardItem.addEventListener("mouseenter", () => {
+      if (follower) {
+        follower.textContent = "View case study";
+        follower.classList.add("is-card-hover");
+      }
+    });
+
+    cardItem.addEventListener("mouseleave", () => {
+      if (follower) {
+        follower.textContent = "DRAG";
+        follower.classList.remove("is-card-hover");
+      }
+    });
+
+    cardItem.addEventListener("click", (e) => {
       const activeInt = ((Math.round(currentPos) % total) + total) % total;
-      if (idx !== activeInt || hasMovedFar) {
+      
+      // If dragged significantly, prevent accidental click
+      if (hasMovedFar) {
+        e.preventDefault();
+        return;
+      }
+
+      if (idx !== activeInt) {
+        // If side card clicked, bring it smoothly to center
         e.preventDefault();
         setTarget(idx);
+      } else {
+        // If center card clicked, navigate to case study
+        if (cardLink) {
+          const href = cardLink.getAttribute("href");
+          const target = cardLink.getAttribute("target");
+          if (href && href !== "#") {
+            if (target === "_blank") {
+              window.open(href, "_blank");
+            } else {
+              window.location.href = href;
+            }
+          }
+        }
       }
     });
   });

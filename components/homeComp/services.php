@@ -1,4 +1,4 @@
-<section class="relative w-full py-12 sm:py-16 lg:py-20" id="our-secvices">
+<section class="relative w-full pt-4 sm:pt-6 lg:pt-8 pb-12 sm:pb-16 lg:pb-20" id="our-secvices">
     <div class="contain relative z-10">
 
         <!-- Centered Header Section (No Badge) -->

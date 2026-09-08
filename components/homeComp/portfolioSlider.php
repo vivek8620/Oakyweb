@@ -1067,26 +1067,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     cardItem.addEventListener("click", (e) => {
-      const activeInt = ((Math.round(currentPos) % total) + total) % total;
+      e.preventDefault();
       
       // If dragged significantly, prevent accidental click
       if (hasMovedFar) {
-        e.preventDefault();
         return;
       }
 
+      const activeInt = ((Math.round(currentPos) % total) + total) % total;
+
       if (idx !== activeInt) {
         // If side card clicked, bring it smoothly to center
-        e.preventDefault();
         setTarget(idx);
       } else {
-        // If center card clicked, navigate to case study
+        // If center card clicked, navigate only once
         if (cardLink) {
           const href = cardLink.getAttribute("href");
           const target = cardLink.getAttribute("target");
           if (href && href !== "#") {
             if (target === "_blank") {
-              window.open(href, "_blank");
+              window.open(href, "_blank", "noopener,noreferrer");
             } else {
               window.location.href = href;
             }

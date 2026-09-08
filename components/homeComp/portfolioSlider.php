@@ -12,7 +12,7 @@
   --color-text-white: #ffffff;
   --color-primary: #1a69fd;
   --color-primary-hover: #0c4fcb;
-  --section-padding-fluid: clamp(32px, 5vw + 8px, 80px);
+  --section-padding-fluid: clamp(48px, 6vw, 84px);
   --container-max-width: clamp(320px, 85vw, 1650px);
   --container-sm-max-width: 820px;
   --container-padding-inline: clamp(1rem, 4vw, 3rem);
@@ -31,10 +31,6 @@
   position: relative;
   overflow: hidden;
   margin-top: -1px;
-}
-
-.appi-section.pb0 {
-  padding-bottom: 0;
 }
 
 .layout-container-sm {
@@ -444,7 +440,7 @@
 }
 </style>
 
-<div class="dark-bg section pb0 appi-section">
+<div class="dark-bg section appi-section">
   
   <div class="layout-container-sm">
     <div class="appi-portfolio-cards-slider-header">

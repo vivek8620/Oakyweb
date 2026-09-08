@@ -156,7 +156,7 @@
 .portfolio-slider-collection {
   position: relative;
   width: 100%;
-  height: 510px;
+  height: 540px;
   overflow: hidden;
   user-select: none;
   cursor: grab;
@@ -236,7 +236,7 @@
   left: 50%;
   width: 410px;
   margin-left: -205px;
-  height: 475px;
+  height: 505px;
   transform-origin: 50% 1200px;
   user-select: none;
   will-change: transform, opacity;
@@ -245,24 +245,24 @@
 
 @media (max-width: 1280px) {
   .portfolio-slider-collection {
-    height: 470px;
+    height: 500px;
   }
   .gsap-slider__item {
     width: 360px;
     margin-left: -180px;
-    height: 440px;
+    height: 470px;
     transform-origin: 50% 1050px;
   }
 }
 
 @media (max-width: 768px) {
   .portfolio-slider-collection {
-    height: 440px;
+    height: 460px;
   }
   .gsap-slider__item {
     width: 300px;
     margin-left: -150px;
-    height: 410px;
+    height: 435px;
     transform-origin: 50% 850px;
   }
 }
@@ -365,30 +365,31 @@
 
 .appi-portfolio-card-image {
   width: 100%;
-  height: 150px;
-  border-radius: 18px;
+  height: 200px;
+  border-radius: 20px;
   overflow: hidden;
-  background: rgba(0, 0, 0, 0.04);
+  background: rgba(0, 0, 0, 0.06);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
+  padding: 0;
 }
 
 .is-cytometry .appi-portfolio-card-image {
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .appi-portfolio-card-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  border-radius: 12px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 20px;
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .portfolio-card:hover .appi-portfolio-card-image img {
-  transform: scale(1.06);
+  transform: scale(1.08);
 }
 
 /* Mobile Responsive */

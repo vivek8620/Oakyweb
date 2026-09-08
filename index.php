@@ -19,6 +19,10 @@
 <?php include("components/homeComp/services.php") ?>
 
 
+<!-- Innovation / Portfolio 3D Cards Slider -->
+<?php include("components/homeComp/portfolioSlider.php") ?>
+
+
 <!-- AI Ecosystem Section -->
 <?php include("components/homeComp/aiEcosystem.php") ?>
 

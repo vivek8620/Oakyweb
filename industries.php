@@ -35,7 +35,7 @@ include("components/header.php");
         </p>
 
         <div class="mt-8 sm:mt-10 flex flex-wrap items-center gap-4">
-          <a href="contact-us.html" class="inline-flex items-center gap-3 rounded-full px-8 py-4 bg-[#ffc835] hover:bg-white text-black font-semibold text-base transition-all duration-300 shadow-[0_8px_30px_rgba(255,200,53,0.3)] hover:-translate-y-0.5">
+          <a href="contact-us.html" class="inline-flex items-center gap-3 rounded-full px-8 py-4 bg-[#ffc835] hover:bg-white text-black font-semibold text-base transition-all duration-300 hover:-translate-y-0.5">
             <span>Tell Us What You're Building</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
           </a>
@@ -868,7 +868,7 @@ include("components/header.php");
     </p>
 
     <div class="flex flex-wrap justify-center gap-4">
-      <a href="contact-us.html" class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#ffc835] hover:bg-white text-black font-bold text-sm sm:text-base transition-all shadow-[0_10px_30px_rgba(255,200,53,0.3)] hover:scale-105">
+      <a href="contact-us.html" class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#ffc835] hover:bg-white text-black font-bold text-sm sm:text-base transition-all hover:scale-105">
         <span>Book a Discovery Call</span>
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
       </a>

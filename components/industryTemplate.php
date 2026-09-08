@@ -339,9 +339,6 @@ function renderIndustryPage($data) {
         <div class="absolute inset-0 bg-gradient-to-br from-[#ffc835]/10 via-transparent to-[#3B82F6]/10 pointer-events-none"></div>
         
         <div>
-          <div class="w-11 h-11 rounded-2xl bg-amber-500/20 text-[#ffc835] border border-[#ffc835]/30 flex items-center justify-center text-xl mb-4 shadow-sm">
-            <i class="fa-solid fa-triangle-exclamation"></i>
-          </div>
           <h3 class="text-xl font-bold text-white mb-2">The Hidden Cost of Legacy Workflows</h3>
           <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
             Outdated software creates data silos, increases compliance vulnerability, and frustrates customers who demand real-time digital access.
@@ -653,7 +650,7 @@ $serviceIcons = [
     </p>
 
     <div class="flex flex-wrap justify-center gap-4">
-      <a href="contact-us.html" class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#ffc835] hover:bg-white text-black font-bold text-sm sm:text-base transition-all shadow-[0_10px_30px_rgba(255,200,53,0.3)] hover:scale-105">
+      <a href="contact-us.html" class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#ffc835] hover:bg-white text-black font-bold text-sm sm:text-base transition-all hover:scale-105">
         <span>Book a Discovery Call</span>
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
       </a>

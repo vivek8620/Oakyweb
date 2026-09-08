@@ -123,11 +123,6 @@ include 'components/meta.php';
           </div>
         </div>
 
-        <a href="case-studies.html#Portfolio"
-          class=" relative link-underline tracking-[2px] <?php echo ($page === 'portofolio.php' || $page === 'portfolio.php') ? 'text-black' : ''; ?>">
-          Portfolio
-        </a>
-
         <!-- Industries -->
         <div class="relative group inline-block">
 
@@ -421,8 +416,6 @@ include 'components/meta.php';
           <a href="oee-dashboard.html" class="block py-2 hover:underline">OEE Dashboard</a>
         </div>
       </div>
-
-      <a href="case-studies.html#Portfolio" class="block py-4 nav-link relative">Portfolio</a>
 
       <!-- INDUSTRIES DROPDOWN MOBILE -->
       <div class="w-full">

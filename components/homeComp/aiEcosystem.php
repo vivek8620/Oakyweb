@@ -17,13 +17,16 @@
       <div class="lg:col-span-5 w-full flex">
         <div class="relative w-full min-h-[400px] sm:min-h-[480px] lg:min-h-[580px] h-full rounded-[24px] lg:rounded-[32px] overflow-hidden border border-[#262626] bg-[#0A0A0A] shadow-2xl group flex flex-col">
           
-          <!-- High-Tech AI & Human Collaboration Visual with Hover Zoom -->
-          <img 
-            src="assets/appi-home-inventivai/inventivai-ai-human.jpg" 
-            alt="InventivAI - Human & AI Intelligence Collaboration"
+          <!-- High-Tech AI & Human Collaboration Video Visual -->
+          <video 
+            src="assets/appi-home-inventivai/Cinematic_Glowing_Best_for.mp4" 
+            poster="assets/appi-home-inventivai/inventivai-ai-human.jpg"
+            autoplay 
+            loop 
+            muted 
+            playsinline 
             class="w-full h-full object-cover flex-1 transform transition-transform duration-700 ease-out group-hover:scale-105"
-            loading="lazy"
-          />
+          ></video>
 
           <!-- Subtle Visual Overlay Gradient for Depth -->
           <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-black/35 pointer-events-none"></div>

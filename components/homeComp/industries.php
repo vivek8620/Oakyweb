@@ -97,12 +97,13 @@ $industriesList = [
 <section class="relative w-full py-12 sm:py-16 lg:py-20" id="industries-we-serve">
   <div class="contain relative z-10">
 
-    <!-- Section Header -->
+    <!-- Section Header (Oakyweb Brand Theme) -->
     <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
       <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-900 leading-tight">
         Tailored solutions for <span class="text-[#ffc835]">diverse industries</span>
       </h2>
-      <p class="text-gray-600 text-sm sm:text-base mt-3 max-w-2xl mx-auto font-normal leading-relaxed">
+      <div class="w-16 h-1 bg-[#ffc835] rounded-full mt-3.5 mx-auto"></div>
+      <p class="text-gray-600 text-sm sm:text-base mt-3.5 max-w-2xl mx-auto font-normal leading-relaxed">
         Comprehensive domain expertise and bespoke digital solutions designed to accelerate digital transformation.
       </p>
     </div>
@@ -110,15 +111,22 @@ $industriesList = [
     <!-- 15 Industries Grid (5 Columns on Desktop) -->
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-5">
       <?php foreach ($industriesList as $item): ?>
-        <a href="<?= $item['link'] ?>" class="group flex flex-col justify-between bg-white border border-gray-200/80 hover:border-[#ffc835] rounded-2xl p-5 sm:p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl">
-          <div>
-            <!-- Icon Container with FontAwesome Icon -->
-            <div class="w-12 h-12 rounded-xl bg-[#ffc835]/15 text-[#111827] flex items-center justify-center mb-4 group-hover:bg-[#ffc835] group-hover:text-black transition-all duration-300 shadow-sm text-lg">
+        <a href="<?= $item['link'] ?>" class="group relative overflow-hidden flex flex-col justify-between bg-white border border-gray-200/80 hover:border-[#ffc835] rounded-2xl p-5 sm:p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl cursor-pointer">
+          
+          <!-- Top Accent Line on Hover -->
+          <div class="absolute top-0 left-0 right-0 h-1 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-[#ffc835]"></div>
+
+          <!-- Bottom Ambient Glow -->
+          <div class="absolute -bottom-10 -right-10 w-24 h-24 bg-[#ffc835]/5 rounded-full blur-xl pointer-events-none"></div>
+
+          <div class="relative z-10">
+            <!-- Icon Container with Oakyweb Brand Accent -->
+            <div class="w-12 h-12 rounded-xl bg-[#ffc835]/15 border border-[#ffc835]/30 text-[#111827] flex items-center justify-center mb-4 group-hover:bg-[#ffc835] group-hover:text-black group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-xs text-lg">
               <i class="<?= $item['icon'] ?>"></i>
             </div>
 
             <!-- Title -->
-            <h3 class="text-gray-900 font-bold text-[16px] mb-2 leading-snug tracking-tight group-hover:text-black transition-colors duration-200">
+            <h3 class="font-bold text-[16px] text-gray-900 mb-2 leading-snug tracking-tight group-hover:text-black transition-colors duration-200">
               <?= $item['title'] ?>
             </h3>
 
@@ -129,7 +137,7 @@ $industriesList = [
           </div>
 
           <!-- Explore Link -->
-          <div class="pt-3.5 mt-3.5 border-t border-gray-100 flex items-center justify-between">
+          <div class="relative z-10 pt-3.5 mt-3.5 border-t border-gray-100 flex items-center justify-between">
             <span class="inline-flex items-center text-xs font-bold text-gray-900 group-hover:text-black transition-colors duration-200 gap-1.5">
               <span>Explore</span>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor" class="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-0.5 text-[#ffc835]">

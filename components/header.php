@@ -325,119 +325,129 @@ include 'components/meta.php';
 
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu"
-    class="fixed top-0 left-0 w-full h-screen bg-[#222222] transform -translate-y-full transition-transform duration-300 ease-in-out z-50 flex flex-col lg:hidden">
+  <div id="mobile-menu" data-lenis-prevent
+    class="fixed inset-0 w-full h-screen h-[100dvh] max-h-screen bg-[#1e1e1e] text-white transform -translate-y-full transition-transform duration-300 ease-in-out z-[9999] flex flex-col overflow-hidden lg:hidden">
 
-    <!-- TOP BAR -->
-    <div class="flex justify-between items-center px-4 py-6 ">
+    <!-- TOP BAR (Fixed at top of drawer) -->
+    <div class="shrink-0 flex justify-between items-center px-5 py-4 border-b border-white/10 bg-[#1e1e1e]">
       <a href="./">
-        <img src="assets/icons/logo.svg" alt="MyLogo" class="w-[110px] h-[44px]" />
+        <img src="assets/icons/logo.svg" alt="OakyWeb" class="w-[110px] h-[40px] object-contain" />
       </a>
 
-      <button id="mobile-menu-close" class="text-white">
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round"
-            d="M6 18L18 6M6 6l12 12" />
+      <button id="mobile-menu-close" class="text-white p-2 rounded-lg hover:bg-white/10 transition-colors cursor-pointer" aria-label="Close menu">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
     </div>
 
     <!-- SCROLLABLE CONTENT -->
-    <div class="flex-1 overflow-y-auto flex flex-col text-28 font-medium px-4 py-6 text-white">
+    <div data-lenis-prevent class="flex-1 overflow-y-auto overscroll-contain px-5 py-5 text-white" style="-webkit-overflow-scrolling: touch; touch-action: pan-y;">
 
-      <!-- ABOUT DROPDOWN MOBILE -->
-      <div class="w-full">
+      <!-- Home -->
+      <a href="./" class="block py-3 text-xl font-medium border-b border-white/5 hover:text-[#ffc835] transition-colors <?php echo ($page === 'index.php') ? 'text-[#ffc835] font-bold' : ''; ?>">
+        Home
+      </a>
+
+      <!-- ABOUT ACCORDION -->
+      <div class="w-full border-b border-white/5">
         <button id="mobileAboutBtn"
-          class="flex items-center gap-2 py-4 w-full text-left nav-link">
+          class="flex items-center justify-between py-3.5 w-full text-left text-xl font-medium hover:text-[#ffc835] transition-colors cursor-pointer">
           <span>About</span>
-          <img id="mobileAboutArrow"
-            src="assets/icons/down-white.svg"
-            class="h-4 w-4 ml-2 transition-transform duration-300" />
+          <svg id="mobileAboutArrow" class="w-4 h-4 transition-transform duration-300 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 6.27a.75.75 0 01.02-1.06z" />
+          </svg>
         </button>
 
-        <div id="mobileAboutMenu" class="hidden pl-6 pb-2 space-y-2 text-22">
-          <a href="about-us.html" class="block py-2 hover:underline">About Us</a>
-          <a href="core-team.html" class="block py-2 hover:underline">Our Core Team</a>
+        <div id="mobileAboutMenu" class="hidden pl-4 pb-3 space-y-1 text-base text-gray-300">
+          <a href="about-us.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo ($page === 'about-us.php') ? 'text-[#ffc835] font-semibold' : ''; ?>">About Us</a>
+          <a href="core-team.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo ($page === 'core-team.php') ? 'text-[#ffc835] font-semibold' : ''; ?>">Our Core Team</a>
         </div>
       </div>
 
-      <!-- SERVICES DROPDOWN -->
-      <div class="w-full">
+      <!-- SERVICES ACCORDION -->
+      <div class="w-full border-b border-white/5">
         <button id="mobileServicesBtn"
-          class="flex items-center gap-2 py-4 w-full text-left nav-link">
+          class="flex items-center justify-between py-3.5 w-full text-left text-xl font-medium hover:text-[#ffc835] transition-colors cursor-pointer">
           <span>Services</span>
-          <img id="mobileArrow"
-            src="assets/icons/down-white.svg"
-            class="h-4 w-4 ml-2 transition-transform duration-300" />
+          <svg id="mobileArrow" class="w-4 h-4 transition-transform duration-300 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 6.27a.75.75 0 01.02-1.06z" />
+          </svg>
         </button>
 
-        <div id="mobileServicesMenu" class="hidden pl-6 pb-2 space-y-2 text-22">
-          <a href="custom-software-solution.html" class="block py-2 hover:underline">Custom Software Solutions</a>
-          <a href="mobile-application.html" class="block py-2 hover:underline">Mobile App Development</a>
-          <a href="web-design-development.html" class="block py-2 hover:underline">Website Development</a>
-          <a href="e-commerce-solution.html" class="block py-2 hover:underline">E-Commerce Solutions</a>
-          <a href="ui-ux-design.html" class="block py-2 hover:underline">UI & UX Design</a>
-          <a href="social-media.html" class="block py-2 hover:underline">Digital Marketing</a>
-          <a href="web-hosting.html" class="block py-2 hover:underline">Cloud & DevOps</a>
-          <a href="oee-dashboard.html" class="block py-2 hover:underline">OEE Dashboard</a>
+        <div id="mobileServicesMenu" class="hidden pl-4 pb-3 space-y-1 text-base text-gray-300">
+          <a href="custom-software-solution.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo ($page === 'custom-software-solution.php') ? 'text-[#ffc835] font-semibold' : ''; ?>">Custom Software Solutions</a>
+          <a href="mobile-application.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo ($page === 'mobile-application.php') ? 'text-[#ffc835] font-semibold' : ''; ?>">Mobile App Development</a>
+          <a href="web-design-development.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo ($page === 'web-design-development.php') ? 'text-[#ffc835] font-semibold' : ''; ?>">Website Development</a>
+          <a href="e-commerce-solution.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo ($page === 'e-commerce-solution.php') ? 'text-[#ffc835] font-semibold' : ''; ?>">E-Commerce Solutions</a>
+          <a href="ui-ux-design.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo ($page === 'ui-ux-design.php') ? 'text-[#ffc835] font-semibold' : ''; ?>">UI &amp; UX Design</a>
+          <a href="social-media.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo ($page === 'social-media.php') ? 'text-[#ffc835] font-semibold' : ''; ?>">Digital Marketing</a>
+          <a href="web-hosting.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo ($page === 'web-hosting.php') ? 'text-[#ffc835] font-semibold' : ''; ?>">Cloud &amp; DevOps</a>
+          <a href="oee-dashboard.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo ($page === 'oee-dashboard.php') ? 'text-[#ffc835] font-semibold' : ''; ?>">OEE Dashboard</a>
         </div>
       </div>
 
-      <!-- INDUSTRIES DROPDOWN MOBILE -->
-      <div class="w-full">
+      <!-- INDUSTRIES ACCORDION -->
+      <div class="w-full border-b border-white/5">
         <button id="mobileIndustriesBtn"
-          class="flex items-center gap-2 py-4 w-full text-left nav-link">
+          class="flex items-center justify-between py-3.5 w-full text-left text-xl font-medium hover:text-[#ffc835] transition-colors cursor-pointer">
           <span>Industries</span>
-          <img id="mobileIndustriesArrow"
-            src="assets/icons/down-white.svg"
-            class="h-4 w-4 ml-2 transition-transform duration-300" />
+          <svg id="mobileIndustriesArrow" class="w-4 h-4 transition-transform duration-300 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 6.27a.75.75 0 01.02-1.06z" />
+          </svg>
         </button>
 
-        <div id="mobileIndustriesMenu" class="hidden pl-6 pb-2 space-y-2 text-22">
-          <a href="real-estate.html" class="block py-2 hover:underline">Real Estate</a>
-          <a href="healthcare.html" class="block py-2 hover:underline">Healthcare</a>
-          <a href="retail-ecommerce.html" class="block py-2 hover:underline">Retail &amp; E-Commerce</a>
-          <a href="media-entertainment.html" class="block py-2 hover:underline">Media &amp; Entertainment</a>
-          <a href="finance-banking.html" class="block py-2 hover:underline">Finance &amp; Banking</a>
-          <a href="automotive.html" class="block py-2 hover:underline">Automotive</a>
-          <a href="agriculture.html" class="block py-2 hover:underline">Agriculture</a>
-          <a href="telecommunication.html" class="block py-2 hover:underline">Telecommunication</a>
-          <a href="manufacturing.html" class="block py-2 hover:underline">Manufacturing</a>
-          <a href="public-sector-government.html" class="block py-2 hover:underline">Public Sector &amp; Government</a>
-          <a href="energy-utilities.html" class="block py-2 hover:underline">Energy &amp; Utilities</a>
-          <a href="travel-hospitality.html" class="block py-2 hover:underline">Travel &amp; Hospitality</a>
-          <a href="education-elearning.html" class="block py-2 hover:underline">Education &amp; E-Learning</a>
-          <a href="insurance.html" class="block py-2 hover:underline">Insurance</a>
-          <a href="logistics-supply-chain.html" class="block py-2 hover:underline">Logistics &amp; Supply Chain</a>
+        <div id="mobileIndustriesMenu" class="hidden pl-4 pb-3 space-y-1 text-base text-gray-300">
+          <a href="real-estate.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo ($page === 'real-estate.php') ? 'text-[#ffc835] font-semibold' : ''; ?>">Real Estate</a>
+          <a href="healthcare.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo ($page === 'healthcare.php') ? 'text-[#ffc835] font-semibold' : ''; ?>">Healthcare</a>
+          <a href="retail-ecommerce.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo in_array($page, ['retail-ecommerce.php', 'e-commerce-industry.php']) ? 'text-[#ffc835] font-semibold' : ''; ?>">Retail &amp; E-Commerce</a>
+          <a href="media-entertainment.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo ($page === 'media-entertainment.php') ? 'text-[#ffc835] font-semibold' : ''; ?>">Media &amp; Entertainment</a>
+          <a href="finance-banking.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo in_array($page, ['finance-banking.php', 'finance.php']) ? 'text-[#ffc835] font-semibold' : ''; ?>">Finance &amp; Banking</a>
+          <a href="automotive.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo ($page === 'automotive.php') ? 'text-[#ffc835] font-semibold' : ''; ?>">Automotive</a>
+          <a href="agriculture.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo ($page === 'agriculture.php') ? 'text-[#ffc835] font-semibold' : ''; ?>">Agriculture</a>
+          <a href="telecommunication.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo ($page === 'telecommunication.php') ? 'text-[#ffc835] font-semibold' : ''; ?>">Telecommunication</a>
+          <a href="manufacturing.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo ($page === 'manufacturing.php') ? 'text-[#ffc835] font-semibold' : ''; ?>">Manufacturing</a>
+          <a href="public-sector-government.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo ($page === 'public-sector-government.php') ? 'text-[#ffc835] font-semibold' : ''; ?>">Public Sector &amp; Government</a>
+          <a href="energy-utilities.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo ($page === 'energy-utilities.php') ? 'text-[#ffc835] font-semibold' : ''; ?>">Energy &amp; Utilities</a>
+          <a href="travel-hospitality.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo in_array($page, ['travel-hospitality.php', 'travel.php']) ? 'text-[#ffc835] font-semibold' : ''; ?>">Travel &amp; Hospitality</a>
+          <a href="education-elearning.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo in_array($page, ['education-elearning.php', 'education.php']) ? 'text-[#ffc835] font-semibold' : ''; ?>">Education &amp; E-Learning</a>
+          <a href="insurance.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo ($page === 'insurance.php') ? 'text-[#ffc835] font-semibold' : ''; ?>">Insurance</a>
+          <a href="logistics-supply-chain.html" class="block py-2 hover:text-[#ffc835] transition-colors <?php echo ($page === 'logistics-supply-chain.php') ? 'text-[#ffc835] font-semibold' : ''; ?>">Logistics &amp; Supply Chain</a>
         </div>
       </div>
 
-      <a href="case-studies.html" class="block py-4 nav-link relative">Case Studies</a>
-      <a href="contact-us.html" class="block py-4 nav-link relative">Contact</a>
-    </div>
+      <a href="case-studies.html" class="block py-3.5 text-xl font-medium border-b border-white/5 hover:text-[#ffc835] transition-colors <?php echo ($page === 'case-studies.php') ? 'text-[#ffc835] font-bold' : ''; ?>">
+        Case Studies
+      </a>
 
-    <!-- STICKY BOTTOM ICONS -->
-    <div class="px-6 py-4 flex gap-6 items-center mb-20">
+      <a href="contact-us.html" class="block py-3.5 text-xl font-medium border-b border-white/5 hover:text-[#ffc835] transition-colors <?php echo ($page === 'contact-us.php') ? 'text-[#ffc835] font-bold' : ''; ?>">
+        Contact Us
+      </a>
 
-      <div class="flex items-center border border-white rounded-full">
-        <a href="https://www.linkedin.com/company/oakyweb/">
-          <img src="assets/icons/linkedin.svg" class="h-8 w-8 ">
+      <!-- START PROJECT BUTTON -->
+      <div class="pt-6 pb-2">
+        <a href="start-project.php" class="block w-full text-center bg-[#ffc835] hover:bg-[#ffc835]/90 text-black font-bold py-3.5 px-6 rounded-xl transition-all shadow-md">
+          Start Project
         </a>
       </div>
-      <div class="flex items-center border border-white rounded-full">
-        <a href="https://www.facebook.com/OakyWeb/">
-          <img src="assets/icons/fb-sicon.svg" class="h-8 w-8 ">
-        </a>
-      </div>
-      <div class="flex items-center border border-white rounded-full">
-        <a href="https://twitter.com/oakyweb">
-          <img src="assets/icons/x-sicon.svg" class="h-8 w-8">
-        </a>
-      </div>
-      <div class="flex items-center border border-white rounded-full">
-        <a href="https://www.instagram.com/oaky_web/">
-          <img src="assets/icons/insta-sicon.svg" class="h-8 w-8">
-        </a>
+
+      <!-- SOCIAL ICONS & COPYRIGHT (INSIDE SCROLLER) -->
+      <div class="pt-6 pb-10 border-t border-white/10 mt-6">
+        <p class="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-3">Connect with us</p>
+        <div class="flex gap-4 items-center">
+          <a href="https://www.linkedin.com/company/oakyweb/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:border-[#ffc835] hover:bg-[#ffc835]/10 transition-colors">
+            <img src="assets/icons/linkedin.svg" class="h-5 w-5" alt="LinkedIn" />
+          </a>
+          <a href="https://www.facebook.com/OakyWeb/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:border-[#ffc835] hover:bg-[#ffc835]/10 transition-colors">
+            <img src="assets/icons/fb-sicon.svg" class="h-5 w-5" alt="Facebook" />
+          </a>
+          <a href="https://twitter.com/oakyweb" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:border-[#ffc835] hover:bg-[#ffc835]/10 transition-colors">
+            <img src="assets/icons/x-sicon.svg" class="h-5 w-5" alt="X / Twitter" />
+          </a>
+          <a href="https://www.instagram.com/oaky_web/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:border-[#ffc835] hover:bg-[#ffc835]/10 transition-colors">
+            <img src="assets/icons/insta-sicon.svg" class="h-5 w-5" alt="Instagram" />
+          </a>
+        </div>
       </div>
 
     </div>
@@ -454,21 +464,35 @@ include 'components/meta.php';
   const menuBtn = document.getElementById("menu-btn");
   const closeBtn = document.getElementById("mobile-menu-close");
 
-  menuBtn.addEventListener("click", () => {
-    menu.classList.toggle("-translate-y-full");
-
-    if (!menu.classList.contains("-translate-y-full")) {
-      document.body.classList.add("overflow-hidden"); // disable scroll
-    } else {
-      document.body.classList.remove("overflow-hidden"); // enable scroll
+  function openMobileMenu() {
+    if (menu) {
+      menu.classList.remove("-translate-y-full");
+      document.body.style.overflow = "hidden";
+      document.documentElement.style.overflow = "hidden";
+      if (window.lenis) {
+        window.lenis.stop();
+      }
     }
-  });
+  }
 
-  closeBtn.addEventListener("click", () => {
-    menu.classList.add("-translate-y-full");
-    document.body.classList.remove("overflow-hidden");
-  });
+  function closeMobileMenu() {
+    if (menu) {
+      menu.classList.add("-translate-y-full");
+      document.body.style.overflow = "";
+      document.documentElement.style.overflow = "";
+      if (window.lenis) {
+        window.lenis.start();
+      }
+    }
+  }
 
+  if (menuBtn) {
+    menuBtn.addEventListener("click", openMobileMenu);
+  }
+
+  if (closeBtn) {
+    closeBtn.addEventListener("click", closeMobileMenu);
+  }
 
   tailwind.config = {
     theme: {
@@ -499,12 +523,12 @@ include 'components/meta.php';
     }
 
     const btn = document.getElementById("mobileServicesBtn");
-    const menu = document.getElementById("mobileServicesMenu");
+    const serviceMenu = document.getElementById("mobileServicesMenu");
     const arrow = document.getElementById("mobileArrow");
 
-    if (btn && menu && arrow) {
+    if (btn && serviceMenu && arrow) {
       btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
+        serviceMenu.classList.toggle("hidden");
         arrow.classList.toggle("rotate-180");
       });
     }

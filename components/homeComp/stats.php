@@ -51,21 +51,21 @@ $heroStats = [
 <section class="relative w-full bg-[#FBFBFC] py-12 sm:py-16 lg:py-20" id="experience-stats">
     <div class="contain relative z-10">
 
-        <!-- 4-Column Stats Cards Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
+        <!-- 2-Column on Mobile, 4-Column on Desktop Stats Cards Grid -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5 lg:gap-6">
             <?php foreach ($heroStats as $index => $stat): ?>
-                <div class="stat-card group bg-white p-6 lg:p-7 rounded-[22px] border border-[#E5E7EB] hover:border-[#ffc835] transition-all duration-300 shadow-sm hover:shadow-xl hover:-translate-y-1.5 flex flex-col justify-between">
+                <div class="stat-card group bg-white p-4 sm:p-6 lg:p-7 rounded-2xl sm:rounded-[22px] border border-[#E5E7EB] hover:border-[#ffc835] transition-all duration-300 shadow-sm hover:shadow-xl hover:-translate-y-1.5 flex flex-col justify-between">
                     
                     <!-- Icon Badge -->
-                    <div class="mb-4">
-                        <div class="w-12 h-12 rounded-xl <?= $stat['badge_bg'] ?> border flex items-center justify-center text-lg transition-transform duration-300 group-hover:scale-110 shadow-sm">
+                    <div class="mb-3 sm:mb-4">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl <?= $stat['badge_bg'] ?> border flex items-center justify-center text-base sm:text-lg transition-transform duration-300 group-hover:scale-110 shadow-sm">
                             <i class="<?= $stat['icon'] ?>"></i>
                         </div>
                     </div>
 
                     <!-- Counter Number -->
-                    <div class="my-1">
-                        <div class="text-4xl sm:text-5xl font-black text-[#111827] tracking-tight leading-none group-hover:text-black transition-colors">
+                    <div class="my-0.5 sm:my-1">
+                        <div class="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-black text-[#111827] tracking-tight leading-none group-hover:text-black transition-colors">
                             <span class="stat-counter font-black tracking-tight"
                                   data-target="<?= $stat['target'] ?>"
                                   data-decimals="<?= $stat['decimals'] ?>"
@@ -74,11 +74,11 @@ $heroStats = [
                     </div>
 
                     <!-- Title & Subtitle with Divider -->
-                    <div class="mt-4 pt-3.5 border-t border-gray-100">
-                        <h4 class="text-xs sm:text-[13px] font-bold uppercase tracking-wider text-[#111827] group-hover:text-amber-600 transition-colors">
+                    <div class="mt-3 sm:mt-4 pt-2.5 sm:pt-3.5 border-t border-gray-100">
+                        <h4 class="text-[11px] sm:text-[13px] font-bold uppercase tracking-wider text-[#111827] group-hover:text-amber-600 transition-colors line-clamp-1">
                             <?= $stat['title'] ?>
                         </h4>
-                        <p class="mt-1 text-xs sm:text-[13px] text-gray-500 font-medium leading-relaxed">
+                        <p class="mt-0.5 sm:mt-1 text-[10px] sm:text-[13px] text-gray-500 font-medium leading-tight sm:leading-relaxed line-clamp-2">
                             <?= $stat['subtitle'] ?>
                         </p>
                     </div>

@@ -1,9 +1,9 @@
 <?php include("components/header.php") ?>
 
 <!-- Banner Section (Signature OakyWeb Brand Style with Right Showcase Image) -->
-<section class="contain2 paddingy lg:pb-8 lg:mb-4 relative overflow-hidden" id="hero">
+<section class="contain2 pt-4 pb-4 lg:pt-6 lg:pb-6 relative overflow-hidden" id="hero">
   <div class="contain">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center lg:mt-4 lg:pb-4">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
 
       <!-- Left Side Content -->
       <div class="lg:col-span-6 flex flex-col items-center lg:items-start text-center lg:text-left z-10">
@@ -38,53 +38,53 @@
 
 
 <!-- 2. CASE STUDIES SHOWCASE SECTION -->
-<section class="w-full py-12 sm:py-16 bg-[#F8F9FA] border-t border-gray-100" id="case-studies-grid-section">
+<section class="w-full py-8 sm:py-10 bg-[#F8F9FA] border-t border-gray-100" id="case-studies-grid-section">
   <div class="contain">
 
     <!-- Section Heading Above Filter Tabs -->
-    <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
+    <div class="text-center max-w-3xl mx-auto mb-6 sm:mb-8">
       <h2 class="Abhaya text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight leading-tight">
         Our <span class="text-[#ffc835]">Finest Work</span>
       </h2>
-      <p class="text-base sm:text-lg text-gray-600 font-normal mt-2.5 leading-relaxed">
+      <p class="text-base sm:text-lg text-gray-600 font-normal mt-2 leading-relaxed">
         Championing user experience design across industries, geographies, &amp; demographics
       </p>
     </div>
 
     <!-- Category Filter Tabs -->
-    <div class="flex flex-wrap items-center justify-center gap-2 mb-10 sm:mb-12" id="filter-tabs">
-      <button class="filter-tab active px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all bg-[#0f172a] text-white cursor-pointer shadow-sm" data-filter="all">
+    <div class="flex flex-wrap items-center justify-center gap-2 mb-6 sm:mb-8" id="filter-tabs">
+      <button class="filter-tab active px-5 py-2 rounded-full text-xs sm:text-sm font-bold transition-all bg-[#0f172a] text-white cursor-pointer shadow-sm" data-filter="all">
         All Projects
       </button>
-      <button class="filter-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all bg-white text-gray-700 hover:bg-[#ffc835] hover:text-black border border-gray-200 cursor-pointer shadow-2xs" data-filter="mobile">
+      <button class="filter-tab px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all bg-white text-gray-700 hover:bg-[#ffc835] hover:text-black border border-gray-200 cursor-pointer shadow-2xs" data-filter="mobile">
         Mobile Apps
       </button>
-      <button class="filter-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all bg-white text-gray-700 hover:bg-[#ffc835] hover:text-black border border-gray-200 cursor-pointer shadow-2xs" data-filter="web">
+      <button class="filter-tab px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all bg-white text-gray-700 hover:bg-[#ffc835] hover:text-black border border-gray-200 cursor-pointer shadow-2xs" data-filter="web">
         Web &amp; SaaS
       </button>
-      <button class="filter-tab px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all bg-white text-gray-700 hover:bg-[#ffc835] hover:text-black border border-gray-200 cursor-pointer shadow-2xs" data-filter="enterprise">
+      <button class="filter-tab px-5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all bg-white text-gray-700 hover:bg-[#ffc835] hover:text-black border border-gray-200 cursor-pointer shadow-2xs" data-filter="enterprise">
         Enterprise
       </button>
     </div>
 
-    <!-- 6 Clean Case Study Cards Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" id="case-study-list">
+    <!-- 4 Case Study Cards in One Row -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 xl:gap-6" id="case-study-list">
 
       <!-- Case 1: 1Click -->
       <div class="case-item group bg-white rounded-3xl border border-gray-200/90 hover:border-[#ffc835] overflow-hidden flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl" data-category="mobile">
         <div>
-          <div class="h-56 bg-gradient-to-tr from-amber-50 to-amber-100/60 flex items-center justify-center p-6 border-b border-gray-100 overflow-hidden">
+          <div class="h-44 xl:h-48 bg-gradient-to-tr from-amber-50 to-amber-100/60 flex items-center justify-center p-5 border-b border-gray-100 overflow-hidden">
             <img src="assets/homeImages/1click.png" alt="1Click App" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500 drop-shadow-sm" />
           </div>
-          <div class="p-6 sm:p-7">
-            <span class="inline-block text-[11px] font-bold text-amber-800 uppercase tracking-wider mb-2 bg-amber-50 px-2.5 py-0.5 rounded-md border border-amber-200/60">
+          <div class="p-5 sm:p-6">
+            <span class="inline-block text-[10.5px] font-bold text-amber-800 uppercase tracking-wider mb-2 bg-amber-50 px-2 py-0.5 rounded-md border border-amber-200/60">
               FinTech &amp; Insurance
             </span>
-            <h3 class="text-xl font-bold text-gray-900 group-hover:text-black leading-snug">
-              1Click — Smart Insurance Management App
+            <h3 class="text-base sm:text-lg font-bold text-gray-900 group-hover:text-black leading-snug">
+              1Click — Smart Insurance App
             </h3>
-            <p class="text-gray-600 text-sm mt-3 leading-relaxed">
-              Consolidated fragmented multi-provider insurance management into a unified mobile app with auto-renewal alerts, instant document verification, and digital claim tracking.
+            <p class="text-gray-600 text-xs sm:text-[13px] mt-2.5 leading-relaxed">
+              Consolidated fragmented insurance management into a unified mobile app with auto-renewal alerts and digital claim tracking.
             </p>
           </div>
         </div>
@@ -93,18 +93,18 @@
       <!-- Case 2: CREDAI -->
       <div class="case-item group bg-white rounded-3xl border border-gray-200/90 hover:border-[#ffc835] overflow-hidden flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl" data-category="web">
         <div>
-          <div class="h-56 bg-gradient-to-tr from-amber-100 to-amber-200/50 flex items-center justify-center p-6 border-b border-gray-100 overflow-hidden">
+          <div class="h-44 xl:h-48 bg-gradient-to-tr from-amber-100 to-amber-200/50 flex items-center justify-center p-5 border-b border-gray-100 overflow-hidden">
             <img src="assets/homeImages/credai.png" alt="CREDAI Platform" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500 drop-shadow-sm" />
           </div>
-          <div class="p-6 sm:p-7">
-            <span class="inline-block text-[11px] font-bold text-amber-800 uppercase tracking-wider mb-2 bg-amber-50 px-2.5 py-0.5 rounded-md border border-amber-200/60">
-              Event Platform &amp; Conclave
+          <div class="p-5 sm:p-6">
+            <span class="inline-block text-[10.5px] font-bold text-amber-800 uppercase tracking-wider mb-2 bg-amber-50 px-2 py-0.5 rounded-md border border-amber-200/60">
+              Event &amp; Conclave
             </span>
-            <h3 class="text-xl font-bold text-gray-900 group-hover:text-black leading-snug">
-              CREDAI — National Summit &amp; Delegate Portal
+            <h3 class="text-base sm:text-lg font-bold text-gray-900 group-hover:text-black leading-snug">
+              CREDAI — Summit &amp; Delegate Portal
             </h3>
-            <p class="text-gray-600 text-sm mt-3 leading-relaxed">
-              Architected a high-concurrency event portal managing 15,000+ delegate registrations, live QR check-ins, automated badge printing, B2B meeting scheduling, and sponsor analytics.
+            <p class="text-gray-600 text-xs sm:text-[13px] mt-2.5 leading-relaxed">
+              Architected a high-concurrency event portal managing 15,000+ delegate registrations, live QR check-ins, and sponsor analytics.
             </p>
           </div>
         </div>
@@ -113,18 +113,18 @@
       <!-- Case 3: HR BABU -->
       <div class="case-item group bg-white rounded-3xl border border-gray-200/90 hover:border-[#ffc835] overflow-hidden flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl" data-category="enterprise">
         <div>
-          <div class="h-56 bg-gradient-to-tr from-emerald-50 to-teal-100/50 flex items-center justify-center p-6 border-b border-gray-100 overflow-hidden">
+          <div class="h-44 xl:h-48 bg-gradient-to-tr from-emerald-50 to-teal-100/50 flex items-center justify-center p-5 border-b border-gray-100 overflow-hidden">
             <img src="assets/homeImages/hrbabu.png" alt="HR BABU HRMS" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500 drop-shadow-sm" />
           </div>
-          <div class="p-6 sm:p-7">
-            <span class="inline-block text-[11px] font-bold text-emerald-800 uppercase tracking-wider mb-2 bg-emerald-50 px-2.5 py-0.5 rounded-md border border-emerald-200/60">
-              SaaS &amp; Workforce Tech
+          <div class="p-5 sm:p-6">
+            <span class="inline-block text-[10.5px] font-bold text-emerald-800 uppercase tracking-wider mb-2 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200/60">
+              SaaS &amp; Workforce
             </span>
-            <h3 class="text-xl font-bold text-gray-900 group-hover:text-black leading-snug">
-              HR BABU — Cloud HRMS &amp; Automated Payroll
+            <h3 class="text-base sm:text-lg font-bold text-gray-900 group-hover:text-black leading-snug">
+              HR BABU — Cloud HRMS &amp; Payroll
             </h3>
-            <p class="text-gray-600 text-sm mt-3 leading-relaxed">
-              An intelligent enterprise workforce management system integrating geofenced biometric attendance, automated multi-tier tax computations, leave approvals, and employee self-service.
+            <p class="text-gray-600 text-xs sm:text-[13px] mt-2.5 leading-relaxed">
+              Intelligent workforce system with geofenced biometric attendance, automated payroll, and employee self-service.
             </p>
           </div>
         </div>
@@ -133,58 +133,18 @@
       <!-- Case 4: Cytometry -->
       <div class="case-item group bg-white rounded-3xl border border-gray-200/90 hover:border-[#ffc835] overflow-hidden flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl" data-category="web">
         <div>
-          <div class="h-56 bg-slate-900 flex items-center justify-center p-6 border-b border-gray-100 overflow-hidden">
+          <div class="h-44 xl:h-48 bg-slate-900 flex items-center justify-center p-5 border-b border-gray-100 overflow-hidden">
             <img src="assets/homeImages/Cytometry.png" alt="Cytometry Journal" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500 drop-shadow-sm" />
           </div>
-          <div class="p-6 sm:p-7">
-            <span class="inline-block text-[11px] font-bold text-slate-800 uppercase tracking-wider mb-2 bg-slate-100 px-2.5 py-0.5 rounded-md border border-slate-200">
+          <div class="p-5 sm:p-6">
+            <span class="inline-block text-[10.5px] font-bold text-slate-800 uppercase tracking-wider mb-2 bg-slate-100 px-2 py-0.5 rounded-md border border-slate-200">
               Healthcare &amp; Research
             </span>
-            <h3 class="text-xl font-bold text-gray-900 group-hover:text-black leading-snug">
-              Cytometry — Research Journal &amp; Medical Portal
+            <h3 class="text-base sm:text-lg font-bold text-gray-900 group-hover:text-black leading-snug">
+              Cytometry — Medical Research Journal
             </h3>
-            <p class="text-gray-600 text-sm mt-3 leading-relaxed">
-              An international medical research dissemination portal with automated peer review workflows, scientific abstract publishing, live keynote streaming, and author citation indexes.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Case 5: Smart OEE Dashboard -->
-      <div class="case-item group bg-white rounded-3xl border border-gray-200/90 hover:border-[#ffc835] overflow-hidden flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl" data-category="enterprise">
-        <div>
-          <div class="h-56 bg-slate-900 flex items-center justify-center p-4 border-b border-gray-100 overflow-hidden">
-            <img src="assets/multiImages/oee1-lg.png" alt="OEE Dashboard" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500 rounded-lg drop-shadow-sm" />
-          </div>
-          <div class="p-6 sm:p-7">
-            <span class="inline-block text-[11px] font-bold text-blue-800 uppercase tracking-wider mb-2 bg-blue-50 px-2.5 py-0.5 rounded-md border border-blue-200/60">
-              Industrial IoT &amp; Telemetry
-            </span>
-            <h3 class="text-xl font-bold text-gray-900 group-hover:text-black leading-snug">
-              Smart OEE Dashboard &amp; Machine Analytics
-            </h3>
-            <p class="text-gray-600 text-sm mt-3 leading-relaxed">
-              A real-time shop-floor IoT telemetry platform calculating Overall Equipment Effectiveness (OEE), predicting machine halts, and benchmarking operator line efficiency.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Case 6: Headless E-Commerce -->
-      <div class="case-item group bg-white rounded-3xl border border-gray-200/90 hover:border-[#ffc835] overflow-hidden flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl" data-category="web">
-        <div>
-          <div class="h-56 bg-gradient-to-tr from-amber-50 to-amber-100/70 flex items-center justify-center p-4 border-b border-gray-100 overflow-hidden">
-            <img src="assets/multiImages/e-commerce-banner.png" alt="E-Commerce Architecture" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500 drop-shadow-sm" />
-          </div>
-          <div class="p-6 sm:p-7">
-            <span class="inline-block text-[11px] font-bold text-amber-800 uppercase tracking-wider mb-2 bg-amber-50 px-2.5 py-0.5 rounded-md border border-amber-200/60">
-              Retail &amp; E-Commerce
-            </span>
-            <h3 class="text-xl font-bold text-gray-900 group-hover:text-black leading-snug">
-              Enterprise Headless E-Commerce Architecture
-            </h3>
-            <p class="text-gray-600 text-sm mt-3 leading-relaxed">
-              Developed a headless omnichannel store with sub-second faceted catalog search, dynamic multi-warehouse inventory sync, instant one-click checkout, and localized payment rails.
+            <p class="text-gray-600 text-xs sm:text-[13px] mt-2.5 leading-relaxed">
+              Medical dissemination portal with automated peer review workflows, abstract publishing, and live keynote streaming.
             </p>
           </div>
         </div>
@@ -197,16 +157,16 @@
 
 
 <!-- 3. LOGO & ACHIEVEMENTS SWIPER AREA -->
-<section class="logo__area pt-100 pb-100 bg-[#F8F9FA] relative overflow-hidden border-t border-b border-gray-100" id="achievements-section">
+<section class="logo__area py-8 sm:py-10 bg-[#F8F9FA] relative overflow-hidden border-t border-b border-gray-100" id="achievements-section">
 
   <div class="container mx-auto px-4 relative z-10">
     <div class="row">
       <div class="col-xxl-12 col-xl-12 col-lg-12">
         
         <!-- Section Title Wrapper -->
-        <div class="sec-title-wrapper text-center mb-10">
-          <h3 class="sec-title title-anim text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-3">
-            Trusted by Leading Brands &amp; Enterprises
+        <div class="sec-title-wrapper text-center mb-6 sm:mb-8">
+          <h3 class="sec-title title-anim text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-2">
+            Trusted By <span class="text-[#ffc835]">Clients Worldwide</span>
           </h3>
           <p class="text-gray-500 text-xs sm:text-sm max-w-2xl mx-auto">
             Delivering scalable engineering solutions for national institutions and global companies.
@@ -266,20 +226,6 @@
 .logo__area {
   position: relative;
 }
-.pt-100 {
-  padding-top: 70px;
-}
-.pb-100 {
-  padding-bottom: 70px;
-}
-@media (min-width: 768px) {
-  .pt-100 {
-    padding-top: 90px;
-  }
-  .pb-100 {
-    padding-bottom: 90px;
-  }
-}
 .achievements__slider .swiper-wrapper {
   -webkit-transition-timing-function: linear !important;
   -o-transition-timing-function: linear !important;
@@ -333,7 +279,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 <!-- 4. HIGH IMPACT CALL TO ACTION -->
-<section class="w-full py-16 sm:py-20 bg-[#0f172a] text-white relative overflow-hidden">
+<section class="w-full py-10 sm:py-14 bg-[#0f172a] text-white relative overflow-hidden">
   
   <!-- Subtle Amber Glow -->
   <div class="absolute inset-0 pointer-events-none">
